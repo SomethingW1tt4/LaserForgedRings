@@ -1,39 +1,58 @@
-/* Basic Styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-
-#ring-description {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laser Forged Rings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Laser Forged Rings</h1>
+        <p>Innovative. Customizable. Unparalleled Design.</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">What It Is</a></li>
+            <li><a href="#advantages">Why It's Better</a></li>
+            <li><a href="#designs">Designs & Customization</a></li>
+            <li><a href="#investment">Business & Investment</a></li>
+            <li><a href="#about-me">About</a></li>
+        </ul>
+    </nav>
+    
+    <section id="about">
+        <h2>What It Is</h2>
+        <p>Introducing the next generation of spinner rings with algorithmically designed customization and premium materials.</p>
+    </section>
+    
+    <section id="advantages">
+        <h2>Why It's Better</h2>
+        <p>Our unique design offers enhanced spinning mechanics, durability, and personalization options.</p>
+    </section>
+    
+    <section id="designs">
+        <h2>Designs & Customization</h2>
+        <p>Explore the different styles and witness the power of our 3D modeler in real-time.</p>
+        <video controls loop>
+            <source src="spinning-animation.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+    
+    <section id="investment">
+        <h2>Business & Investment</h2>
+        <p>We are seeking investors and partners to bring Laser Forged Rings to market. Get involved today!</p>
+    </section>
+    
+    <section id="about-me">
+        <h2>About the Creator</h2>
+        <p>Learn more about the mind behind Laser Forged Rings and the vision for the future.</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Laser Forged Rings. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
