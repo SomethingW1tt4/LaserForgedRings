@@ -37,6 +37,7 @@
         <p>Explore the different styles and witness the power of our 3D modeler in real-time.</p>
         <video controls loop>
             <source src="Animation1.mp4" type="video/mp4">
+
             Your browser does not support the video tag.
         </video>
     </section>
@@ -56,3 +57,10 @@
     </footer>
 </body>
 </html>
+.responsive-video {
+    width: 20%;
+    height: auto;
+    max-width: 800px; /* Adjust this value as needed */
+    display: block;
+    margin: 0 auto;
+}
