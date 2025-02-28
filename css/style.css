@@ -13,10 +13,20 @@
     opacity: 1;
 }
 
-video {
-    width: 100%; /* Adjusts the video to the full width of its container */
-    height: auto; /* Maintains the aspect ratio */
-    display: block; /* Prevents inline element spacing issues */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Aspect ratio: 16:9 */
+    overflow: hidden;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
 }
 
 .back-to-top {
