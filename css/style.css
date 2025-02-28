@@ -15,7 +15,7 @@
 
 .video-container {
     position: relative;
-    width: 300%;
+    width: 200%;
     padding-bottom: 56.25%; /* Aspect ratio: 16:9 */
     overflow: hidden;
 }
@@ -24,8 +24,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 300%;
-    height: 300%;
+    width: 200%;
+    height: 200%;
     background-color: transparent;
 }
 
