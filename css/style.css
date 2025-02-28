@@ -13,6 +13,12 @@
     opacity: 1;
 }
 
+video {
+    width: 100%; /* Adjusts the video to the full width of its container */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Prevents inline element spacing issues */
+}
+
 .back-to-top {
     position: fixed;
     display: none;
