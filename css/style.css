@@ -17,8 +17,8 @@
     display: flex;
     justify-content: center; /* Centers horizontally */
     align-items: center;    /* Centers vertically */
-    width: 100%;            /* Ensures the wrapper takes full width */
-    height: 100%;           /* Adjust as needed */
+    width: 200%;            /* Ensures the wrapper takes full width */
+    height: 200%;           /* Adjust as needed */
     overflow: hidden;       /* Hides any overflow */
 }
 
