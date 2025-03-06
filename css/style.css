@@ -17,9 +17,10 @@
     display: flex;
     justify-content: center; /* Centers horizontally */
     align-items: center;    /* Centers vertically */
-    width: 200%;            /* Ensures the wrapper takes full width */
-    height: 200%;           /* Adjust as needed */
+    width: 100%;            /* Ensures the wrapper takes full width */
+    height: auto;           /* Adjust as needed */
     overflow: hidden;       /* Hides any overflow */
+    transform: scale (1.0);
 }
 
 .video-wrapper video {
@@ -32,15 +33,16 @@
     display: flex;
     justify-content: center; /* Centers horizontally */
     align-items: center;    /* Centers vertically */
-    width: 175%;            /* Ensures the wrapper takes full width */
-    height: 175%;           /* Adjust as needed */
+    width: 100%;            /* Ensures the wrapper takes full width */
+    height: auto;           /* Adjust as needed */
     overflow: hidden;       /* Hides any overflow */
 }
 
 .animation2-wrapper video {
     width: 175%;             /* Adjust percentage as needed */
     height: auto;           /* Maintains aspect ratio */
-    object-fit: cover;      /* Ensures the video covers the container */
+    object-fit: contain;      /* Ensures the video covers the container */
+    transform: scale (1.5);
 }
 
 
