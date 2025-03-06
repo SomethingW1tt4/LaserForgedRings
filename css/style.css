@@ -30,22 +30,24 @@
     object-fit: cover;      /* Ensures the video covers the container */
 }
 
-.animation2-wrapper{
+.animation2-wrapper {
     display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center;    /* Centers vertically */
-    width: 100%;            /* Ensures the wrapper takes full width */
-    height: auto;           /* Adjust as needed */
-    overflow: hidden;       /* Hides any overflow */
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensures it takes the full column width */
+    height: auto; /* Keeps proportional scaling */
+    overflow: hidden; /* Prevents content overflow */
 }
 
+
 .animation2-wrapper video {
-    width: 100%;             /* Adjust percentage as needed */
-    height: auto;           /* Maintains aspect ratio */
-    object-fit: contain;      /* Ensures the video covers the container */
-    transform: scale (3.0);
-    max-width: none;
+    width: 150% !important;  /* Force width override */
+    height: auto !important; /* Keep aspect ratio */
+    max-width: unset !important; /* Remove Bootstrap restrictions */
+    display: block; /* Ensure no extra margins from inline elements */
+    margin: 0 auto; /* Keep it centered */
 }
+
 
 
 @keyframes pulse {
