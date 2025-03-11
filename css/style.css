@@ -41,9 +41,9 @@
 
 
 .animation2-wrapper video {
-    width: 200% !important;  /* Force width override */
-    height: auto !important; /* Keep aspect ratio */
-    max-width: unset !important; /* Remove Bootstrap restrictions */
+    width: 100%;  /* Force width override */
+    height: auto; /* Keep aspect ratio */
+    max-width: unset; /* Remove Bootstrap restrictions */
     display: block; /* Ensure no extra margins from inline elements */
     margin: 0 auto; /* Keep it centered */
 }
