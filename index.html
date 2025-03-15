@@ -2,14 +2,20 @@
 <html lang="en">
 
 
- <div id="header"></div>
-    <script>
-  fetch('meta/header.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('header').innerHTML = data;
-    })
-    .catch(error => console.error('Error loading header:', error));
+<div id="header"></div>
+<script>
+  // Ensure the DOM is fully loaded before running the script
+  document.addEventListener("DOMContentLoaded", () => {
+    // Fetch and insert the header content
+    fetch('meta/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+        // Add the "loaded" class to the body once the header is fetched
+        document.body.classList.add('loaded');
+      })
+      .catch(error => console.error('Error loading header:', error));
+  });
 </script>
 
   <!--
