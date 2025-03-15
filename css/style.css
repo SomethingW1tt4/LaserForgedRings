@@ -181,7 +181,7 @@ img.animated.pulse {
 .hero-header {
     position: relative;
     margin-top: -85px;
-    padding-top: 6rem;
+    padding-top: 10rem;
     padding-bottom: 6rem;
     background: url(../img/bg.png) center center no-repeat;
     background-size: cover;
@@ -209,6 +209,12 @@ img.animated.pulse {
 
 
 /*** Feature ***/
+.feature {
+    position: relative;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
 .feature-item::before {
     position: absolute;
     content: "";
