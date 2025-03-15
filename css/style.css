@@ -198,6 +198,11 @@ img.animated.pulse {
     clip-path: polygon(66% 0, 100% 0, 100% 100%, 33% 100%);
 }
 
+.container-fluid {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .hero-header .container {
     position: relative;
     z-index: 1;
