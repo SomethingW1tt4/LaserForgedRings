@@ -198,10 +198,6 @@ img.animated.pulse {
     clip-path: polygon(66% 0, 100% 0, 100% 100%, 33% 100%);
 }
 
-.container-fluid {
-    border: 2px solid red; /* This will outline each section */
-}
-
 .hero-header .container {
     position: relative;
     z-index: 1;
