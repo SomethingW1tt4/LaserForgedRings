@@ -13,42 +13,6 @@
     opacity: 1;
 }
 
-.video-wrapper {
-    display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center;    /* Centers vertically */
-    width: 100%;            /* Ensures the wrapper takes full width */
-    height: auto;           /* Adjust as needed */
-    overflow: hidden;       /* Hides any overflow */
-    transform: scale (1.0);
-    max-width: none;
-}
-
-.video-wrapper video {
-    width: 100%;             /* Adjust percentage as needed */
-    height: auto;           /* Maintains aspect ratio */
-    object-fit: cover;      /* Ensures the video covers the container */
-}
-
-.animation2-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; /* Ensures it takes the full column width */
-    height: auto; /* Keeps proportional scaling */
-    overflow: hidden; /* Prevents content overflow */
-}
-
-
-.animation2-wrapper video {
-    width: 100%;  /* Force width override */
-    height: auto; /* Keep aspect ratio */
-    max-width: unset; /* Remove Bootstrap restrictions */
-    display: block; /* Ensure no extra margins from inline elements */
-    margin: 0 auto; /* Keep it centered */
-}
-
-
 @keyframes pulse {
     0%, 100% {
         transform: scale(1);
@@ -56,10 +20,6 @@
     50% {
         transform: scale(1.05); /* Adjust the scale factor as needed */
     }
-}
-
-.video-wrapper video {
-    animation: pulse 2s infinite; /* 2 seconds duration, infinite repeats */
 }
 
 .back-to-top {
@@ -109,7 +69,6 @@ img.animated.pulse {
     font-weight: normal;
     border-radius: 50px;
 }
-
 
 /*** Navbar ***/
 .sticky-top {
@@ -176,7 +135,6 @@ img.animated.pulse {
     }
 }
 
-
 /*** Hero Header ***/
 .hero-header {
     position: relative;
@@ -207,12 +165,50 @@ img.animated.pulse {
     color: var(--bs-light);
 }
 
+.video-wrapper {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;    /* Centers vertically */
+    width: 100%;            /* Ensures the wrapper takes full width */
+    height: auto;           /* Adjust as needed */
+    overflow: hidden;       /* Hides any overflow */
+    transform: scale (1.0);
+    max-width: none;
+}
+
+.video-wrapper video {
+    width: 100%;             /* Adjust percentage as needed */
+    height: auto;           /* Maintains aspect ratio */
+    object-fit: cover;      /* Ensures the video covers the container */
+}
+
+.animation2-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensures it takes the full column width */
+    height: auto; /* Keeps proportional scaling */
+    overflow: hidden; /* Prevents content overflow */
+}
+
+
+.animation2-wrapper video {
+    width: 100%;  /* Force width override */
+    height: auto; /* Keep aspect ratio */
+    max-width: unset; /* Remove Bootstrap restrictions */
+    display: block; /* Ensure no extra margins from inline elements */
+    margin: 0 auto; /* Keep it centered */
+}
+
+.video-wrapper video {
+    animation: pulse 2s infinite; /* 2 seconds duration, infinite repeats */
+}
 
 /*** Feature ***/
 .feature {
     position: relative;
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .feature-item::before {
@@ -232,142 +228,37 @@ img.animated.pulse {
     z-index: 1;
 }
 
-
-/*** Deal ***/
-.deal {
+/*** POC ***/
+.poc{
     position: relative;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
     background: url(../img/bg.png) center center no-repeat;
     background-size: cover;
 }
 
-.deal::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(255, 255, 255, .1);
-    clip-path: polygon(66% 0, 100% 0, 100% 100%, 33% 100%);
-}
-
-.deal .bg-white {
+.poc .container {
     position: relative;
     z-index: 1;
 }
 
-.deal .cdt span {
-    display: block;
-    font-size: 16px;
-    font-style: italic;
-    font-weight: 200;
-    text-transform: capitalize;
-}
+/*** Value ***/
 
-
-/*** How To Use ***/
-.how-to-use {
+.value {
     position: relative;
-    background: url(../img/bg.png) center center no-repeat;
-    background-size: cover;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
-
-.how-to-use::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(255, 255, 255, .1);
-    clip-path: polygon(66% 0, 100% 0, 100% 100%, 33% 100%);
-}
-
-.how-to-use .container {
-    position: relative;
-    z-index: 1;
-}
-
-.how-to-use .border {
-    border-color: rgba(255, 255, 255, .2) !important;
-}
-
-
-/*** Product ***/
-.product-item {
-    transition: .1s;
-}
-
-.product-item:hover {
-    border-width: 0 !important;
-    box-shadow: 0 0 35px rgba(144, 188, 121, .25);
-}
-
-.product-item:hover a.btn {
-    color: var(--bs-white);
-    background: var(--bs-primary);
-}
-
-
-/*** Testimonial ***/
-.testimonial {
-    position: relative;
-    background: url(../img/bg.png) center center no-repeat;
-    background-size: cover;
-}
-
-.testimonial::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(255, 255, 255, .1);
-    clip-path: polygon(66% 0, 100% 0, 100% 100%, 33% 100%);
-}
-
-.testimonial .testimonial-carousel {
-    position: relative;
-    z-index: 1;
-}
-
-.testimonial-carousel .owl-item img {
-    width: 120px;
-    height: 120px;
-    border-color: rgba(255, 255, 255, .2) !important;
-    margin: 0 auto 20px auto;
-    border-radius: 100px;
-}
-
-.testimonial-carousel .owl-dots {
-    margin-top: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.testimonial-carousel .owl-dot {
-    position: relative;
-    display: inline-block;
-    margin: 0 5px;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: transparent;
-    border: 3px solid rgba(255, 255, 255, .2);
-    border-radius: 30px;
-    transition: .5s;
-}
-
-.testimonial-carousel .owl-dot.active {
-    background: var(--bs-dark);
-}
-
 
 /*** Blog ***/
+.blog{
+    position: relative;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background: url(../img/bg.png) center center no-repeat;
+    background-size: cover;
+}
+
 .blog-item {
     transition: .1s;
 }
@@ -381,54 +272,6 @@ img.animated.pulse {
     color: var(--bs-white);
     background: var(--bs-primary);
 }
-
-
-/*** Contact ***/
-.contact-info-item::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(255, 255, 255, .1);
-    clip-path: polygon(66% 0, 100% 0, 100% 100%, 33% 100%);
-}
-
-.contact-info-item .border {
-    position: relative;
-    border-color: rgba(255, 255, 255, .2) !important;
-    z-index: 1;
-}
-
-
-/*** Newsletter ***/
-.newsletter {
-    position: relative;
-    background: url(../img/bg.png) center center no-repeat;
-    background-size: cover;
-}
-
-.newsletter::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(255, 255, 255, .1);
-    clip-path: polygon(66% 0, 100% 0, 100% 100%, 33% 100%);
-}
-
-.newsletter .container {
-    position: relative;
-    z-index: 1;
-}
-
-.newsletter .form-control {
-    background: rgba(255, 255, 255, .3);
-}
-
 
 /*** Footer ***/
 .footer .btn.btn-link {
