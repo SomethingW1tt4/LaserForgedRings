@@ -246,15 +246,15 @@ img.animated.pulse {
 
 .value {
     position: relative;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 /*** Blog ***/
 .blog{
     position: relative;
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     background: url(../img/bg.png) center center no-repeat;
     background-size: cover;
 }
