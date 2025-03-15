@@ -2760,21 +2760,21 @@ textarea.form-control-lg {
 
 .btn-primary:hover {
   color: #000;
-  background-color: #a1c68d;
-  border-color: #9bc386;
+  background-color: #C45A4A;
+  border-color: #BF5040;
 }
 
 .btn-check:focus+.btn-primary,.btn-primary:focus {
   color: #000;
-  background-color: #a1c68d;
-  border-color: #9bc386;
+  background-color: #C45A4A;
+  border-color: #BF5040;
   box-shadow: 0 0 0 .25rem rgba(122,160,103,.5);
 }
 
 .btn-check:checked+.btn-primary,.btn-check:active+.btn-primary,.btn-primary:active,.btn-primary.active,.show>.btn-primary.dropdown-toggle {
   color: #000;
-  background-color: #a6c994;
-  border-color: #9bc386;
+  background-color: #D16A5A ;
+  border-color: #BF5040;
 }
 
 .btn-check:checked+.btn-primary:focus,.btn-check:active+.btn-primary:focus,.btn-primary:active:focus,.btn-primary.active:focus,.show>.btn-primary.dropdown-toggle:focus {
@@ -2830,25 +2830,25 @@ textarea.form-control-lg {
 
 .btn-success:hover {
   color: #fff;
-  background-color: #157347;
-  border-color: #146c43;
+  background-color: #9E2A22;
+  border-color: #8F241E;
 }
 
 .btn-check:focus+.btn-success,.btn-success:focus {
   color: #fff;
-  background-color: #157347;
-  border-color: #146c43;
-  box-shadow: 0 0 0 .25rem rgba(60,153,110,.5);
+  background-color: #9E2A22;
+  border-color: #8F241E;
+  box-shadow: 0 0 0 .25rem rgba(180,80,70,0.5);
 }
 
 .btn-check:checked+.btn-success,.btn-check:active+.btn-success,.btn-success:active,.btn-success.active,.show>.btn-success.dropdown-toggle {
   color: #fff;
-  background-color: #146c43;
-  border-color: #13653f;
+  background-color: #8F241E;
+  border-color: #8A2B1C;
 }
 
 .btn-check:checked+.btn-success:focus,.btn-check:active+.btn-success:focus,.btn-success:active:focus,.btn-success.active:focus,.show>.btn-success.dropdown-toggle:focus {
-  box-shadow: 0 0 0 .25rem rgba(60,153,110,.5);
+  box-shadow: 0 0 0 .25rem rgba(180,80,70,0.5);
 }
 
 .btn-success:disabled,.btn-success.disabled {
@@ -6050,7 +6050,7 @@ to {
 }
 
 .link-primary:hover,.link-primary:focus {
-  color: #a6c994;
+  color: #D16A5A ;
 }
 
 .link-secondary {
@@ -6066,7 +6066,7 @@ to {
 }
 
 .link-success:hover,.link-success:focus {
-  color: #146c43;
+  color: #8F241E;
 }
 
 .link-info {
