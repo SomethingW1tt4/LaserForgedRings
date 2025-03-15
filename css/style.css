@@ -1,12 +1,5 @@
 /********** Template CSS **********/
 
-body {
-  visibility: hidden;
-}
-body.loaded {
-  visibility: visible;
-}
-
 /*** Spinner ***/
 #spinner {
     opacity: 0;
