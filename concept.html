@@ -150,17 +150,38 @@
                 <div class="col-lg-1 wow fadeIn text-center">
                 </div>
 <!-- Center Column (YouTube Video) -->
-                <div class="col-lg-4 mb-4 wow fadeIn text-center" data-wow-delay="0.1s">
+                <!-- YouTube Embed with JavaScript Loop -->
+                <div class="col-lg-4 wow fadeIn text-center" data-wow-delay="0.1s">
                     <div class="animation2-wrapper mx-auto" style="max-width: 100%;">
-                        <iframe width="100%" height="auto" 
-                            src="https://www.youtube.com/embed/bgQvqVq-SQU?autoplay=1&loop=1&playlist=bgQvqVq-SQU&mute=1&start=17&end=24"
+                        <iframe id="youtube-video" width="100%" height="auto" 
+                            src="https://www.youtube.com/embed/bgQvqVq-SQU?autoplay=1&controls=0&mute=1&start=16&end=24&enablejsapi=1"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                         </iframe>
-
                     </div>
                 </div>
+                
+                <!-- JavaScript to Loop Clip -->
+                <script>
+                    var endTime = 23; // Set the end time of the clip
+                
+                    function onYouTubeIframeAPIReady() {
+                        var player = new YT.Player('youtube-video', {
+                            events: {
+                                'onStateChange': function(event) {
+                                    if (event.data === YT.PlayerState.ENDED) {
+                                        player.seekTo(17); // Restart at the clip start time
+                                    }
+                                }
+                            }
+                        });
+                    }
+                </script>
+                
+                <!-- Load YouTube API -->
+                <script src="https://www.youtube.com/iframe_api"></script>
+
                 
     <!-- Core Features End -->
 
