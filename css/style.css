@@ -326,3 +326,8 @@ img.animated.pulse {
     padding-right: 0;
     border-right: none;
 }
+
+.poc .row {
+    display: flex;
+    flex-wrap: nowrap; /* Prevents wrapping to the next line */
+}
