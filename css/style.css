@@ -192,7 +192,15 @@ img.animated.pulse {
     overflow: hidden; /* Prevents content overflow */
 }
 
-
+.animation2-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none; /* Removes any border */
+    pointer-events: none; /* Prevents interaction with iframe */
+}
 .animation2-wrapper video {
     width: 100%;  /* Force width override */
     height: auto; /* Keep aspect ratio */
