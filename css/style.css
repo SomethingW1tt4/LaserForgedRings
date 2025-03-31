@@ -375,6 +375,7 @@ html {
 .sticky-nav a:hover {
     color: #007bff;
 }
+
 .feature-bar {
     position: fixed;
     right: 0;
@@ -388,6 +389,10 @@ html {
 .comparison-section {
     text-align: center;
     margin: 3rem 0;
+    padding: 2rem;
+}
+.comparison-section:nth-child(even) {
+    background-color: white;
 }
 .comparison-section img, .comparison-section video {
     max-width: 100%;
