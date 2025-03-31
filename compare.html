@@ -38,38 +38,17 @@
     </div>
     <!-- Spinner End -->
 
-    <!-- Navbar Start -->
-    <div class="container-fluid sticky-top">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-primary p-0">
-                <a href="index.html" class="navbar-brand">
-                    <h2 class="text-white">Laser-Forged Rings</h2>
-                </a>
-                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
-                    data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="concept.html" class="nav-item nav-link">What It Is</a>
-                        <a href="compare.html" class="nav-item nav-link">Why It's Better</a>
-                        <a href="designs.html" class="nav-item nav-link">Designs & Customization</a>
-                        <a href="business.html" class="nav-item nav-link">Business & Investment</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About Me</a>
-                            <div class="dropdown-menu bg-white mt-2">
-                                <a href="bio.html" class="dropdown-item">Bio</a>
-                                <a href="art.html" class="dropdown-item">Art Show</a>
-                                <a href="misc-art.html" class="dropdown-item">Hobbies</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </div>
-    <!-- Navbar End -->
+    <!-- Scrolling Vertical Navigation Bar -->
+    <nav class="sticky-nav">
+        <a href="#compare" class="nav-item">Comparison Overview</a>
+        <a href="#bulky" class="nav-item">Bulky Rings</a>
+        <a href="#bent" class="nav-item">Bent Rings</a>
+        <a href="#jangly" class="nav-item">Jangly Rings</a>
+        <a href="#bad-spin" class="nav-item">Bad Spin</a>
+        <a href="#plastic" class="nav-item">Plastic Rings</a>
+        <a href="#seam" class="nav-item">Obvious Seam</a>
+        <a href="#patent" class="nav-item">My Patent</a>
+    </nav>
 
     <!-- Hero Header -->
     <div class="container-fluid bg-primary hero-header mb-5">
@@ -84,66 +63,64 @@
 
     <!-- Comparison Section -->
     <div id="compare">
-        <div class="comparison-section">
+        <div id="bulky" class="comparison-section">
             <h2>Bulky Rings</h2>
             <img class="comparison-img" src="img/compare/compBulky.webp" alt="Bulky Ring">
         </div>
 
-        <div class="comparison-section">
+        <div id="bent" class="comparison-section hero-header">
             <h2>Bent Rings</h2>
             <video autoplay loop muted playsinline>
                 <source src="img/compare/compBentHammer.webm" type="video/webm">
             </video>
         </div>
 
-        <div class="comparison-section">
+        <div id="jangly" class="comparison-section">
             <h2>Jangly Rings</h2>
             <img class="comparison-img" src="img/compare/compJangly.webp" alt="Jangly Ring">
         </div>
 
-        <div class="comparison-section">
+        <div id="bad-spin" class="comparison-section hero-header">
             <h2>Rings With Bad Spin</h2>
             <video autoplay loop muted playsinline>
                 <source src="img/compare/compSpin.webm" type="video/webm">
             </video>
         </div>
 
-        <div class="comparison-section">
+        <div id="plastic" class="comparison-section">
             <h2>Plastic Rings</h2>
             <img class="comparison-img" src="img/compare/compPlastic.webp" alt="Plastic Ring">
         </div>
 
-        <div class="comparison-section">
+        <div id="seam" class="comparison-section hero-header">
             <h2>Obvious Seam</h2>
             <video autoplay loop muted playsinline>
                 <source src="img/compare/compSeam.webm" type="video/webm">
             </video>
         </div>
-    </div>
 
-    <!-- Patent Section -->
-    <div class="comparison-section">
-        <h2>My Patent</h2>
-        <div class="patent-image">
-            <img src="img/compare/patentCover.png" alt="Patent Cover">
+        <div id="patent" class="comparison-section">
+            <h2>My Patent</h2>
+            <div class="patent-image">
+                <img src="img/compare/patentCover.png" alt="Patent Cover">
+            </div>
+            <div>
+                <img class="patent-page" src="img/compare/patentPage1.png" alt="Patent Page 1">
+                <img class="patent-page" src="img/compare/patentPage7.png" alt="Patent Page 7">
+            </div>
+            <p><a class="btn btn-primary" href="img/compare/PatentFull.pdf" target="_blank">View Full Patent</a></p>
         </div>
-        <div>
-            <img class="patent-page" src="img/compare/patentPage1.png" alt="Patent Page 1">
-            <img class="patent-page" src="img/compare/patentPage7.png" alt="Patent Page 7">
-        </div>
-        <p><a class="btn btn-primary" href="img/compare/PatentFull.pdf" target="_blank">View Full Patent</a></p>
     </div>
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-white footer">
+    <div class="container-fluid bg-white footer" style="margin-bottom: 50px;">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
                     <a href="index.html" class="d-inline-block mb-3">
-                        <h1 class="text-primary">Hairnic</h1>
+                        <h1 class="text-primary">JGB Designs</h1>
                     </a>
-                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet, erat non
-                        malesuada consequat, nibh erat tempus risus, vitae porttitor purus nisl vitae purus.</p>
+                    <p class="mb-0">"Innovating alternatives to traditional methods"</p>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
                     <h5 class="mb-4">Get In Touch</h5>
@@ -154,55 +131,15 @@
                         <a class="btn btn-square btn-outline-primary me-1" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-square btn-outline-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-square btn-outline-primary me-1" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-square btn-outline-primary me-1" href=""><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
-                    <h5 class="mb-4">Our Products</h5>
-                    <a class="btn btn-link" href="">Hair Shining Shampoo</a>
-                    <a class="btn btn-link" href="">Anti-dandruff Shampoo</a>
-                    <a class="btn btn-link" href="">Anti Hair Fall Shampoo</a>
-                    <a class="btn btn-link" href="">Hair Growing Shampoo</a>
-                    <a class="btn btn-link" href="">Anti smell Shampoo</a>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
-                    <h5 class="mb-4">Popular Link</h5>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Privacy Policy</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Career</a>
-                </div>
-            </div>
-        </div>
-        <div class="container wow fadeIn" data-wow-delay="0.1s">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
-
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <div class="footer-menu">
-                            <a href="">Home</a>
-                            <a href="">Cookies</a>
-                            <a href="">Help</a>
-                            <a href="">FAQs</a>
-                        </div>
+                        <a class="btn btn-square btn-outline-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Footer End -->
-
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
