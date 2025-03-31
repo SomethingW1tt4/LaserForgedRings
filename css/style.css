@@ -1,4 +1,5 @@
 /********** Template CSS **********/
+
 /*** Spinner ***/
 #spinner {
     opacity: 0;
@@ -21,11 +22,6 @@
         transform: scale(1.05); /* Adjust the scale factor as needed */
     }
 }
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    50% { opacity: 1; }
-    100% { opacity: 0; }
-
 
 .back-to-top {
     position: fixed;
@@ -374,42 +370,4 @@ html {
 }
 .sticky-nav a:hover {
     color: #007bff;
-}
-
-.feature-bar {
-    position: fixed;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 1rem;
-    border-radius: 10px 0 0 10px;
-}
-.comparison-section {
-    text-align: center;
-    margin: 3rem 0;
-    padding: 2rem;
-}
-.comparison-section:nth-child(even) {
-    background-color: white;
-}
-.comparison-section img, .comparison-section video {
-    max-width: 100%;
-    height: auto;
-}
-.patent-cover {
-    position: relative;
-    display: inline-block;
-}
-.patent-cover img {
-    filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.8));
-}
-.patent-page:hover {
-    transform: scale(2);
-}
-.animated-text {
-    font-size: 2rem;
-    font-weight: bold;
-    animation: fadeIn 3s ease-in-out infinite;
 }
