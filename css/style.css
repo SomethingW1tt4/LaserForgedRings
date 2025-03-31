@@ -19,7 +19,7 @@
         transform: scale(1);
     }
     50% {
-        transform: scale(1.05); /* Creates a pulsing animation effect */
+        transform: scale(1.05);
     }
 }
 
@@ -153,14 +153,45 @@ img.animated.pulse {
     color: var(--bs-light);
 }
 
+/*** Intro Section Animation ***/
+@keyframes slide-left {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-right {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-left {
+    animation: slide-left 1s ease-in;
+}
+
+.slide-in-right {
+    animation: slide-right 1s ease-in;
+}
+
 /*** Video Wrapper ***/
 .video-wrapper {
     display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center;    /* Centers vertically */
-    width: 100%;            /* Ensures the wrapper takes full width */
-    height: auto;           /* Adjust as needed */
-    overflow: hidden;       /* Hides any overflow */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
     transform: scale(1.0);
     max-width: none;
 }
@@ -177,24 +208,24 @@ img.animated.pulse {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%; /* Ensures it takes the full column width */
-    height: auto; /* Keeps proportional scaling */
-    overflow: hidden; /* Prevents content overflow */
-    position: relative; /* Ensures iframe stays visible */
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
 }
 
 .animation2-wrapper iframe {
     width: 100%;
     height: 100%;
-    border: none; /* Removes the YouTube border */
+    border: none;
 }
 
 .animation2-wrapper video {
     width: 100%;
     height: auto;
-    max-width: unset; /* Remove Bootstrap restrictions */
+    max-width: unset;
     display: block;
-    margin: 0 auto; /* Keep it centered */
+    margin: 0 auto;
 }
 
 /*** Feature Section ***/
@@ -233,6 +264,25 @@ img.animated.pulse {
 .poc .container {
     position: relative;
     z-index: 1;
+}
+
+/*** Patent Section ***/
+@keyframes glowing {
+    0% { box-shadow: 0 0 10px rgba(255, 223, 0, 0.6); }
+    50% { box-shadow: 0 0 25px rgba(255, 223, 0, 1); }
+    100% { box-shadow: 0 0 10px rgba(255, 223, 0, 0.6); }
+}
+
+.patent-image img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    animation: glowing 1.5s infinite alternate;
+}
+
+.patent-page:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
 }
 
 /*** Value Section ***/
@@ -327,35 +377,6 @@ img.animated.pulse {
     padding: 50px 0;
 }
 
-/*** Smooth Scrolling ***/
-html {
-    scroll-behavior: smooth;
-}
-
-/*** Image Styling ***/
-.comparison-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-/*** Sticky Navigation ***/
-.sticky-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: white;
-    z-index: 1000;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.sticky-nav a {
-    padding: 10px 20px;
-    display: inline-block;
-    color: black;
-    text-decoration: none;
-}
-
-.sticky-nav a:hover {
-    color: #007bff;
-}
+.comparison-section img {
+    max-width: 600px;
+    height:
