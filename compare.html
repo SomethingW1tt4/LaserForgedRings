@@ -3,35 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
     <title>Comparison Page</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="img/Icon.png" rel="icon" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Poppins:wght@200;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fae7e23863.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-primary p-0">
+                <a href="index.html" class="navbar-brand">
+                    <h2 class="text-white">Laser-Forged Rings</h2>
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="concept.html" class="nav-item nav-link">What It Is</a>
+                        <a href="compare.html" class="nav-item nav-link">Why It's Better</a>
+                        <a href="designs.html" class="nav-item nav-link">Designs & Customization</a>
+                        <a href="business.html" class="nav-item nav-link">Business & Investment</a>                       
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About Me</a>
+                            <div class="dropdown-menu bg-white mt-2">
+                                <a href="bio.html" class="dropdown-item">Bio</a>
+                                <a href="art.html" class="dropdown-item">Art Show</a>
+                                <a href="misc-art.html" class="dropdown-item">Hobbies</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+    
     <header class="hero-header">
         <h1>Comparison of Spinner Rings</h1>
     </header>
     
-    <nav class="top-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="designs.html">Designs</a>
-        <a href="compare.html" class="active">Comparison</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    
-    <nav class="sticky-nav right-nav">
-        <a href="#bulky">Bulky Ring</a>
-        <a href="#bent">Bent Ring</a>
-        <a href="#jangly">Jangly Ring</a>
-        <a href="#badspin">Rings with Bad Spin</a>
+    <nav class="sticky-nav">
+        <a href="#bulky">Bulky</a>
+        <a href="#bent">Bent</a>
+        <a href="#jangly">Jangly</a>
+        <a href="#badspin">Bad Spin</a>
         <a href="#plastic">Plastic</a>
         <a href="#seam">Obvious Seam</a>
-      <a href="#patent">Patent</a>
+        <a href="#patent">My Patent</a>
     </nav>
 
     <section class="intro-section">
         <h2>See How My Ring Outshines the Rest!</h2>
-        <img src="img/compare/intro.webp" alt="Comparison intro" class="intro-img">
+        <img src="img/compare/intro.webp" alt="Comparison intro" class="intro-img medium-img">
     </section>
     
     <section class="comparison-section" id="bulky">
@@ -52,7 +88,8 @@
     <section class="comparison-section" id="jangly">
         <h2>Jangly Ring</h2>
         <img src="img/compare/compJangly.webp" alt="Jangly Ring" class="comparison-img medium-img">
-        <p>Some rings have loose, noisy parts that jangle and feel flimsy. Our design ensures a smooth and quiet spin for an elegant experience.</p>
+        <p>Some rings have loose, noisy parts that jangle and feel flimsy. 
+            Our design ensures a smooth and quiet spin for an elegant experience.</p>
     </section>
     
     <section class="comparison-section" id="badspin">
@@ -61,13 +98,16 @@
             <source src="img/compare/compSpin.webm" type="video/webm">
             Your browser does not support the video tag.
         </video>
-        <p>Some rings barely spin at all, either due to poor design or friction issues. Our ring is crafted for a long, satisfying spin every time.</p>
+        <p>Some rings barely spin at all, either due to poor design or friction issues. Our ring is crafted 
+            for a long, satisfying spin every time.</p>
     </section>
 
     <section class="comparison-section" id="plastic">
         <h2>Plastic Rings</h2>
         <img src="img/compare/compplastic.webp" alt="Plastic Ring" class="comparison-img medium-img">
-        <p>Plastic rings often feel cheap, break easily, and lack the refined aesthetics of a premium metal ring. Ours is crafted from high-quality materials for lasting beauty.</p>
+        <p>Plastic rings often feel cheap, break easily, and lack the refined aesthetics of a premium metal ring.
+            The material also lacks the frictionless characteristics needed for a smooth spin.
+            Our rings are crafted from high-quality materials for lasting beauty.</p>
     </section>
 
     <section class="comparison-section" id="seam">
@@ -94,14 +134,5 @@
             </div>
         </div>
     </section>
-    
-    <script>
-        document.querySelector('.patent-cover').addEventListener('mouseenter', function() {
-            this.querySelector('.patent-overlay').style.opacity = '1';
-        });
-        document.querySelector('.patent-cover').addEventListener('mouseleave', function() {
-            this.querySelector('.patent-overlay').style.opacity = '0';
-        });
-    </script>
 </body>
 </html>
