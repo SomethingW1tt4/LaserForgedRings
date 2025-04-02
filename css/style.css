@@ -93,7 +93,7 @@ img.animated.pulse {
 .sticky-nav a {
     display: block;
     padding: 10px;
-    color: var(--bs-secondary); /* Sets text color to secondary */
+    color: var(text-secondary); /* Sets text color to secondary */
     text-decoration: none;
     transition: color 0.3s ease;
 }
