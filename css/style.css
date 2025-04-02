@@ -93,12 +93,12 @@ img.animated.pulse {
 .sticky-nav a {
     display: block;
     padding: 10px;
-    color: var(text-secondary); /* Sets text color to secondary */
+    color: var(--bs-white); /* Sets text color to secondary */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 .sticky-nav a:hover {
-    color: var(--bs-white);
+    color: var(text-secondary);
 }
 
 .navbar .navbar-nav .nav-link:hover,
