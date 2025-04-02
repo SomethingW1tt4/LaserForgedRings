@@ -83,7 +83,7 @@ img.animated.pulse {
     right: 0; /* Positions it on the right side */
     top: 50%;
     transform: translateY(-50%); /* Centers it vertically */
-    background: white;
+    background: var(--bs-primary); /* Sets background to primary */
     z-index: 1000;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
     padding: 10px;
@@ -93,11 +93,10 @@ img.animated.pulse {
 .sticky-nav a {
     display: block;
     padding: 10px;
-    color: black;
+    color: var(--bs-secondary); /* Sets text color to secondary */
     text-decoration: none;
     transition: color 0.3s ease;
 }
-
 .sticky-nav a:hover {
     color: #007bff;
 }
