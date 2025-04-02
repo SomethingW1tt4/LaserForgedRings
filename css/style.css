@@ -98,7 +98,7 @@ img.animated.pulse {
     transition: color 0.3s ease;
 }
 .sticky-nav a:hover {
-    color: var(text-secondary);
+    color: var(--text-secondary);
 }
 
 .navbar .navbar-nav .nav-link:hover,
