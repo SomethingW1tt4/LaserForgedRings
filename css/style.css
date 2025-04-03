@@ -406,16 +406,16 @@ img.animated.pulse {
     display: block;
     margin: 0 auto; /* Centers the image */
 }
-
 .patent-cover {
     position: relative;
     display: inline-block;
-    transition: transform 0.3s ease, filter 0.3s ease;
+    transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
 }
 
 .patent-cover:hover {
     transform: scale(1.2);
     filter: brightness(0.8);
+    box-shadow: 0 0 20px rgba(255, 255, 100, 0.8); /* Soft yellow glow */
 }
 
 .patent-cover::before {
