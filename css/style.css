@@ -290,6 +290,7 @@ img.animated.pulse {
 }
 
 /*** Patent Section ***/
+/* Glowing effect (always on, undulating) */
 @keyframes glow {
     0% { box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); }
     50% { box-shadow: 0 0 20px rgba(255, 255, 255, 1); }
@@ -411,7 +412,7 @@ img.animated.pulse {
     position: relative;
     display: inline-block;
     transition: transform 0.3s ease, filter 0.3s ease;
-    animation: glow 2s infinite alternate ease-in-out; /* Continuous pulsing glow */
+    animation: glow 1.5s infinite alternate ease-in-out; /* Continuous pulsing glow */
 }
 
 /* Enlarges and darkens on hover */
@@ -420,22 +421,25 @@ img.animated.pulse {
     filter: brightness(0.8);
 }
 
-/* Text overlay (ensures visibility) */
+/* Text overlay (hidden by default, appears on hover) */
 .patent-cover::before {
-    content: "Click to see patent";
+    content: "Click to See Patent";
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1.2em;
+    font-size: 1.5em; /* Bigger text */
+    font-weight: bold; /* Bold */
+    text-align: center;
     color: white;
-    background: rgba(0, 0, 0, 0.8); /* More contrast */
-    padding: 10px 15px;
+    background: rgba(0, 0, 0, 0.8); /* High contrast */
+    padding: 15px 20px;
     border-radius: 5px;
-    opacity: 1; /* Always visible */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease;
 }
 
+/* Show text on hover */
 .patent-cover:hover::before {
     opacity: 1;
 }
