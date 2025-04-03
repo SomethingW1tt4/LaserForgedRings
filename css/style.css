@@ -292,9 +292,9 @@ img.animated.pulse {
 /*** Patent Section ***/
 /* Glowing effect (always on, undulating) */
 @keyframes glow {
-    0% { box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); }
-    50% { box-shadow: 0 0 20px rgba(255, 255, 255, 1); }
-    100% { box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); }
+    0% { box-shadow: 0 0 5px rgba(95.4, 100.0, 0.0, 0.5); }
+    50% { box-shadow: 0 0 20px rgba(95.4, 100.0, 0.0, 1); }
+    100% { box-shadow: 0 0 5px rgba(95.4, 100.0, 0.0, 0.5); }
 }
 
 .patent-image img {
@@ -428,7 +428,7 @@ img.animated.pulse {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1.5em; /* Bigger text */
+    font-size: 2.5em; /* Bigger text */
     font-weight: bold; /* Bold */
     text-align: center;
     color: white;
