@@ -406,3 +406,44 @@ img.animated.pulse {
     display: block;
     margin: 0 auto; /* Centers the image */
 }
+
+.patent-cover {
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.patent-cover:hover {
+    transform: scale(1.2);
+    filter: brightness(0.8);
+}
+
+.patent-cover::before {
+    content: "Click to see patent";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2em;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 15px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.patent-cover:hover::before {
+    opacity: 1;
+}
+
+/* Patent pages hover effect - doubles size from right edge */
+.patent-page {
+    transition: transform 0.3s ease;
+    transform-origin: right center; /* Expands from right edge */
+}
+
+.patent-page:hover {
+    transform: scale(2);
+}
+
