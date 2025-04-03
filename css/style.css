@@ -425,7 +425,7 @@ img.animated.pulse {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 1.2em;
-    color: white;
+    color: var(--bs-white);
     background: rgba(0, 0, 0, 0.7);
     padding: 10px 15px;
     border-radius: 5px;
