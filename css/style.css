@@ -1,7 +1,5 @@
 /********** Template CSS **********/
 
-background-color: rgb(255, 0, 0);  /* Should be pure red */
-
 /*** Spinner ***/
 #spinner {
     opacity: 0;
@@ -321,7 +319,7 @@ img.animated.pulse {
     position: relative;
     display: inline-block;
     transition: transform 0.3s ease, filter 0.3s ease;
-    animation: glow 3s infinite alternate;
+    animation: pulseGlow 3s infinite alternate;
 }
 
 
