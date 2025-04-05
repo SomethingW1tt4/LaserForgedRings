@@ -433,13 +433,6 @@ img.animated.pulse {
     margin: 0 auto; /* Centers the image */
 }
 
-.patent-cover {
-    position: relative;
-    display: inline-block;
-    transition: transform 0.3s ease, filter 0.3s ease;
-    animation: glow 1.5s infinite alternate ease-in-out; /* Continuous pulsing glow */
-}
-
 /* Enlarges and darkens on hover */
 .patent-cover:hover {
     transform: scale(1.2);
