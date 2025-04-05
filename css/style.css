@@ -1,5 +1,7 @@
 /********** Template CSS **********/
 
+background-color: rgb(255, 0, 0);  /* Should be pure red */
+
 /*** Spinner ***/
 #spinner {
     opacity: 0;
