@@ -84,7 +84,7 @@ img.animated.pulse {
     top: 50%;
     transform: translateY(-50%); /* Centers it vertically */
     background: var(--bs-primary); /* Sets background to primary */
-    z-index: 1000;
+    z-index: 1050;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
     padding: 10px;
     border-radius: 5px;
