@@ -472,8 +472,7 @@ img.animated.pulse {
     transform: scale(2);
 }
 
-/* Gallery */
-.gallery-grid {
+/* Gallery */.gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
@@ -490,7 +489,7 @@ img.animated.pulse {
 }
 
 .gallery-item:hover {
-    z-index: 10; /* Bring the hovered item above others */
+    z-index: 10;
 }
 
 .gallery-thumb,
@@ -498,37 +497,37 @@ img.animated.pulse {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.4s ease, object-fit 0.4s ease;
+    transition: transform 0.4s ease;
     border-radius: 8px;
     display: block;
+    pointer-events: none; /* Important: allows hover tracking only on .gallery-item */
 }
 
-/* Enlarge image on hover */
 .gallery-item:hover .gallery-thumb,
 .gallery-item:hover video {
     transform: scale(3);
     object-fit: contain;
 }
 
-/* Caption styling */
+/* Overlay text appears within the scaled image */
 .overlay {
     position: absolute;
-    bottom: 10px; /* stays at bottom of enlarged image */
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: 0;
+    left: 0;
+    right: 0;
     background: rgba(0, 0, 0, 0.75);
     color: white;
-    padding: 8px 12px;
+    padding: 10px;
     font-size: 0.9rem;
     text-align: center;
-    border-radius: 5px;
     opacity: 0;
     transition: opacity 0.3s ease;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     pointer-events: none;
-    max-width: 90%;
 }
 
-/* Show caption only on hover */
+/* Show overlay on gallery item hover only */
 .gallery-item:hover .overlay {
     opacity: 1;
 }
