@@ -476,26 +476,36 @@ img.animated.pulse {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
+    overflow: visible;
+    position: relative;
+    z-index: 1;
 }
 
 .gallery-item {
     position: relative;
-    overflow: hidden;
+    overflow: visible;
     border-radius: 10px;
     height: 200px;
+    z-index: 1;
 }
 
-.gallery-thumb {
+.gallery-item:hover {
+    z-index: 10; /* Elevate hovered item above others */
+}
+
+.gallery-thumb,
+.gallery-item video {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.4s ease;
+    border-radius: 8px;
     display: block;
 }
 
-.gallery-item:hover .gallery-thumb {
+.gallery-item:hover .gallery-thumb,
+.gallery-item:hover video {
     transform: scale(3);
-    z-index: 2;
 }
 
 .overlay {
@@ -515,9 +525,4 @@ img.animated.pulse {
 
 .gallery-item:hover .overlay {
     opacity: 1;
-}
-
-/* Play video on hover */
-.gallery-item:hover video {
-    /* Trigger play via JavaScript */
 }
