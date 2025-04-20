@@ -472,13 +472,13 @@ img.animated.pulse {
     transform: scale(2);
 }
 
+/* Gallery */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     overflow: visible;
     position: relative;
-    z-index: 1;
 }
 
 .gallery-item {
@@ -490,7 +490,7 @@ img.animated.pulse {
 }
 
 .gallery-item:hover {
-    z-index: 10; /* Elevate hovered item above others */
+    z-index: 10; /* Raise above surrounding content */
 }
 
 .gallery-thumb,
@@ -498,7 +498,7 @@ img.animated.pulse {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.4s ease;
+    transition: transform 0.4s ease, object-fit 0.4s ease;
     border-radius: 8px;
     display: block;
 }
@@ -506,6 +506,7 @@ img.animated.pulse {
 .gallery-item:hover .gallery-thumb,
 .gallery-item:hover video {
     transform: scale(3);
+    object-fit: contain; /* Reveal full image */
 }
 
 .overlay {
