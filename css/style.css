@@ -490,6 +490,7 @@ img.animated.pulse {
     height: 100%;
     object-fit: cover;
     transition: transform 0.4s ease;
+    display: block;
 }
 
 .gallery-item:hover .gallery-thumb {
@@ -514,4 +515,9 @@ img.animated.pulse {
 
 .gallery-item:hover .overlay {
     opacity: 1;
+}
+
+/* Play video on hover */
+.gallery-item:hover video {
+    /* Trigger play via JavaScript */
 }
