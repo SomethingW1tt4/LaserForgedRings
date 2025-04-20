@@ -472,14 +472,7 @@ img.animated.pulse {
     transform: scale(2);
 }
 
-/* Gallery */.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    overflow: visible;
-    position: relative;
-}
-
+/* Gallery */
 .gallery-item {
     position: relative;
     overflow: visible;
@@ -492,24 +485,30 @@ img.animated.pulse {
     z-index: 10;
 }
 
+/* Wrapper that scales along with the image */
+.gallery-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.4s ease;
+    transform-origin: center;
+}
+
+.gallery-item:hover .gallery-inner {
+    transform: scale(3);
+    z-index: 10;
+}
+
 .gallery-thumb,
 .gallery-item video {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.4s ease;
     border-radius: 8px;
     display: block;
-    pointer-events: none; /* Important: allows hover tracking only on .gallery-item */
+    pointer-events: none;
 }
 
-.gallery-item:hover .gallery-thumb,
-.gallery-item:hover video {
-    transform: scale(3);
-    object-fit: contain;
-}
-
-/* Overlay text appears within the scaled image */
 .overlay {
     position: absolute;
     bottom: 0;
@@ -527,7 +526,6 @@ img.animated.pulse {
     pointer-events: none;
 }
 
-/* Show overlay on gallery item hover only */
 .gallery-item:hover .overlay {
     opacity: 1;
 }
