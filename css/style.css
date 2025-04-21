@@ -471,58 +471,67 @@ img.animated.pulse {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
-    overflow: visible;
     position: relative;
+    z-index: 1;
 }
 
 .gallery-item {
     position: relative;
-    overflow: visible;
-    border-radius: 10px;
     aspect-ratio: 1 / 1;
-    z-index: 1;
+    overflow: visible;
 }
 
-.gallery-item:hover {
-    z-index: 10;
+.gallery-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
-.gallery-thumb,
-.gallery-item video {
+.gallery-thumb {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.4s ease;
-    border-radius: 8px;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
     display: block;
-    pointer-events: none; /* Important: allows hover tracking only on .gallery-item */
+    z-index: 1;
+    position: relative;
 }
 
-.gallery-item:hover .gallery-thumb,
-.gallery-item:hover video {
-    transform: scale(2.5);
-    object-fit: contain;
+/* This wrapper will lift the image and overlay up and out */
+.gallery-item:hover .gallery-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(3);
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* allow hover state without blocking mouse */
 }
 
-/* Overlay text appears within the scaled image */
+/* This keeps the image above neighbors */
+.gallery-item:hover .gallery-thumb {
+    z-index: 10;
+}
+
+/* Overlay Caption */
 .overlay {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
+    padding: 10px;
     background: rgba(0, 0, 0, 0.75);
     color: white;
-    padding: 10px;
     font-size: 0.9rem;
     text-align: center;
     opacity: 0;
     transition: opacity 0.3s ease;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    z-index: 11;
     pointer-events: none;
 }
 
-/* Show overlay on gallery item hover only */
 .gallery-item:hover .overlay {
     opacity: 1;
 }
