@@ -478,22 +478,26 @@ img.animated.pulse {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     position: relative;
+    overflow: visible; /* <-- let things break out */
+    z-index: 1;
 }
 
 .gallery-item {
     position: relative;
     aspect-ratio: 1 / 1;
     overflow: visible;
+    z-index: 1;
 }
 
 .gallery-inner {
-    position: relative;
     width: 100%;
     height: 100%;
     overflow: hidden;
+    position: relative;
     border-radius: 10px;
 }
 
+/* Base thumbnail view */
 .gallery-thumb {
     width: 100%;
     height: 100%;
@@ -502,9 +506,9 @@ img.animated.pulse {
     z-index: 1;
 }
 
-/* Expanded image on hover */
+/* Expanded view when hovered */
 .gallery-item:hover .gallery-thumb {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     width: auto;
@@ -513,30 +517,30 @@ img.animated.pulse {
     max-height: 90vh;
     transform: translate(-50%, -50%);
     object-fit: contain;
-    z-index: 20;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
     border-radius: 10px;
+    background-color: #000;
 }
 
-/* Overlay styling */
+/* Caption styling */
 .overlay {
-    position: absolute;
-    bottom: 0;
+    position: fixed;
+    bottom: 5vh;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.8);
     color: white;
-    padding: 10px 20px;
-    font-size: 0.9rem;
-    border-radius: 0 0 10px 10px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 10px;
     opacity: 0;
-    white-space: nowrap;
     transition: opacity 0.3s ease;
-    z-index: 21;
+    z-index: 1001;
     pointer-events: none;
 }
 
-/* Show overlay only during hover */
+/* Only show the overlay while hovered */
 .gallery-item:hover .overlay {
     opacity: 1;
 }
