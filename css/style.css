@@ -530,3 +530,7 @@ img.animated.pulse {
 .gallery-item:hover .overlay {
     opacity: 1;
 }
+
+.container {
+    overflow: visible;
+}
