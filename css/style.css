@@ -471,65 +471,52 @@ img.animated.pulse {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
-    position: relative;
-    z-index: 1;
 }
 
 .gallery-item {
     position: relative;
-    aspect-ratio: 1 / 1;
     overflow: visible;
+    z-index: 1;
 }
 
 .gallery-inner {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+    transform-origin: center center; /* Anchor to center */
+    z-index: 1;
 }
 
 .gallery-thumb {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease;
-    border-radius: 10px;
+    transition: transform 0.4s ease;
     display: block;
-    z-index: 1;
-    position: relative;
+    border-radius: 10px;
 }
 
-/* This wrapper will lift the image and overlay up and out */
 .gallery-item:hover .gallery-inner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: scale(3);
-    z-index: 1000;
-    width: 100%;
-    height: 100%;
-    pointer-events: none; /* allow hover state without blocking mouse */
-}
-
-/* This keeps the image above neighbors */
-.gallery-item:hover .gallery-thumb {
+    transform: scale(3); /* Enlarges smoothly */
     z-index: 10;
 }
 
-/* Overlay Caption */
 .overlay {
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     left: 0;
     right: 0;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(0, 0, 0, 0.6);
     color: white;
-    font-size: 0.9rem;
+    font-size: 0.75rem; /* Smaller font */
+    padding: 6px 8px;
     text-align: center;
     opacity: 0;
     transition: opacity 0.3s ease;
     z-index: 11;
-    pointer-events: none;
 }
 
 .gallery-item:hover .overlay {
