@@ -477,7 +477,7 @@ img.animated.pulse {
 
 .gallery-item {
     position: relative;
-    overflow: visible;
+    overflow: hidden;
     border-radius: 10px;
     height: 200px;
     z-index: 1;
@@ -500,7 +500,7 @@ img.animated.pulse {
 
 .gallery-item:hover .gallery-thumb,
 .gallery-item:hover video {
-    transform: scale(3);
+    transform: scale(2.5);
     object-fit: contain;
 }
 
