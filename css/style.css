@@ -471,64 +471,58 @@ img.animated.pulse {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
+    overflow: visible;
     position: relative;
-    z-index: 0;
 }
 
 .gallery-item {
     position: relative;
-    height: 200px;
     overflow: visible;
+    border-radius: 10px;
+    height: 200px;
     z-index: 1;
 }
 
-.gallery-inner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform-origin: center center;
-    transition: transform 0.3s ease-in-out;
-    z-index: 2;
-    pointer-events: none; /* So only the image handles hover */
-}
-
-.gallery-item:hover .gallery-inner {
-    transform: scale(3);
+.gallery-item:hover {
     z-index: 10;
-    pointer-events: auto; /* Allow hover to be sticky on enlarged */
 }
 
-/* Image thumbnail */
-.gallery-thumb {
+.gallery-thumb,
+.gallery-item video {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px;
-    transition: inherit;
+    transition: transform 0.4s ease;
+    border-radius: 8px;
     display: block;
-    z-index: 2;
+    pointer-events: none; /* Important: allows hover tracking only on .gallery-item */
 }
 
-/* Caption */
+.gallery-item:hover .gallery-thumb,
+.gallery-item:hover video {
+    transform: scale(3);
+    object-fit: contain;
+}
+
+/* Overlay text appears within the scaled image */
 .overlay {
     position: absolute;
-    bottom: 8px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.65);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.75);
     color: white;
-    padding: 4px 8px;
-    font-size: 0.65rem;
-    border-radius: 4px;
-    white-space: nowrap;
+    padding: 10px;
+    font-size: 0.9rem;
+    text-align: center;
     opacity: 0;
     transition: opacity 0.3s ease;
-    z-index: 11;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     pointer-events: none;
 }
 
+/* Show overlay on gallery item hover only */
 .gallery-item:hover .overlay {
     opacity: 1;
 }
