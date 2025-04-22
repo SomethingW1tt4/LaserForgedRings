@@ -508,7 +508,9 @@ img.animated.pulse {
     height: auto;
     transition: 0.4s ease;
     z-index: 1000;
-    transform: scale(3);
+    transform: scale(2.5);
+    max-width: 600px;
+    max-height: 600px;
     object-fit: contain;
     pointer-events: none; /* allow hover state without blocking mouse */
 }
