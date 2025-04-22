@@ -73,6 +73,256 @@ img.animated.pulse {
 }
 
 /*** Navbar ***/
+.sticky-top {
+    transition: 0.5s;
+    outline: none;
+}
+
+.sticky-nav {
+    position: fixed;
+    right: 0; /* Positions it on the right side */
+    top: 50%;
+    transform: translateY(-50%); /* Centers it vertically */
+    background: var(--bs-primary); /* Sets background to primary */
+    z-index: 1050;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sticky-nav a {
+    display: block;
+    padding: 10px;
+    color: var(--bs-white); /* Sets text color to secondary */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.sticky-nav a:hover {
+    color: var(--bs-secondary);
+}
+
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: var(--bs-white);
+}
+
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+@media (max-width: 991.98px) {
+    .navbar .navbar-nav {
+        padding: 0 15px;
+        background: var(--bs-primary);
+    }
+
+    .navbar .navbar-nav .nav-link {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        border: none;
+        margin-top: 0;
+        top: 150%;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        top: 100%;
+        visibility: visible;
+        transition: 0.5s;
+        opacity: 1;
+    }
+}
+
+/*** Hero Header ***/
+.hero-header {
+    position: relative;
+    margin-top: -85px;
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+    background: url(../img/bg.png) center center no-repeat;
+    background-size: cover;
+}
+
+.hero-header::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.1);
+    clip-path: polygon(66% 0, 100% 0, 100% 100%, 33% 100%);
+}
+
+.hero-header .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-header .breadcrumb-item + .breadcrumb-item::before {
+    color: var(--bs-light);
+}
+
+/*** Intro Section Animation ***/
+@keyframes slide-left {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-right {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-left {
+    animation: slide-left 1s ease-in;
+}
+
+.slide-in-right {
+    animation: slide-right 1s ease-in;
+}
+/*** Video Wrapper ***/
+.video-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    transform: scale(1.0);
+    max-width: none;
+}
+
+.video-wrapper video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    animation: pulse 2s infinite;
+}
+
+/*** Animation Wrapper ***/
+.animation2-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.animation2-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.animation2-wrapper video {
+    width: 100%;
+    height: auto;
+    max-width: unset;
+    display: block;
+    margin: 0 auto;
+}
+
+/*** Feature Section ***/
+.feature {
+    position: relative;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.feature-item::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.1);
+    clip-path: polygon(66% 0, 100% 0, 100% 100%, 33% 100%);
+}
+
+.feature-item .border {
+    position: relative;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+    z-index: 1;
+}
+
+/*** POC Section ***/
+.poc {
+    position: relative;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background: url(../img/bg.png) center center no-repeat;
+    background-size: cover;
+}
+
+.poc .container {
+    position: relative;
+    z-index: 1;
+}
+
+/*** Patent Section ***/
+/* Glowing effect (always on, undulating) */
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 20px rgba(255,215, 0, 0.6),
+                0 0 40px rgba(255,215, 0, 0.4),
+                0 0 60px rgba(255,215, 0, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(255,215, 0, 0.9),
+                0 0 80px rgba(255,215, 0, 0.6),
+                0 0 120px rgba(255,215, 0, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(255,215, 0, 0.6),
+                0 0 40px rgba(255,215, 0, 0.4),
+                0 0 60px rgba(255,215, 0, 0.2);
+  }
+}
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+.footer .copyright {
+    padding: 25px 0;
+    border-top: 3px solid var(--bs-light);
+}
+
+.footer .copyright a {
     color: var(--bs-body);
 }
 
@@ -180,7 +430,6 @@ img.animated.pulse {
     z-index: 1;
     position: relative;
 }
-
 /* This wrapper will lift the image and overlay up and out */
 .gallery-item:hover .gallery-inner {
     position: absolute;
@@ -191,14 +440,14 @@ img.animated.pulse {
     transition: 0.4s ease;
     z-index: 1000;
     transform: scale(1.05);
-    width: 400px;
+    width: 300px;
     height: auto;
     object-fit: contain;
     pointer-events: none; /* allow hover state without blocking mouse */
 }
 
 /* Overlay Caption */
-.overlay {
+.overlay {1
     position: absolute;
     bottom: 0;
     left: 0;
@@ -206,7 +455,7 @@ img.animated.pulse {
     padding: 10px;
     background: rgba(0, 0, 0, 0.75);
     color: white;
-    font-size: 0.5rem;
+    font-size: 0.9rem;
     text-align: center;
     opacity: 0;
     transition: opacity 0.3s ease;
