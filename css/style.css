@@ -508,7 +508,7 @@ img.animated.pulse {
     height: auto;
     transition: 0.4s ease;
     z-index: 1000;
-    transform: scale(2.5);
+    transform: scale(3);
     max-width: 300px;
     max-height: 300px;
     object-fit: contain;
