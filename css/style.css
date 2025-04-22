@@ -503,8 +503,9 @@ img.animated.pulse {
 /* This wrapper will lift the image and overlay up and out */
 .gallery-item:hover .gallery-inner {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+     transform: translate(-50%, -50%) scale(2.5);
     width: auto;
     height: auto;
     transition: 0.4s ease;
