@@ -324,6 +324,12 @@ img.animated.pulse {
     transition: transform 0.3s ease-in-out;
 }
 
+.urinal-img {
+    max-height: 400px;
+    width: auto;
+    object-fit: contain;
+}
+
 /*** Value Section ***/
 .value {
     position: relative;
