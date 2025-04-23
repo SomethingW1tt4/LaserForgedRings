@@ -318,12 +318,12 @@ img.animated.pulse {
     border-radius: 10px;
     animation: glowing 1.5s infinite alternate;
 }
-
+/*
 .patent-page:hover {
     transform: scale(1.2);
     transition: transform 0.3s ease-in-out;
 }
-
+*/
 .urinal-img {
     max-height: 400px;
     width: auto;
