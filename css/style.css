@@ -292,22 +292,20 @@ img.animated.pulse {
 /*** Patent Section ***/
 /* Glowing effect (always on, undulating) */
 @keyframes pulseGlow {
-  0% {
-    box-shadow: 0 0 20px rgba(255,215, 0, 0.6),
-                0 0 40px rgba(255,215, 0, 0.4),
-                0 0 60px rgba(255,215, 0, 0.2);
-  }
-  50% {
-    box-shadow: 0 0 40px rgba(255,215, 0, 0.9),
-                0 0 80px rgba(255,215, 0, 0.6),
-                0 0 120px rgba(255,215, 0, 0.3);
-  }
-  100% {
-    box-shadow: 0 0 20px rgba(255,215, 0, 0.6),
-                0 0 40px rgba(255,215, 0, 0.4),
-                0 0 60px rgba(255,215, 0, 0.2);
-  }
+    0% {
+        box-shadow: 0 0 20px rgba(255,215, 0, 0.6), 0 0 40px rgba(255,215, 0, 0.4), 0 0 60px rgba(255,215, 0, 0.2);
+    }
+
+    50% {
+        box-shadow: 0 0 40px rgba(255,215, 0, 0.9), 0 0 80px rgba(255,215, 0, 0.6), 0 0 120px rgba(255,215, 0, 0.3);
+    }
+
+    100% {
+        box-shadow: 0 0 20px rgba(255,215, 0, 0.6), 0 0 40px rgba(255,215, 0, 0.4), 0 0 60px rgba(255,215, 0, 0.2);
+    }
 }
+
+.patent-cover{
     font-weight: 900;
     margin-right: 10px;
 }
@@ -447,7 +445,7 @@ img.animated.pulse {
 }
 
 /* Overlay Caption */
-.overlay {1
+.overlay {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -466,4 +464,26 @@ img.animated.pulse {
 
 .gallery-item:hover .overlay {
     opacity: 1;
+}
+
+/* Gallery video styling — behaves like .gallery-thumb */
+.gallery-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    display: block;
+    z-index: 1;
+    position: relative;
+}
+
+/* Scale videos on hover just like images */
+.gallery-item:hover .gallery-video {
+    transform: scale(1.05);
+}
+
+/* Optional: prevent native video controls from showing */
+.gallery-video::-webkit-media-controls {
+    display: none !important;
 }

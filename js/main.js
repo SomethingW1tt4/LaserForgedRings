@@ -93,12 +93,16 @@
     
 })(jQuery);
 
-document.querySelectorAll('.gallery-item video').forEach(video => {
-    video.addEventListener('mouseenter', () => {
-        video.play();
-    });
-    video.addEventListener('mouseleave', () => {
+document.querySelectorAll('.gallery-item').forEach(item => {
+    const video = item.querySelector('video');
+    if (video) {
+        item.addEventListener('mouseenter', () => {
+            video.play();
+        });
+        item.addEventListener('mouseleave', () => {
         video.pause();
-        video.currentTime = 0; // Reset to start
-    });
+    video.currentTime = 0; // Optional: reset to beginning
+        });
+    }
 });
+
