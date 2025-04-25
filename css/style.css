@@ -307,7 +307,7 @@ img.animated.pulse {
 
 .halo-glow {
     box-shadow: 0 0 10px 4px rgba(255, 200, 0, 0.6);
-    animation: pulseGlow 3s infinite alternate;
+    animation: pulseGlow 2s infinite alternate;
     border-radius: 10px;
 }
 
