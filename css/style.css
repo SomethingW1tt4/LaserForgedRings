@@ -325,7 +325,7 @@ img.animated.pulse {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 2.5em; /* Bigger text */
+    font-size: 1.5em; /* Bigger text */
     font-weight: bold; /* Bold */
     text-align: center;
     color: white;
