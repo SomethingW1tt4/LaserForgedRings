@@ -468,6 +468,13 @@ img.animated.pulse {
     transform: scale(2);
 }
 
+.patent-preview {
+    max-width: 100%;
+    width: 200px;
+    height: auto;
+}
+
+
 /* Gallery */
 .gallery-grid {
     display: grid;
