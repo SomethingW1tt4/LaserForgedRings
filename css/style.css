@@ -568,3 +568,22 @@ img.animated.pulse {
 .gallery-video::-webkit-media-controls {
     display: none !important;
 }
+
+.footer-quote-container {
+    position: relative;
+    margin-top: 2rem;
+}
+
+.footer-quote {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #aaa;
+    margin-bottom: 0;
+}
+
+.footer-question-mark {
+    width: 40px;
+    height: 80px;
+    margin: 0 auto;
+    opacity: 0.4;
+}
