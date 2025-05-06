@@ -114,41 +114,54 @@
         <!-- Carousel for Sculpture Progress-->
         <div class="my-5">
             <h5 class="text-center text-secondary">The Process</h5>
-            <!-- Carousel Start -->
-            <div id="carouselClayProgress" class="carousel slide text-center" data-bs-ride="carousel">
-                <div class="carousel-inner">
+            <div class="d-flex justify-content-center align-items-center position-relative">
 
-                    <div class="carousel-item active">
-                        <img src="img/art/claySculpting.jpg" class="carousel-img" alt="Initial Clay Sculpting">
-                        <p class="carousel-caption-text">Early clay shaping begins</p>
-                    </div>
-
-                    <div class="carousel-item">
-                        <img src="img/art/claySculpting4.jpg" class="carousel-img" alt="Clay Sculpting 4">
-                        <p class="carousel-caption-text">Fine tuning the features</p>
-                    </div>
-
-                    <div class="carousel-item">
-                        <img src="img/art/claySculpting7.jpg" class="carousel-img" alt="Clay Sculpting 7">
-                        <p class="carousel-caption-text">Final clay refinements</p>
-                    </div>
-
-                    <div class="carousel-item">
-                        <img src="img/art/LatexMold2.jpg" class="carousel-img" alt="Latex Mold">
-                        <p class="carousel-caption-text">Preparing the mold</p>
-                    </div>
-
-                </div>
-
-                <!-- Navigation Buttons -->
-                <button class="carousel-control-prev custom-carousel-control" type="button" data-bs-target="#carouselClayProgress" data-bs-slide="prev">
+                <!-- Carousel controls moved in closer -->
+                <button class="carousel-control-prev custom-carousel-btn" type="button" data-bs-target="#carouselClayProgress" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon"></span>
                 </button>
-                <button class="carousel-control-next custom-carousel-control" type="button" data-bs-target="#carouselClayProgress" data-bs-slide="next">
+
+                <div id="carouselClayProgress" class="carousel slide" data-bs-ride="carousel" style="max-width: 500px;">
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <div class="carousel-img-wrapper">
+                                <img src="img/art/claySculpting.jpg" class="carousel-img" alt="Clay Sculpting">
+                            </div>
+                            <p class="carousel-caption-text">Blocking in forms with clay — early shaping phase</p>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="carousel-img-wrapper">
+                                <img src="img/art/claySculpting4.jpg" class="carousel-img" alt="Clay Sculpting 4">
+                            </div>
+                            <p class="carousel-caption-text">Refining facial details with modeling tools</p>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="carousel-img-wrapper">
+                                <img src="img/art/claySculpting7.jpg" class="carousel-img" alt="Clay Sculpting 7">
+                            </div>
+                            <p class="carousel-caption-text">Final smoothing before mold-making</p>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="carousel-img-wrapper">
+                                <img src="img/art/LatexMold2.jpg" class="carousel-img" alt="Latex Mold">
+                            </div>
+                            <p class="carousel-caption-text">Latex mold applied over the clay — preparing for casting</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <button class="carousel-control-next custom-carousel-btn" type="button" data-bs-target="#carouselClayProgress" data-bs-slide="next">
                     <span class="carousel-control-next-icon"></span>
                 </button>
+
             </div>
         </div>
+
         <!-- Carousel End -->
     </div>
 

@@ -618,26 +618,9 @@ img.animated.pulse {
 }
 
 .carousel-caption-text {
-    color: black;
     font-size: 0.9rem;
+    color: #ccc;
+    text-align: center;
     margin-top: 0.5rem;
 }
 
-/* Custom positioning for controls */
-.custom-carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.4);
-    border: none;
-    padding: 0.5rem;
-    z-index: 1;
-}
-
-.carousel-control-prev.custom-carousel-btn {
-    left: -50px;
-}
-
-.carousel-control-next.custom-carousel-btn {
-    right: -50px;
-}
