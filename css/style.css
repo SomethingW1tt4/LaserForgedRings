@@ -618,33 +618,25 @@ img.animated.pulse {
 }
 
 .carousel-caption-text {
-    text-align: center;
-    color: #eee;
-    background-color: #222;
-    padding: 0.5rem 1rem;
-    margin-top: 0.5rem;
+    color: black;
     font-size: 0.9rem;
-    border-radius: 6px;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 0.5rem;
 }
 
-/* Custom positioning for controls */
-.custom-carousel-btn {
+.custom-carousel-control {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.4);
+    width: 40px;
+    height: 40px;
+    background: none;
     border: none;
-    padding: 0.5rem;
-    z-index: 1;
+    z-index: 10;
 }
 
-.carousel-control-prev.custom-carousel-btn {
-    left: -50px;
+.carousel-control-prev.custom-carousel-control {
+    left: 10%;
 }
 
-.carousel-control-next.custom-carousel-btn {
-    right: -50px;
-}
+.carousel-control-next.custom-carousel-control {
+    right: 10%;
