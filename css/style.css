@@ -596,9 +596,15 @@ img.animated.pulse {
     background-size: 100%, 100%;
 }
 
-.carousel-control-prev,
+.carousel-control-prev {
+    width: 5%; /* Shrink clickable area slightly */
+    left: 28%;
+}
+
+
 .carousel-control-next {
     width: 5%; /* Shrink clickable area slightly */
+    right: 28%;
 }
 
 .carousel-img-wrapper {
@@ -618,8 +624,8 @@ img.animated.pulse {
 }
 
 .carousel-caption-text {
-    font-size: 0.9rem;
-    color: #ccc;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0);
     text-align: center;
     margin-top: 0.5rem;
 }
