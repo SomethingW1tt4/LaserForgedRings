@@ -7485,6 +7485,10 @@ to {
   color: rgba(255,255,255,.5);
 }
 
+.text-white-80 {
+    color: rgba(255,255,255,.8);
+}
+
 .text-reset {
   color: inherit;
 }
