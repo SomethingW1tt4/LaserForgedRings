@@ -14,9 +14,8 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Poppins:wght@200;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Poppins:wght@200;600;700&display=swap"
+          rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -36,15 +35,13 @@
 <body>
     <!-- Spinner Start -->
     <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only">Loading...</span>
         </div>
     </div>
     <!-- Spinner End -->
-
-
-       <!-- Navbar Start -->
+    <!-- Navbar Start -->
     <div class="container-fluid sticky-top">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-primary p-0">
@@ -52,16 +49,16 @@
                     <h2 class="text-white">Laser-Forged Rings</h2>
                 </a>
                 <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
-                    data-bs-target="#navbarCollapse">
+                        data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="index.html" class="nav-item nav-link">Home</a>
                         <a href="concept.html" class="nav-item nav-link">What It Is</a>
                         <a href="compare.html" class="nav-item nav-link">Why It's Better</a>
-                        <a href="designs.html" class="nav-item nav-link">Designs & Customization</a>
-                        <a href="business.html" class="nav-item nav-link">Business & Investment</a>                       
+                        <a href="designs.html" class="nav-item nav-link active">Designs & Customization</a>
+                        <a href="business.html" class="nav-item nav-link">Business & Investment</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About Me</a>
                             <div class="dropdown-menu bg-primary mt-2">
@@ -78,164 +75,106 @@
     <!-- Navbar End -->
 
 
-    <!-- Hero Start -->
-    <div class="container-fluid bg-primary hero-header mb-5">
-        <div class="container text-center">
-            <h1 class="display-4 text-white mb-3 animated slideInDown">How To Use</h1>
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb justify-content-center mb-0 animated slideInDown">
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                    <li class="breadcrumb-item text-white active" aria-current="page">How To Use</li>
-                </ol>
-            </nav>
-        </div>
-    </div>
-    <!-- Hero End -->
+    <section class="container my-5">
+        <h2 class="mb-4 text-center">Designs & Customization</h2>
 
+        <!-- Section 1: GH UI & Variation Grid -->
+        <div class="mb-5">
+            <h4>From Code to Craft – Parameter-Driven Designs</h4>
+            <p>These rings are generated using a custom algorithm. With just a few parameters, we can generate entirely new forms — sharp, smooth, patterned, or minimalist.</p>
 
-    <!-- Feature Start -->
-    <div class="container-fluid py-5">
-        <div class="container">
+            <!-- GH Control UI (Manual Play with Poster) -->
+            <div class="text-center mb-4">
+                <video controls poster="img/designs/GHControlPoster.jpg" class="img-fluid rounded shadow-sm" style="max-width: 640px;">
+                    <source src="img/designs/GHControlFinal.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="text-muted small mt-2">This video is playable — click to see how parameters affect each ring design in real time.</p>
+            </div>
+
+            <!-- Design Variations Grid -->
             <div class="row g-4">
-                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="feature-item position-relative bg-primary text-center p-3">
-                        <div class="border py-5 px-3">
-                            <i class="fa fa-leaf fa-3x text-dark mb-4"></i>
-                            <h5 class="text-white mb-0">100% Natural</h5>
-                        </div>
-                    </div>
+                <!-- Bar Pattern -->
+                <div class="col-md-6 col-lg-3">
+                    <video autoplay muted loop playsinline class="img-fluid rounded shadow-sm">
+                        <source src="img/designs/animBar.webm" type="video/webm">
+                    </video>
+                    <p class="text-center small mt-2">Bar Pattern – Channel-cut style lines</p>
                 </div>
-                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
-                    <div class="feature-item position-relative bg-primary text-center p-3">
-                        <div class="border py-5 px-3">
-                            <i class="fa fa-tint-slash fa-3x text-dark mb-4"></i>
-                            <h5 class="text-white mb-0">Anti Hair Fall</h5>
-                        </div>
-                    </div>
+
+                <!-- Holey Ring -->
+                <div class="col-md-6 col-lg-3">
+                    <video autoplay muted loop playsinline class="img-fluid rounded shadow-sm">
+                        <source src="img/designs/animHoley.webm" type="video/webm">
+                    </video>
+                    <p class="text-center small mt-2">Perforated Ring – Swiss-inspired geometry</p>
                 </div>
-                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="feature-item position-relative bg-primary text-center p-3">
-                        <div class="border py-5 px-3">
-                            <i class="fa fa-times fa-3x text-dark mb-4"></i>
-                            <h5 class="text-white mb-0">Hypoallergenic</h5>
-                        </div>
-                    </div>
+
+                <!-- Pyramid Ring -->
+                <div class="col-md-6 col-lg-3">
+                    <video autoplay muted loop playsinline class="img-fluid rounded shadow-sm">
+                        <source src="img/designs/animPyram.webm" type="video/webm">
+                    </video>
+                    <p class="text-center small mt-2">Pyramids – Architectural sharpness</p>
+                </div>
+
+                <!-- Polygon Variations -->
+                <div class="col-md-6 col-lg-3">
+                    <video autoplay muted loop playsinline class="img-fluid rounded shadow-sm">
+                        <source src="img/designs/AnimationT2.webm" type="video/webm">
+                    </video>
+                    <p class="text-center small mt-2">Polygon Variations – From subtle to sharp</p>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Feature End -->
 
-
-    <!-- How To Use Start -->
-    <div class="container-fluid how-to-use bg-primary my-5 py-5">
-        <div class="container text-white py-5">
-            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h1 class="text-white mb-3"><span class="fw-light text-dark">How To Use Our</span> Natural & Organic
-                    <span class="fw-light text-dark">Hair Shampoo</span></h1>
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet, erat non malesuada consequat, nibh erat tempus risus.</p>
-            </div>
-            <div class="row g-5">
-                <div class="col-lg-4 text-center wow fadeIn" data-wow-delay="0.1s">
-                    <div class="btn-square rounded-circle border mx-auto mb-4" style="width: 120px; height: 120px;">
-                        <i class="fa fa-home fa-3x text-dark"></i>
-                    </div>
-                    <h5 class="text-white">Wash Hair With Water</h5>
-                    <hr class="w-25 bg-light my-2 mx-auto">
-                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet, erat non malesuada consequat.</span>
-                </div>
-                <div class="col-lg-4 text-center wow fadeIn" data-wow-delay="0.3s">
-                    <div class="btn-square rounded-circle border mx-auto mb-4" style="width: 120px; height: 120px;">
-                        <i class="fa fa-home fa-3x text-dark"></i>
-                    </div>
-                    <h5 class="text-white">Apply Shampoo On Hair</h5>
-                    <hr class="w-25 bg-light my-2 mx-auto">
-                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet, erat non malesuada consequat.</span>
-                </div>
-                <div class="col-lg-4 text-center wow fadeIn" data-wow-delay="0.5s">
-                    <div class="btn-square rounded-circle border mx-auto mb-4" style="width: 120px; height: 120px;">
-                        <i class="fa fa-home fa-3x text-dark"></i>
-                    </div>
-                    <h5 class="text-white">Wait 5 Mins And Wash</h5>
-                    <hr class="w-25 bg-light my-2 mx-auto">
-                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet, erat non malesuada consequat.</span>
-                </div>
+        <!-- Section 2: Fortune Teller Ring -->
+        <div class="mb-5">
+            <h4>The Fortune Teller Ring</h4>
+            <p>This polygonal ring rotates to reveal one of four sides — each one engraved with a cryptic message. A playful design inspired by the Magic 8 Ball, ideal for wearable conversation starters.</p>
+            <div class="text-center">
+                <video autoplay muted loop playsinline class="img-fluid rounded shadow-sm" style="max-height: 400px;">
+                    <source src="img/designs/polygonChange.webm" type="video/webm">
+                </video>
             </div>
         </div>
-    </div>
-    <!-- How To Use End -->
+
+        <!-- Section 3: Relief Concept & Collaborations -->
+        <div class="mb-5">
+            <h4>Relief Designs & Artistic Collaboration</h4>
+            <p>Not all designs need to be patterned. This conceptual ring features a stylized beach-and-mountain scene, demonstrating how sculptural reliefs could turn metal into miniature landscapes.</p>
+            <div class="text-center mb-3">
+                <video autoplay muted loop playsinline class="img-fluid rounded shadow-sm" style="max-height: 400px;">
+                    <source src="img/designs/animRelief.webm" type="video/webm">
+                </video>
+            </div>
+            <p>We're looking to collaborate with digital artists and sculptors to produce richly detailed ring designs — think mythic, textural, story-driven surfaces. These rings become tiny canvases of identity.</p>
+        </div>
+    </section>
+
 
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-white footer">
+    <div class="container-fluid bg-dark text-light footer mt-5 pt-5">
         <div class="container py-5">
             <div class="row g-5">
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
-                    <a href="index.html" class="d-inline-block mb-3">
-                        <h1 class="text-primary">Hairnic</h1>
-                    </a>
-                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet, erat non
-                        malesuada consequat, nibh erat tempus risus, vitae porttitor purus nisl vitae purus.</p>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
-                    <h5 class="mb-4">Get In Touch</h5>
-                    <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-primary me-1" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-outline-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-primary me-1" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-square btn-outline-primary me-1" href=""><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
-                    <h5 class="mb-4">Our Products</h5>
-                    <a class="btn btn-link" href="">Hair Shining Shampoo</a>
-                    <a class="btn btn-link" href="">Anti-dandruff Shampoo</a>
-                    <a class="btn btn-link" href="">Anti Hair Fall Shampoo</a>
-                    <a class="btn btn-link" href="">Hair Growing Shampoo</a>
-                    <a class="btn btn-link" href="">Anti smell Shampoo</a>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
-                    <h5 class="mb-4">Popular Link</h5>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Privacy Policy</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Career</a>
+                <div class="col-lg-6 col-md-12">
+                    <h5 class="text-white mb-4">About This Site</h5>
+                    <p class="mb-0">This website is a digital extension of my lab notebook — documenting creativity, engineering, failures, and everything in between.</p>
                 </div>
             </div>
         </div>
-        <div class="container wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center">
             <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
-
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <div class="footer-menu">
-                            <a href="">Home</a>
-                            <a href="">Cookies</a>
-                            <a href="">Help</a>
-                            <a href="">FAQs</a>
-                        </div>
-                    </div>
-                </div>
+                &copy; <a href="#">Laser-Forged Rings</a>, All Right Reserved.
             </div>
         </div>
     </div>
     <!-- Footer End -->
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -248,5 +187,4 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
-
 </html>
