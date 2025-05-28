@@ -18,7 +18,7 @@
           rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fae7e23863.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
@@ -41,6 +41,7 @@
         </div>
     </div>
     <!-- Spinner End -->
+    <!-- Spinner End -->
     <!-- Navbar Start -->
     <div class="container-fluid sticky-top">
         <div class="container">
@@ -60,11 +61,11 @@
                         <a href="designs.html" class="nav-item nav-link active">Designs & Customization</a>
                         <a href="business.html" class="nav-item nav-link">Business & Investment</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About Me</a>
-                            <div class="dropdown-menu bg-primary mt-2">
+                            <a href="about.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" onclick="location.href='about.html';">About Me</a>
+                            <div class="dropdown-menu bg-white mt-2">
                                 <a href="bio.html" class="dropdown-item">Bio</a>
-                                <a href="art.html" class="dropdown-item">Art Show</a>
-                                <a href="misc-art.html" class="dropdown-item">Hobbies</a>
+                                <a href="projects.html" class="dropdown-item">Projects</a>
+                                <a href="art.html" class="dropdown-item">Art</a>
                             </div>
                         </div>
                     </div>
@@ -74,83 +75,93 @@
     </div>
     <!-- Navbar End -->
 
+    <div class="container-fluid bg-primary hero-header">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col text-center">
+                    <h2 class="text-white mb-4">Designs & Customization</h2>
 
-    <section class="container my-5">
-        <h2 class="mb-4 text-center">Designs & Customization</h2>
+                    <!-- Section 1: GH UI & Variation Grid -->
+                    <div class="mb-5">
+                        <h4>From Code to Craft – Parameter-Driven Designs</h4>
+                        <p>These rings are generated using a custom algorithm. With just a few parameters, we can generate entirely new forms — sharp, smooth, patterned, or minimalist.</p>
 
-        <!-- Section 1: GH UI & Variation Grid -->
-        <div class="mb-5">
-            <h4>From Code to Craft – Parameter-Driven Designs</h4>
-            <p>These rings are generated using a custom algorithm. With just a few parameters, we can generate entirely new forms — sharp, smooth, patterned, or minimalist.</p>
+                        <!-- GH Control UI (Manual Play with Poster) -->
+                        <div class="text-center mb-4">
+                            <video id="ghVideo" controls poster="img/designs/GHControlPoster.jpg" class="img-fluid rounded shadow-sm" style="max-width: 640px;">
+                                <source src="img/designs/GHControlFinal.webm" type="video/webm">
+                                Your browser does not support the video tag.
+                            </video>
 
-            <!-- GH Control UI (Manual Play with Poster) -->
-            <div class="text-center mb-4">
-                <video controls poster="img/designs/GHControlPoster.jpg" class="img-fluid rounded shadow-sm" style="max-width: 640px;">
-                    <source src="img/designs/GHControlFinal.webm" type="video/webm">
-                    Your browser does not support the video tag.
-                </video>
-                <p class="text-muted small mt-2">This video is playable — click to see how parameters affect each ring design in real time.</p>
-            </div>
+                            <div class="mt-2 d-flex justify-content-center align-items-center gap-2">
+                                <label for="speedSelect" class="form-label mb-0 small text-muted">Playback Speed:</label>
+                                <select id="speedSelect" class="form-select form-select-sm w-auto">
+                                    <option value="0.5">0.5×</option>
+                                    <option value="1" selected>1× (Normal)</option>
+                                    <option value="1.5">1.5×</option>
+                                    <option value="2">2×</option>
+                                </select>
+                            </div>
 
-            <!-- Design Variations Grid -->
-            <div class="row g-4">
-                <!-- Bar Pattern -->
-                <div class="col-md-6 col-lg-3">
-                    <video autoplay muted loop playsinline class="img-fluid rounded shadow-sm">
-                        <source src="img/designs/animBar.webm" type="video/webm">
-                    </video>
-                    <p class="text-center small mt-2">Bar Pattern – Channel-cut style lines</p>
+                            <p class="text-muted small mt-2">This video is playable — click to see how parameters affect the Fortune-Teller
+                            ring design in real time.</p>
+                        </div>
+
+                        <!-- Design Variations Grid -->
+                        <div class="row g-4">
+                            <!-- Bar Pattern -->
+                            <div class="col-md-6 col-lg-4">
+                                <video autoplay muted loop playsinline class="img-fluid rounded shadow-sm">
+                                    <source src="img/designs/animBar.webm" type="video/webm">
+                                </video>
+                                <p class="text-center small mt-2">Bar Pattern – Channel-cut style lines</p>
+                            </div>
+
+                            <!-- Holey Ring -->
+                            <div class="col-md-6 col-lg-4">
+                                <video autoplay muted loop playsinline class="img-fluid rounded shadow-sm">
+                                    <source src="img/designs/animHoley.webm" type="video/webm">
+                                </video>
+                                <p class="text-center small mt-2">Perforated Ring – Swiss-cheese inspired geometry</p>
+                            </div>
+
+                            <!-- Pyramid Ring -->
+                            <div class="col-md-6 col-lg-4">
+                                <video autoplay muted loop playsinline class="img-fluid rounded shadow-sm">
+                                    <source src="img/designs/animPyram.webm" type="video/webm">
+                                </video>
+                                <p class="text-center small mt-2">Pyramids – For tactile euphoria</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <!-- Holey Ring -->
-                <div class="col-md-6 col-lg-3">
-                    <video autoplay muted loop playsinline class="img-fluid rounded shadow-sm">
-                        <source src="img/designs/animHoley.webm" type="video/webm">
-                    </video>
-                    <p class="text-center small mt-2">Perforated Ring – Swiss-inspired geometry</p>
-                </div>
-
-                <!-- Pyramid Ring -->
-                <div class="col-md-6 col-lg-3">
-                    <video autoplay muted loop playsinline class="img-fluid rounded shadow-sm">
-                        <source src="img/designs/animPyram.webm" type="video/webm">
-                    </video>
-                    <p class="text-center small mt-2">Pyramids – Architectural sharpness</p>
-                </div>
-
-                <!-- Polygon Variations -->
-                <div class="col-md-6 col-lg-3">
-                    <video autoplay muted loop playsinline class="img-fluid rounded shadow-sm">
-                        <source src="img/designs/AnimationT2.webm" type="video/webm">
-                    </video>
-                    <p class="text-center small mt-2">Polygon Variations – From subtle to sharp</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Section 2: Fortune Teller Ring -->
-        <div class="mb-5">
-            <h4>The Fortune Teller Ring</h4>
-            <p>This polygonal ring rotates to reveal one of four sides — each one engraved with a cryptic message. A playful design inspired by the Magic 8 Ball, ideal for wearable conversation starters.</p>
-            <div class="text-center">
-                <video autoplay muted loop playsinline class="img-fluid rounded shadow-sm" style="max-height: 400px;">
-                    <source src="img/designs/polygonChange.webm" type="video/webm">
-                </video>
             </div>
         </div>
+    </div>
 
-        <!-- Section 3: Relief Concept & Collaborations -->
-        <div class="mb-5">
-            <h4>Relief Designs & Artistic Collaboration</h4>
-            <p>Not all designs need to be patterned. This conceptual ring features a stylized beach-and-mountain scene, demonstrating how sculptural reliefs could turn metal into miniature landscapes.</p>
-            <div class="text-center mb-3">
-                <video autoplay muted loop playsinline class="img-fluid rounded shadow-sm" style="max-height: 400px;">
-                    <source src="img/designs/animRelief.webm" type="video/webm">
-                </video>
-            </div>
-            <p>We're looking to collaborate with digital artists and sculptors to produce richly detailed ring designs — think mythic, textural, story-driven surfaces. These rings become tiny canvases of identity.</p>
+    <!-- Section 2: Fortune Teller Ring -->
+    <div class="mb-5">
+        <h4>The Customizable Polygon Ring</h4>
+        <p>Algorithms free us from cookie-cut limitations.  Option to add inscriptions to each side are avaialble.</p>
+        <div class="text-center">
+            <video autoplay muted loop playsinline class="img-fluid rounded shadow-sm" style="max-height: 400px;">
+                <source src="img/designs/polygonChange.webm" type="video/webm">
+            </video>
         </div>
-    </section>
+    </div>
+
+    <!-- Section 3: Relief Concept & Collaborations -->
+
+    <div class="container-fluid bg-primary hero-header mb-5">
+        <h4>Relief Designs & Artistic Collaboration</h4>
+        <p>Not all designs need to be patterned. This conceptual ring features a stylized beach-and-mountain scene, demonstrating how sculptural reliefs could turn metal into miniature landscapes.</p>
+        <div class="text-center mb-3">
+            <video autoplay muted loop playsinline class="img-fluid rounded shadow-sm" style="max-height: 400px;">
+                <source src="img/designs/animRelief.webm" type="video/webm">
+            </video>
+        </div>
+        <p>We're looking to collaborate with digital artists and sculptors to produce richly detailed ring designs — think mythic, textural, story-driven surfaces. These rings become tiny canvases of identity.</p>
+    </div>
 
     <!-- Footer Start -->
     <div class="container-fluid bg-white footer" style="margin-bottom: 50px;">
@@ -194,8 +205,16 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <!-- Other content -->
+
+    <script>
+        const ghVideo = document.getElementById('ghVideo');
+        const speedSelect = document.getElementById('speedSelect');
+
+        speedSelect.addEventListener('change', () => {
+            ghVideo.playbackRate = parseFloat(speedSelect.value);
+        });
+    </script>
 </body>
-
-
-
 </html>
