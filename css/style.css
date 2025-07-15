@@ -167,7 +167,6 @@ img.animated.pulse {
 
     .hero-header {
         margin-top: 0 !important;
-        padding-top: 10rem !important; /* Keep enough space for the fixed navbar */
     }
 
         .hero-header h1.display-4 {
