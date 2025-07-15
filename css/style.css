@@ -156,13 +156,12 @@ img.animated.pulse {
 
     .navbar-nav {
         flex-direction: column !important;
-        align-items: flex-start !important;
+        align-items: flex-end !important;
     }
 
     .hero-header h1.display-4 {
         font-size: 2rem !important;
         line-height: 2.5rem !important;
-        margin-top: 1.5rem !important; /* Optional: adds a little space below navbar */
     }
 }
 /*** Hero Header ***/
