@@ -152,18 +152,31 @@ img.animated.pulse {
     .navbar {
         width: 100% !important;
         min-width: 0 !important;
+        right: 0;
+        left: 0;
+        top: 0;
+        position: fixed !important; /* Ensures overlap and top alignment */
+        z-index: 1050;
     }
 
     .navbar-nav {
         flex-direction: column !important;
-        align-items: flex-end !important;
+        align-items: flex-end !important; /* Right-aligns nav links */
+        width: 100%;
     }
 
-    .hero-header h1.display-4 {
-        font-size: 2rem !important;
-        line-height: 2.5rem !important;
+    .hero-header {
+        margin-top: 0 !important;
+        padding-top: 10rem !important; /* Keep enough space for the fixed navbar */
     }
+
+        .hero-header h1.display-4 {
+            font-size: 2rem !important;
+            line-height: 2.5rem !important;
+            margin-top: 0 !important;
+        }
 }
+
 /*** Hero Header ***/
 .hero-header {
     position: relative;
