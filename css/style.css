@@ -147,6 +147,23 @@ img.animated.pulse {
     }
 }
 
+/* --- Custom mobile fixes for index.html --- */
+@media (max-width: 576px) {
+    .navbar {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    .navbar-nav {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+
+    .hero-header h1.display-4 {
+        font-size: 2rem !important;
+        line-height: 2.5rem !important;
+    }
+}
 /*** Hero Header ***/
 .hero-header {
     position: relative;
