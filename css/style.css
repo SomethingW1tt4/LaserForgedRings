@@ -169,11 +169,11 @@ img.animated.pulse {
         margin-top: 0 !important;
     }
 
-        .hero-header h1.display-4 {
-            font-size: 2rem !important;
-            line-height: 2.5rem !important;
-            margin-top: 0 !important;
-        }
+    .hero-header h1.display-4 {
+        font-size: 1.5rem !important;
+        line-height: 2rem !important;
+        margin-top: 0 !important;
+    }
 }
 
 /*** Hero Header ***/
@@ -656,4 +656,14 @@ img.animated.pulse {
     color: rgba(0, 0, 0, 1);
     text-align: center;
     margin-top: 0.5rem;
+}
+
+@media (max-width: 576px) {
+    body, p, h1, h2, h3, h4, h5, h6, .btn, .footer, .feature, .value, .blog, .copyright {
+        font-size: 0.95rem !important;
+    }
+    .hero-header h1.display-4 {
+        font-size: 1.5rem !important;
+        line-height: 2rem !important;
+    }
 }
