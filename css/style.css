@@ -159,6 +159,10 @@ img.animated.pulse {
         z-index: 1050;
     }
 
+    .navbar .navbar-brand h2 {
+    font-size: 1.3rem !important;
+    }
+
     .navbar-nav {
         flex-direction: column !important;
         align-items: flex-end !important; /* Right-aligns nav links */
@@ -665,5 +669,30 @@ img.animated.pulse {
     .hero-header h1.display-4 {
         font-size: 1.5rem !important;
         line-height: 2rem !important;
+        word-break: break-word;
+    }
+    .hero-header h3 {
+        font-size: 1.2rem !important;
+    }
+
+    .hero-header p {
+        font-size: 0.95rem;
+    }
+
+    .hero-header .btn {
+        margin-bottom: 0.75rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .video-wrapper video {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .col-lg-4 {
+        display: flex;
+        justify-content: center;
     }
 }
