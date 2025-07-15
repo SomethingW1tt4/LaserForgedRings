@@ -149,34 +149,72 @@ img.animated.pulse {
 
 /* --- Custom mobile fixes for index.html --- */
 @media (max-width: 576px) {
+    /* Navbar */
     .navbar {
         width: 100% !important;
         min-width: 0 !important;
         right: 0;
         left: 0;
         top: 0;
-        position: fixed !important; /* Ensures overlap and top alignment */
+        position: fixed !important;
         z-index: 1050;
     }
-
     .navbar .navbar-brand h2 {
-    font-size: 1.3rem !important;
+        font-size: 1.3rem !important;
     }
-
     .navbar-nav {
         flex-direction: column !important;
-        align-items: flex-end !important; /* Right-aligns nav links */
+        align-items: flex-end !important;
         width: 100%;
     }
+    .navbar .nav-link {
+        text-align: right;
+        font-size: 1rem !important;
+    }
 
+    /* Hero Header */
     .hero-header {
         margin-top: 0 !important;
     }
-
     .hero-header h1.display-4 {
         font-size: 1.5rem !important;
         line-height: 2rem !important;
         margin-top: 0 !important;
+        word-break: break-word;
+    }
+    .hero-header h3 {
+        font-size: 1.2rem !important;
+    }
+    .hero-header p {
+        font-size: 0.95rem;
+    }
+    .hero-header .btn {
+        margin-bottom: 0.75rem;
+        width: 100%;
+    }
+
+    /* General text size */
+    body, p, h1, h2, h3, h4, h5, h6, .btn, .footer, .feature, .value, .blog, .copyright {
+        font-size: 0.95rem !important;
+    }
+
+    /* Video */
+    .video-wrapper video {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .col-lg-4 {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Checkmarks */
+    .btn-square {
+        width: 48px !important;
+        height: 48px !important;
+    }
+    .btn-square .fa-check {
+        font-size: 1.2em !important;
     }
 }
 
@@ -696,3 +734,12 @@ img.animated.pulse {
         justify-content: center;
     }
 }
+@media (max-width: 576px) {
+    .btn-square {
+        width: 48px !important;
+        height: 48px !important;
+    }
+    .btn-square .fa-check {
+        font-size: 1.2em !important; /* Override fa-2x for mobile */
+    }
+}      
