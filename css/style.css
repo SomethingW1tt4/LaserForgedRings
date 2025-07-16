@@ -118,13 +118,14 @@ img.animated.pulse {
 
 @media (max-width: 991.98px) {
     .navbar .navbar-nav {
-        padding: 0 15px;
+        padding: 0;
         background: var(--bs-primary);
     }
 
     .navbar .navbar-nav .nav-link {
         margin-right: 0;
-        padding: 10px 0;
+        padding: 0;
+        line-height: 1.2;
     }
 }
 
@@ -160,7 +161,9 @@ img.animated.pulse {
         z-index: 1050;
     }
     .navbar .navbar-brand h2 {
-        font-size: 1.3rem !important;
+        font-size: 1.2rem;
+        line-height: 1.1;
+        padding-top: 0;
     }
     .navbar-nav {
         flex-direction: column !important;
@@ -698,7 +701,7 @@ img.animated.pulse {
     color: rgba(0, 0, 0, 1);
     text-align: center;
     margin-top: 0.5rem;
-}
+}     
 
 @media (max-width: 576px) {
     body, p, h1, h2, h3, h4, h5, h6, .btn, .footer, .feature, .value, .blog, .copyright {
@@ -743,3 +746,14 @@ img.animated.pulse {
         font-size: 1.2em !important; /* Override fa-2x for mobile */
     }
 }      
+@media (max-width: 576px) {
+    .navbar {
+        background: transparent !important;
+        transition: background 0.3s;
+    }
+    .navbar.hide-on-scroll {
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s;
+    }
+}
