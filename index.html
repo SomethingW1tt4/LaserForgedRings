@@ -76,23 +76,28 @@
     </div>
     <!-- Navbar End -->
     <!-- Hero Start -->
-    <div class="container-fluid bg-primary hero-header">
+    <div class="container-fluid bg-primary hero-header py-5">
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6 text-center text-lg-start">
                     <h3 class="fw-primary text-white animated slideInRight">Introducing</h3>
-                    <h1 class="display-4 mb-4 text-white animated slideInRight">The <span class="fw-primary text-secondary">Laser Forged</span> Fidget-Spinner Ring</h1>
+                    <h1 class="display-4 mb-4 text-white animated slideInRight">
+                        The <span class="fw-primary text-secondary">Laser Forged</span> Fidget-Spinner Ring
+                    </h1>
                     <p class="text-white mb-4 animated slideInRight">
                         Innovative. Customizable. Unparalleled Design. <br>
-                        A patented dual-banded ring, <br>made with computer-precision and laser-beams
+                        A patented dual-banded ring,<br>
+                        made with computer-precision and laser-beams<br>
                         to guarantee a customized fit and optimal spin.
                     </p>
-                    <a href="concept.html" class="btn btn-primary py-2 px-4 me-3 animated slideInRight">Learn More</a>
-                    <a href="contact.html" class="btn btn-outline-primary py-2 px-4 animated slideInRight">Contact Us</a>
+                    <div class="d-grid gap-2 d-sm-block">
+                        <a href="concept.html" class="btn btn-primary py-2 px-4 me-sm-3 mb-2 animated slideInRight">Learn More</a>
+                        <a href="contact.html" class="btn btn-outline-primary py-2 px-4 mb-2 animated slideInRight">Contact Us</a>
+                    </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 offset-lg-1 text-center">
                     <div class="video-wrapper">
-                        <video autoplay loop muted playsinline>
+                        <video autoplay loop muted playsinline class="img-fluid rounded shadow-sm">
                             <source src="img/index/AnimationT1.webm" type="video/webm">
                             Your browser does not support the video tag.
                         </video>
@@ -101,6 +106,7 @@
             </div>
         </div>
     </div>
+
     <!-- Hero End -->
     <!-- Feature Start -->
     <div class="container-fluid feature">
@@ -380,24 +386,28 @@
     <script src="js/main.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            var navbar = document.querySelector('.navbar');
-            var lastScrollTop = 0;
+            const navbar = document.querySelector('.navbar');
+            let lastScrollTop = 0;
+
             window.addEventListener('scroll', function () {
-                var st = window.pageYOffset || document.documentElement.scrollTop;
-                // Only apply on mobile
+                const st = window.scrollY;
+
+                // Hide on scroll for mobile only
                 if (window.innerWidth <= 576) {
-                    if (st > 80) { // Adjust 80 to your desired scroll threshold
+                    if (st > lastScrollTop) {
                         navbar.classList.add('hide-on-scroll');
                     } else {
                         navbar.classList.remove('hide-on-scroll');
                     }
                 } else {
-                    navbar.classList.remove('hide-on-scroll');
+                    navbar.classList.remove('hide-on-scroll'); // Always show on desktop
                 }
-                lastScrollTop = st;
+
+                lastScrollTop = Math.max(st, 0);
             });
         });
     </script>
+
 </body>
 
 </html>

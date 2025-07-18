@@ -217,7 +217,7 @@ img.animated.pulse {
         height: 48px !important;
     }
     .btn-square .fa-check {
-        font-size: 1.2em !important;
+        font-size: .5em !important;
     }
 }
 
@@ -701,17 +701,73 @@ img.animated.pulse {
     color: rgba(0, 0, 0, 1);
     text-align: center;
     margin-top: 0.5rem;
-}     
+}
 
 @media (max-width: 576px) {
+    /* General Typography */
     body, p, h1, h2, h3, h4, h5, h6, .btn, .footer, .feature, .value, .blog, .copyright {
         font-size: 0.95rem !important;
     }
+
+    /* Navbar */
+    .navbar {
+        width: 100% !important;
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1050;
+        background-color: transparent !important;
+        box-shadow: none !important;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        transition: top 0.3s, background-color 0.3s ease;
+    }
+
+    .navbar.hidden {
+        top: -80px; /* hides navbar on scroll down */
+    }
+
+    .navbar-collapse {
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .navbar .navbar-brand h2 {
+        font-size: 1.2rem;
+        line-height: 1.1;
+        padding-top: 0;
+    }
+
+    .navbar-nav {
+        flex-direction: column !important;
+        align-items: flex-end !important;
+        width: 100%;
+    }
+
+    .navbar .nav-link {
+        text-align: right;
+        font-size: 1rem !important;
+    }
+
+    .hide-on-scroll {
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    /* Hero Section */
+    .hero-header {
+        margin-top: 0 !important;
+        padding: 4rem 1rem;
+        text-align: center;
+    }
+
     .hero-header h1.display-4 {
         font-size: 1.5rem !important;
         line-height: 2rem !important;
+        margin-top: 0 !important;
         word-break: break-word;
     }
+
     .hero-header h3 {
         font-size: 1.2rem !important;
     }
@@ -724,36 +780,29 @@ img.animated.pulse {
         margin-bottom: 0.75rem;
         width: 100%;
     }
-}
 
-@media (max-width: 576px) {
+
+    /* Video Wrapper */
     .video-wrapper video {
         width: 80%;
         margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
     }
 
     .col-lg-4 {
         display: flex;
         justify-content: center;
     }
-}
-@media (max-width: 576px) {
+
+    /* Button Icons */
     .btn-square {
         width: 48px !important;
         height: 48px !important;
     }
+
     .btn-square .fa-check {
-        font-size: 1.2em !important; /* Override fa-2x for mobile */
-    }
-}      
-@media (max-width: 576px) {
-    .navbar {
-        background: transparent !important;
-        transition: background 0.3s;
-    }
-    .navbar.hide-on-scroll {
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity 0.3s;
+        font-size: 1.2em !important;
     }
 }

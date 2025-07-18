@@ -106,3 +106,17 @@ document.querySelectorAll('.gallery-item').forEach(item => {
     }
 });
 
+// Hide navbar on scroll down — only on mobile (?576px)
+if (window.innerWidth <= 576) {
+    let lastScrollTop = 0;
+    window.addEventListener("scroll", function () {
+        let st = window.pageYOffset || document.documentElement.scrollTop;
+        const navbar = document.querySelector(".navbar");
+        if (st > lastScrollTop) {
+            navbar.classList.add("hidden");
+        } else {
+            navbar.classList.remove("hidden");
+        }
+        lastScrollTop = st <= 0 ? 0 : st;
+    }, false);
+}
