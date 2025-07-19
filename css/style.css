@@ -727,6 +727,11 @@ img.animated.pulse {
         text-align: right;
     }
 
+    .navbar-brand {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
     .navbar-brand h2 {
         font-size: 1.2rem;
         margin: 0;
@@ -734,7 +739,6 @@ img.animated.pulse {
         line-height: normal;
         display: block; /* or inline depending on structure */
         padding-top: 0.1rem !important; /* experiment here */
-        padding-bottom: 0 !important;
         align-self: flex-start; /* overrides vertical centering */
     }
 
