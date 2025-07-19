@@ -733,7 +733,7 @@ img.animated.pulse {
         padding: 0;
         line-height: normal;
         display: block; /* or inline depending on structure */
-        padding-top: 0.3rem; /* experiment here */
+        padding-top: 0.1rem !important; /* experiment here */
     }
 
     .navbar-nav {
