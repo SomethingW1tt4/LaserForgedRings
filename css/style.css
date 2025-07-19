@@ -730,6 +730,7 @@ img.animated.pulse {
     .navbar-brand {
         padding-top: 0 !important;
         padding-bottom: 0 !important;
+        align-self: flex-start !important;
     }
 
     .navbar-brand h2 {
