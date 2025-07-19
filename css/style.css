@@ -734,6 +734,7 @@ img.animated.pulse {
         line-height: normal;
         display: block; /* or inline depending on structure */
         padding-top: 0.1rem !important; /* experiment here */
+        align-self: flex-start; /* overrides vertical centering */
     }
 
     .navbar-nav {
