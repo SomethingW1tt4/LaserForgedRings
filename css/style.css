@@ -800,14 +800,21 @@ img.animated.pulse {
     }
 
     .feature .video-wrapper {
-        position: absolute;
+        position: center;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
+        max-width: 560px;
         z-index: 0;
-        opacity: 0.1;
+        opacity: 0.85;
         pointer-events: none;
+    }
+
+    .hero-header .video-wrapper video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     /* Value Points Section */
@@ -825,18 +832,24 @@ img.animated.pulse {
         width: 100%;
     }
 
-    .value .btn-square {
+    .value .col-12.d-flex {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .value .btn-square i {
         width: 50px !important;
         height: 50px !important;
         font-size: 1.5rem !important;
     }
 
-        .value .btn-square i {
-            font-size: 0.7rem;
-        }
-
     .value p {
         font-size: 0.9rem;
+    }
+
+    .value .ps-3 {
+        flex-grow: 1;
+        max-width: calc(100% - 80px - 1rem); /* 80px for icon + ~1rem gap */
     }
 
     /* Footer Section */
