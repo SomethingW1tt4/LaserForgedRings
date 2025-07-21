@@ -705,8 +705,10 @@ img.animated.pulse {
 }
 
 
+/* Condensed and corrected mobile-first stylesheet */
+
 @media (max-width: 576px) {
-    /* Navbar */
+    /* --- NAVBAR --- */
     .navbar {
         width: 100vw;
         margin: 0;
@@ -754,17 +756,7 @@ img.animated.pulse {
         font-size: 1rem !important;
     }
 
-    .sticky-nav {
-        top: 0 !important;
-        transform: none !important;
-    }
-
-    .hide-on-scroll {
-        transform: translateY(-100%);
-        transition: transform 0.3s ease-in-out;
-    }
-
-    /* Hero Section */
+    /* --- HERO HEADER --- */
     .hero-header {
         padding: 5.5rem 1rem 2rem;
         min-height: 420px;
@@ -774,17 +766,13 @@ img.animated.pulse {
         color: white;
     }
 
-        .hero-header .container {
-            width: 100%;
-            padding: 0;
-        }
-
+        .hero-header .container,
         .hero-header .row {
             display: flex;
             flex-direction: column;
-            margin: 0;
-            padding: 0;
             width: 100%;
+            padding: 0;
+            margin: 0;
         }
 
         .hero-header .video-wrapper {
@@ -835,11 +823,7 @@ img.animated.pulse {
             width: 100%;
         }
 
-    .col-lg-4 {
-        display: none !important;
-    }
-
-    /* Feature Section */
+    /* --- FEATURE SECTION --- */
     .feature {
         position: relative;
         padding: 3rem 1rem;
@@ -889,7 +873,7 @@ img.animated.pulse {
         color: white;
     }
 
-    /* Value Points */
+    /* --- VALUE POINTS --- */
     .value .row {
         flex-direction: column;
         padding: 1rem;
@@ -926,7 +910,7 @@ img.animated.pulse {
         color: white;
     }
 
-    /* Footer */
+    /* --- FOOTER --- */
     .footer .row {
         display: flex;
         flex-direction: column;
@@ -948,18 +932,6 @@ img.animated.pulse {
         margin-top: 0.5rem;
         text-align: center;
     }
+}
 
-    /* Typography */
-    body, p, h1, h2, h3, h4, h5, h6, .btn, .footer, .feature, .value, .blog, .copyright {
-        font-size: 0.95rem !important;
-    }
-
-    .btn-square {
-        width: 48px !important;
-        height: 48px !important;
-    }
-
-        .btn-square .fa-check {
-            font-size: .5em !important;
-        }
 }
