@@ -801,6 +801,7 @@ img.animated.pulse {
     .value .row {
         flex-direction: column;
         padding: 1rem;
+        align-items: flex-start !important;
     }
 
     .value .col-md-6 {
@@ -812,9 +813,9 @@ img.animated.pulse {
     }
 
     .value .btn-square {
-        width: 32px;
-        height: 32px;
-        font-size: 0.7rem;
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 1.5rem !important;
     }
 
         .value .btn-square i {
