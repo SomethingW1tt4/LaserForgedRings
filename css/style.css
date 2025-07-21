@@ -666,9 +666,11 @@ img.animated.pulse {
 
     .navbar-brand h2 {
         font-size: 1.1rem;
-        white-space: normal;
+        word-break: break-word; /* Force wrap on small screens */
         max-width: 60vw;
         line-height: 1.2;
+        margin-right: auto;
+        margin-left: 0;
     }
 
     .navbar-nav {
