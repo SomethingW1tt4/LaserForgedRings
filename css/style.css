@@ -293,6 +293,13 @@ img.animated.pulse {
     z-index: 1;
 }
 
+.value .animation2-wrapper {
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+    max-width: 100%;
+}
+
 /*** Patent Section ***/
 /* Glowing effect (always on, undulating) */
 @keyframes pulseGlow {
@@ -822,9 +829,18 @@ img.animated.pulse {
     }
 
     /* Value Points Section */
+    .value {
+        position: relative;
+        overflow: hidden;
+    }
     .value .container > .text-center {
         max-width: 250px !important;
     }
+        .value .container,
+        .value .row {
+            position: relative;
+            z-index: 2;
+        }
 
     .value .row {
         flex-direction: column;
@@ -842,25 +858,31 @@ img.animated.pulse {
 
     .value .col-12.d-flex {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+        gap: 1rem;
         text-align: left;
     }
 
+    .value .col-12.d-flex > .ps-3 {
+        flex: 1 1 auto;
+        max-width: 100%;
+        padding-left: 1rem !important;
+    }
+
     .value .btn-square {
-        width: 50px !important;
-        height: 50px !important;
-        font-size: 1.5rem !important;
         display: flex;
         align-items: center !important;
         justify-content: center !important;
         padding: 0 !important;
         margin-bottom: 0.5rem;
+        width: 50px !important;
+        height: 50px !important;
     }
 
     .value .btn-square i {
-        width: 50px !important;
-        height: 50px !important;
         font-size: 1.5rem !important;
+        line-height: 1;
+        margin: 0;
     }
 
     .value .ps-3 {
@@ -877,6 +899,26 @@ img.animated.pulse {
         display: block;
         width: 100%;
     }
+
+        .value .animation2-wrapper {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            opacity: 0.12;
+            pointer-events: none;
+        }
+
+            .value .animation2-wrapper video {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+
 
 
     /* Footer Section */
