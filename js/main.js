@@ -107,16 +107,23 @@ document.querySelectorAll('.gallery-item').forEach(item => {
 });
 
 // Hide navbar on scroll down — only on mobile (?576px)
-if (window.innerWidth <= 576) {
-    let lastScrollTop = 0;
-    window.addEventListener("scroll", function () {
-        let st = window.scrollY;
+document.addEventListener("DOMContentLoaded", function () {
+    if (window.innerWidth <= 576) {
         const navbar = document.querySelector(".navbar");
-        if (st > lastScrollTop) {
-            navbar.classList.add("hidden");
-        } else {
-            navbar.classList.remove("hidden");
-        }
-        lastScrollTop = st <= 0 ? 0 : st;
-    }, false);
-}
+        if (!navbar) return;
+
+        let lastScrollTop = 0;
+
+        window.addEventListener("scroll", function () {
+            let st = window.scrollY;
+
+            if (st > lastScrollTop) {
+                navbar.classList.add("hidden");
+            } else {
+                navbar.classList.remove("hidden");
+            }
+
+            lastScrollTop = Math.max(st, 0);
+        });
+    }
+});
