@@ -833,95 +833,75 @@ img.animated.pulse {
         position: relative;
         overflow: hidden;
     }
-    .value .container > .text-center {
-        max-width: 250px !important;
-    }
+
         .value .container,
         .value .row {
             position: relative;
             z-index: 2;
         }
 
-    .value .row {
-        flex-direction: column;
-        padding: 1rem;
-        align-items: flex-start !important;
-    }
+            /* Section heading width on mobile */
+            .value .container > .text-center {
+                max-width: 250px !important;
+            }
 
-    .value .col-md-6 {
-        display: flex;
-        align-items: flex-start;
-        gap: 0.75rem;
-        margin-bottom: 1rem;
-        width: 100%;
-    }
+        /* Stack items vertically on mobile */
+        .value .row {
+            flex-direction: column;
+            padding: 1rem;
+            align-items: flex-start;
+        }
 
+        /* Individual value rows */
         .value .col-12.d-flex {
-            flex-direction: row !important; /* force horizontal layout */
+            display: flex;
+            flex-direction: row;
             align-items: flex-start;
             gap: 1rem;
             text-align: left;
+            width: 100%;
+            padding-inline: 1rem;
+            margin: 0 auto;
         }
 
-    .value .col-12.d-flex > .ps-3 {
-        flex: 1 1 auto;
-        max-width: 100%;
-        padding-left: 1rem !important;
-    }
+        /* Circle container for icon */
+        .value .btn-square {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px !important;
+            height: 50px !important;
+            padding: 0;
+            margin-bottom: 0.5rem;
+            flex-shrink: 0;
+        }
 
-    .value .btn-square {
-        display: flex;
-        align-items: center !important;
-        justify-content: center !important;
-        padding: 0 !important;
-        margin-bottom: 0.5rem;
-        width: 50px !important;
-        height: 50px !important;
-    }
+            /* Font Awesome check inside */
+            .value .btn-square i {
+                font-size: 1.5rem !important;
+                line-height: 1;
+                width: 50px;
+                height: 50px;
+                margin: 0;
+            }
 
-    .value .btn-square i {
-        font-size: 1.5rem !important;
-        line-height: 1;
-        margin: 0;
-    }
-
+        /* Text area next to icon */
         .value .ps-3 {
+            flex-grow: 1;
             padding-left: 0.75rem !important;
-            flex: 1 1 auto !important; /* grow/shrink as needed */
-            max-width: none !important;
-            width: auto !important;
+            max-width: 100%;
+            width: 100%;
         }
 
-    .value p {
-        font-size: 0.9rem;
-    }
-
-    .value span {
-        display: block;
-        width: 100%;
-    }
-
-        .value .animation2-wrapper {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100%;
-            z-index: 0;
-            opacity: 0.12;
-            pointer-events: none;
-            max-height: 100%;
-        }
-
-            .value .animation2-wrapper video {
-                width: 100vw;
-                height: auto;
-                object-fit: cover;
+            .value .ps-3 h5,
+            .value .ps-3 span,
+            .value .ps-3 hr {
+                word-break: break-word;
+                white-space: normal;
             }
 
 
-
-
+    
     /* Footer Section */
     .footer {
         padding: 2rem 1rem;
