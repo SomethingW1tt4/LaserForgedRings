@@ -657,7 +657,7 @@ img.animated.pulse {
     }
 
     .navbar.hidden {
-        top: -80px;
+        top: -120px;
     }
 
     .navbar-collapse {
@@ -822,6 +822,10 @@ img.animated.pulse {
     }
 
     /* Value Points Section */
+    .value .container > .text-center {
+        max-width: 250px !important;
+    }
+
     .value .row {
         flex-direction: column;
         padding: 1rem;
@@ -842,10 +846,23 @@ img.animated.pulse {
         align-items: flex-start;
     }
 
+    .value .btn-square {
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 1.5rem !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .value .btn-square i {
         width: 50px !important;
         height: 50px !important;
         font-size: 1.5rem !important;
+    }
+
+    .value span{
+        width: 300%;
     }
 
     .value p {
