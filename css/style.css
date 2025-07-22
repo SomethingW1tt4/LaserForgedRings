@@ -885,12 +885,12 @@ img.animated.pulse {
         margin: 0;
     }
 
-    .value .ps-3 {
-        padding-left: 0 !important;
-        width: 100%;
-        max-width: none; /* adjust as needed */
-        flex: 1;
-    }
+        .value .ps-3 {
+            padding-left: 0.75rem !important;
+            flex: 1 1 auto !important; /* grow/shrink as needed */
+            max-width: none !important;
+            width: auto !important;
+        }
 
     .value p {
         font-size: 0.9rem;
@@ -905,16 +905,17 @@ img.animated.pulse {
             position: absolute;
             top: 0;
             left: 0;
-            width: 100vw; /* match screen width */
+            width: 100vw;
             height: 100%;
             z-index: 0;
             opacity: 0.12;
             pointer-events: none;
+            max-height: 100%;
         }
 
             .value .animation2-wrapper video {
-                width: 100%;
-                height: 100%;
+                width: 100vw;
+                height: auto;
                 object-fit: cover;
             }
 
