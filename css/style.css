@@ -656,9 +656,10 @@ img.animated.pulse {
         align-items: flex-start;
     }
 
-        .navbar.hidden {
-            top: -80px;
-        }
+    .navbar.hidden {
+        top: -80px;
+        transition: top 0.3s ease-in-out;
+    }
 
     .navbar-collapse {
         background-color: rgba(0, 0, 0, 0.9);
@@ -693,6 +694,10 @@ img.animated.pulse {
         margin-left: auto;
     }
 
+    .sticky-nav {
+        top: 0 !important;
+        transform: none !important; /* ❌ remove this */
+    }
     /* Hero Section */
     .hero-header {
         padding: 4rem 1rem 2rem 1rem;
@@ -833,6 +838,7 @@ img.animated.pulse {
     }
 
     .value .col-12.d-flex {
+        display: flex;
         flex-wrap: nowrap;
         align-items: flex-start;
     }
