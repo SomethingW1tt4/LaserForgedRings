@@ -109,21 +109,30 @@ document.querySelectorAll('.gallery-item').forEach(item => {
 // Hide navbar on scroll down — only on mobile (?576px)
 document.addEventListener("DOMContentLoaded", function () {
     if (window.innerWidth <= 576) {
+        console.log("Mobile scroll listener enabled");
         const navbar = document.querySelector(".navbar");
-        if (!navbar) return;
+        if (!navbar) {
+            console.error("Navbar not found");
+            return;
+        }
 
-        let lastScrollTop = 0;
+        let lastScrollTop = window.scrollY;
 
         window.addEventListener("scroll", function () {
-            let st = window.scrollY;
+            const st = window.scrollY;
 
             if (st > lastScrollTop) {
                 navbar.classList.add("hidden");
+                console.log("Hiding navbar");
             } else {
                 navbar.classList.remove("hidden");
+                console.log("Showing navbar");
             }
 
-            lastScrollTop = Math.max(st, 0);
+            lastScrollTop = st <= 0 ? 0 : st;
         });
+    } else {
+        console.log("Not a mobile screen — scroll listener skipped");
     }
 });
+

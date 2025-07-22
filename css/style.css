@@ -652,13 +652,12 @@ img.animated.pulse {
         z-index: 1050;
         background-color: transparent !important;
         box-shadow: none !important;
-        transition: top 0.3s, background-color 0.3s ease;
+        transition: top 0.3s ease-in-out;
         align-items: flex-start;
     }
 
     .navbar.hidden {
         top: -80px;
-        transition: top 0.3s ease-in-out;
     }
 
     .navbar-collapse {
