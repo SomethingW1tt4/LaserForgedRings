@@ -856,12 +856,12 @@ img.animated.pulse {
         width: 100%;
     }
 
-    .value .col-12.d-flex {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
-        text-align: left;
-    }
+        .value .col-12.d-flex {
+            flex-direction: row !important; /* force horizontal layout */
+            align-items: flex-start;
+            gap: 1rem;
+            text-align: left;
+        }
 
     .value .col-12.d-flex > .ps-3 {
         flex: 1 1 auto;
@@ -888,7 +888,8 @@ img.animated.pulse {
     .value .ps-3 {
         padding-left: 0 !important;
         width: 100%;
-        max-width: 300px; /* adjust as needed */
+        max-width: none; /* adjust as needed */
+        flex: 1;
     }
 
     .value p {
@@ -903,9 +904,8 @@ img.animated.pulse {
         .value .animation2-wrapper {
             position: absolute;
             top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100%;
+            left: 0;
+            width: 100vw; /* match screen width */
             height: 100%;
             z-index: 0;
             opacity: 0.12;
