@@ -110,7 +110,7 @@ document.querySelectorAll('.gallery-item').forEach(item => {
 if (window.innerWidth <= 576) {
     let lastScrollTop = 0;
     window.addEventListener("scroll", function () {
-        let st = window.pageYOffset || document.documentElement.scrollTop;
+        let st = window.scrollY;
         const navbar = document.querySelector(".navbar");
         if (st > lastScrollTop) {
             navbar.classList.add("hidden");
