@@ -657,7 +657,7 @@ img.animated.pulse {
     }
 
     .navbar.hidden {
-        top: -120px;
+        top: -150px;
     }
 
     .navbar-collapse {
@@ -841,9 +841,9 @@ img.animated.pulse {
     }
 
     .value .col-12.d-flex {
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: flex-start;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
     }
 
     .value .btn-square {
@@ -851,8 +851,10 @@ img.animated.pulse {
         height: 50px !important;
         font-size: 1.5rem !important;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 0 !important;
+        margin-bottom: 0.5rem;
     }
 
     .value .btn-square i {
@@ -861,8 +863,10 @@ img.animated.pulse {
         font-size: 1.5rem !important;
     }
 
-    .value span{
-        width: 300%;
+    .value .ps-3 {
+        padding-left: 0 !important;
+        width: 100%;
+        max-width: 300px; /* adjust as needed */
     }
 
     .value p {
