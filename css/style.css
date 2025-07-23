@@ -829,80 +829,78 @@ img.animated.pulse {
     }
 
     /* Value Points Section */
-    .value {
+    /* ==== DESKTOP VERSION ==== */
+    .value-desktop {
         position: relative;
         overflow: hidden;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
 
-        .value .container,
-        .value .row {
+        .value-desktop .container,
+        .value-desktop .row {
             position: relative;
             z-index: 2;
         }
 
-            /* Section heading width on mobile */
-            .value .container > .text-center {
-                max-width: 250px !important;
-            }
-
-        /* Stack items vertically on mobile */
-        .value .row {
-            flex-direction: column;
-            padding: 1rem;
-            align-items: flex-start;
+        .value-desktop .text-center {
+            max-width: 600px;
+            margin: 0 auto;
         }
 
-        /* Individual value rows */
-        .value .col-12.d-flex {
+        .value-desktop .col-12.d-flex {
             display: flex;
             flex-direction: row;
             align-items: flex-start;
             gap: 1rem;
+            margin-bottom: 1.5rem;
             text-align: left;
-            width: 100%;
-            padding-inline: 1rem;
-            margin: 0 auto;
         }
 
-        /* Circle container for icon */
-        .value .btn-square {
+        .value-desktop .btn-square {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 50px !important;
-            height: 50px !important;
-            padding: 0;
-            margin-bottom: 0.5rem;
+            width: 80px;
+            height: 80px;
+            border: 2px solid var(--bs-border-color, #ccc);
+            border-radius: 50%;
             flex-shrink: 0;
         }
 
-            /* Font Awesome check inside */
-            .value .btn-square i {
-                font-size: 1.5rem !important;
-                line-height: 1;
-                width: 50px;
-                height: 50px;
-                margin: 0;
+            .value-desktop .btn-square i {
+                font-size: 2rem;
+                color: #c00;
             }
 
-        /* Text area next to icon */
-        .value .ps-3 {
+        .value-desktop .ps-3 {
             flex-grow: 1;
-            padding-left: 0.75rem !important;
+            padding-left: 0.75rem;
             max-width: 100%;
-            width: 100%;
+            width: auto;
         }
 
-            .value .ps-3 h5,
-            .value .ps-3 span,
-            .value .ps-3 hr {
-                word-break: break-word;
-                white-space: normal;
+        .value-desktop .animation2-wrapper {
+            max-width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+            .value-desktop .animation2-wrapper video {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                opacity: 0.15;
+                pointer-events: none;
             }
 
+    /* ==== MOBILE VERSION ==== */
     .value-mobile {
         position: relative;
         overflow: hidden;
+        padding: 2rem 1rem;
+        z-index: 1;
+        background-color: transparent;
     }
 
         .value-mobile .animation2-wrapper {
@@ -924,16 +922,55 @@ img.animated.pulse {
 
         .value-mobile .container {
             position: relative;
-            z-index: 1;
+            z-index: 2;
+            padding: 1rem 1rem;
+            color: white;
         }
 
-    .value-desktop {
-        outline: 2px solid blue;
-    }
+        .value-mobile .text-center {
+            margin-bottom: 2rem;
+        }
 
-    .value-mobile {
-        outline: 2px solid red;
-    }
+        .value-mobile .d-flex {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+
+        .value-mobile .btn-square {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border: 2px solid var(--bs-border-color, #ccc);
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+            .value-mobile .btn-square i {
+                font-size: 1.5rem;
+                color: #c00;
+            }
+
+        .value-mobile .ps-3 {
+            flex-grow: 1;
+            padding-left: 0.75rem;
+            width: 100%;
+            max-width: 100%;
+        }
+
+            .value-mobile .ps-3 h5,
+            .value-mobile .ps-3 span,
+            .value-mobile .ps-3 hr {
+                word-break: break-word;
+                white-space: normal;
+                color: white;
+            }
+
     
     /* Footer Section */
     .footer {
