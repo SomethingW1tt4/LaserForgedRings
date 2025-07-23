@@ -900,7 +900,32 @@ img.animated.pulse {
                 white-space: normal;
             }
 
+    .value-mobile {
+        position: relative;
+        overflow: hidden;
+    }
 
+        .value-mobile .animation2-wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100%;
+            z-index: 0;
+            opacity: 0.12;
+            pointer-events: none;
+        }
+
+            .value-mobile .animation2-wrapper video {
+                width: 100vw;
+                height: 100%;
+                object-fit: cover;
+            }
+
+        .value-mobile .container {
+            position: relative;
+            z-index: 1;
+        }
     
     /* Footer Section */
     .footer {
