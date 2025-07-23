@@ -926,6 +926,14 @@ img.animated.pulse {
             position: relative;
             z-index: 1;
         }
+
+    .value-desktop {
+        outline: 2px solid blue;
+    }
+
+    .value-mobile {
+        outline: 2px solid red;
+    }
     
     /* Footer Section */
     .footer {
