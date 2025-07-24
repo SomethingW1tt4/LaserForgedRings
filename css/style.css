@@ -830,6 +830,8 @@ img.animated.pulse {
 
     /* Value Points Section */
     /* ==== DESKTOP VERSION ==== */
+
+
     .value-desktop {
         position: relative;
         overflow: hidden;
@@ -895,6 +897,8 @@ img.animated.pulse {
             }
 
     /* ==== MOBILE VERSION ==== */
+   
+
     .value-mobile {
         position: relative;
         overflow: hidden;
@@ -903,97 +907,116 @@ img.animated.pulse {
         background-color: transparent;
     }
 
-        .value-mobile .animation2-wrapper {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100%;
-            z-index: 0;
-            opacity: 0.12;
-            pointer-events: none;
-        }
-
-            .value-mobile .animation2-wrapper video {
+            .value-mobile .animation2-wrapper {
+                position: absolute;
+                top: 0;
+                left: 0;
                 width: 100vw;
                 height: 100%;
-                object-fit: cover;
+                z-index: 0;
+                opacity: 0.12;
+                pointer-events: none;
             }
 
-        .value-mobile .container {
-            position: relative;
-            z-index: 2;
-            padding: 1rem 1rem;
-            color: white;
-        }
+                .value-mobile .animation2-wrapper video {
+                    width: 100vw;
+                    height: 100%;
+                    object-fit: cover;
+                }
 
-        .value-mobile .text-center {
-            margin-bottom: 2rem;
-        }
-
-        .value-mobile .d-flex {
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
-            text-align: left;
-        }
-
-        .value-mobile .btn-square {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 50px;
-            height: 50px;
-            border: 2px solid var(--bs-border-color, #ccc);
-            border-radius: 50%;
-            flex-shrink: 0;
-        }
-
-            .value-mobile .btn-square i {
-                font-size: 1.5rem;
-                color: #c00;
-            }
-
-        .value-mobile .ps-3 {
-            flex-grow: 1;
-            padding-left: 0.75rem;
-            width: 100%;
-            max-width: 100%;
-        }
-
-            .value-mobile .ps-3 h5,
-            .value-mobile .ps-3 span,
-            .value-mobile .ps-3 hr {
-                word-break: break-word;
-                white-space: normal;
+            .value-mobile .container {
+                position: relative;
+                z-index: 2;
+                padding: 1rem 1rem;
                 color: white;
             }
 
-    
-    /* Footer Section */
-    .footer {
-        padding: 2rem 1rem;
-        text-align: left;
+            .value-mobile .text-center {
+                margin-bottom: 2rem;
+            }
+
+            .value-mobile .d-flex {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 1rem;
+                margin-bottom: 1.5rem;
+                text-align: left;
+            }
+
+            .value-mobile .btn-square {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 50px;
+                height: 50px;
+                border: 2px solid var(--bs-border-color, #ccc);
+                border-radius: 50%;
+                flex-shrink: 0;
+            }
+
+                .value-mobile .btn-square i {
+                    font-size: .7rem;
+                    color: #c00;
+                }
+
+            .value-mobile .ps-3 {
+                flex-grow: 1;
+                padding-left: 0.75rem;
+                width: 100%;
+                max-width: 100%;
+            }
+
+                .value-mobile .ps-3 h5,
+                .value-mobile .ps-3 span,
+                .value-mobile .ps-3 hr {
+                    word-break: break-word;
+                    white-space: normal;
+                    color: white;
+                }
+
+    @media (max-width: 767.98px) {
+        .value-desktop {
+            display: none !important;
+        }
+
+        .value-mobile {
+            display: block !important;
+        }
     }
 
-        .footer .row {
-            flex-direction: column;
+    @media (min-width: 768px) {
+        .value-desktop {
+            display: block !important;
         }
 
-        .footer .col-md-4 {
-            width: 100%;
-            margin-bottom: 1rem;
+        .value-mobile {
+            display: none !important;
         }
-
-        .footer .btn {
-            width: 100%;
-            margin-top: 1rem;
-        }
-
-    /* General Typography */
-    body, p, h1, h2, h3, h4, h5, h6 {
-        font-size: 1rem;
     }
-}
+
+        /* Footer Section */
+        .footer {
+            padding: 2rem 1rem;
+            text-align: left;
+        }
+
+            .footer .row {
+                flex-direction: column;
+            }
+
+            .footer .col-md-4 {
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+
+            .footer .btn {
+                width: 100%;
+                margin-top: 1rem;
+            }
+
+        /* General Typography */
+        body, p, h1, h2, h3, h4, h5, h6 {
+            font-size: 1rem;
+        }
+    }
