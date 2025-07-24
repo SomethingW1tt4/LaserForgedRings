@@ -907,22 +907,24 @@ img.animated.pulse {
         background-color: transparent;
     }
 
-            .value-mobile .animation2-wrapper {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100vw;
-                height: 100%;
-                z-index: 0;
-                opacity: 0.12;
-                pointer-events: none;
-            }
+        .value-mobile .animation2-wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            opacity: 0.12;
+            pointer-events: none;
+            overflow: hidden;
+        }
 
-                .value-mobile .animation2-wrapper video {
-                    width: 100vw;
-                    height: 100%;
-                    object-fit: cover;
-                }
+            .value-mobile .animation2-wrapper video {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
 
             .value-mobile .container {
                 position: relative;
