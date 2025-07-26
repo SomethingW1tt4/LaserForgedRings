@@ -1,0 +1,241 @@
+/* Value Points Section */
+/* ==== DESKTOP VERSION ==== */
+
+
+.value-desktop {
+    position: relative;
+    overflow: hidden;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.value-desktop .container,
+.value-desktop .row {
+    position: relative;
+    z-index: 2;
+}
+
+.value-desktop .text-center {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.value-desktop .col-12.d-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.value-desktop .btn-square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border: 2px solid var(--bs-border-color, #ccc);
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.value-desktop .btn-square i {
+    font-size: 2rem;
+    color: #c00;
+}
+
+.value-desktop .ps-3 {
+    flex-grow: 1;
+    padding-left: 0.75rem;
+    max-width: 100%;
+    width: auto;
+}
+
+.value-desktop .animation2-wrapper {
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.value-desktop .animation2-wrapper video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+/* ==== MOBILE VERSION ==== */
+
+
+.value-mobile {
+    position: relative;
+    overflow: hidden;
+    padding: 2rem 1rem;
+    z-index: 1;
+    background-color: transparent;
+}
+
+.value-mobile .animation2-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+    opacity: 0.4;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.value-mobile .animation2-wrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.value-mobile .container {
+    position: relative;
+    z-index: 2;
+    padding: 1rem 1rem;
+    color: white;
+}
+
+.value-mobile .text-center {
+    margin-bottom: 2rem;
+}
+
+.value-mobile .d-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.value-mobile .btn-square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--bs-border-color, #ccc);
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.value-mobile .btn-square i {
+    font-size: .7rem;
+    color: #c00;
+}
+
+.value-mobile .ps-3 {
+    flex-grow: 1;
+    padding-left: 0.75rem;
+    width: 100%;
+    max-width: 100%;
+}
+
+.value-mobile .ps-3 h5,
+.value-mobile .ps-3 span,
+.value-mobile .ps-3 hr {
+    word-break: break-word;
+    white-space: normal;
+    color: black;
+}
+
+@media (max-width: 767.98px) {
+    .value-desktop {
+        display: none !important;
+    }
+
+    .value-mobile {
+        display: block !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .value-desktop {
+        display: block !important;
+    }
+
+    .value-mobile {
+        display: none !important;
+    }
+}
+
+/* Footer Base Styles */
+.footer {
+    padding: 2rem 1rem;
+    text-align: left;
+}
+
+/* Footer: Desktop Only */
+.footer-desktop {
+    display: block;
+}
+
+/* Footer: Mobile Only */
+.footer-mobile {
+    text-align: center;
+}
+
+.footer-mobile .container {
+    padding: 1rem;
+}
+
+.footer-mobile h1,
+.footer-mobile h5,
+.footer-mobile p,
+.footer-mobile ul {
+    margin: 0 auto 1rem auto;
+}
+
+.footer-mobile ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer-mobile ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-mobile .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    width: auto;
+}
+
+.footer-mobile .text-muted {
+    font-size: 0.9rem;
+}
+
+/* Typography reset for all */
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1rem;
+}
+
+/* Media query: mobile only adjustments */
+@media (max-width: 767.98px) {
+    .footer-desktop {
+        display: none !important;
+    }
+
+    .footer-mobile {
+        display: block !important;
+    }
+
+    .footer-mobile .col-12 {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+}
