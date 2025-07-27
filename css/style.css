@@ -931,3 +931,20 @@ h6 {
         padding: 0;
     }
 }
+
+@media (max-width: 767.98px) {
+    .mobile-only {
+        display: block !important;
+    }
+    .desktop-only {
+        display: none !important;
+    }
+}
+@media (min-width: 768px) {
+    .mobile-only {
+        display: none !important;
+    }
+    .desktop-only {
+        display: block !important;
+    }
+}
