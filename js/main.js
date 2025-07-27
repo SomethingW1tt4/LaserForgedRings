@@ -2,14 +2,12 @@
     "use strict";
 
     // Spinner
-    var spinner = function () {
-        setTimeout(function () {
-            if ($('#spinner').length > 0) {
-                $('#spinner').removeClass('show');
-            }
-        }, 1);
-    };
-    spinner();
+    window.addEventListener('load', function () {
+    const spinner = document.getElementById('spinner');
+    if (spinner) {
+        spinner.classList.remove('show');
+    }
+});
     
     
     // Initiate the wowjs
@@ -106,7 +104,7 @@ document.querySelectorAll('.gallery-item').forEach(item => {
     }
 });
 
-// Hide navbar on scroll down — only on mobile (?576px)
+// Hide navbar on scroll down ï¿½ only on mobile (?576px)
 if (window.innerWidth <= 576) {
     let lastScrollTop = 0;
     window.addEventListener("scroll", function () {

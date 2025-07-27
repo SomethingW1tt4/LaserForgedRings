@@ -6,13 +6,23 @@
     visibility: hidden;
     transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
     z-index: 99999;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: white;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #spinner.show {
-    transition: opacity 0.5s ease-out, visibility 0s linear 0s;
     visibility: visible;
     opacity: 1;
+    transition: opacity 0.5s ease-out, visibility 0s linear 0s;
 }
+
 
 @keyframes pulse {
 
