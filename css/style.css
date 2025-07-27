@@ -1,25 +1,22 @@
 /********** Template CSS **********/
 
 /*** Spinner ***/
-#spinner {
+.spinner {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
     z-index: 99999;
     position: fixed;
-    width: 100%;
-    height: 100%;
-    background: white;
     top: 0;
     left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
 }
 
-#spinner.show {
-    visibility: visible;
+.spinner.show {
     opacity: 1;
+    visibility: visible;
     transition: opacity 0.5s ease-out, visibility 0s linear 0s;
 }
 

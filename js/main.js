@@ -3,13 +3,14 @@
 
     // Spinner
     window.addEventListener('load', function () {
-    const spinner = document.getElementById('spinner');
-    if (spinner) {
-        spinner.classList.remove('show');
-    }
-});
-    
-    
+        const spinner = document.getElementById('spinner-desktop');
+        if (spinner) {
+            spinner.classList.remove('show');
+        }
+    });
+
+
+
     // Initiate the wowjs
     new WOW().init();
 
@@ -22,8 +23,8 @@
             $('.sticky-top').removeClass('bg-primary shadow-sm').css('top', '-150px');
         }
     });
-    
-    
+
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -33,13 +34,13 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
         return false;
     });
 
 
     // Countdown Timer
-    function countDownTimer() {	
+    function countDownTimer() {
         var endTime = new Date("31 December 2023 10:00:00 GMT+00:00");
         endTime = (Date.parse(endTime) / 1000);
 
@@ -88,7 +89,7 @@
         items: 1,
         dotsData: true,
     });
-    
+
 })(jQuery);
 
 document.querySelectorAll('.gallery-item').forEach(item => {
@@ -98,8 +99,8 @@ document.querySelectorAll('.gallery-item').forEach(item => {
             video.play();
         });
         item.addEventListener('mouseleave', () => {
-        video.pause();
-    video.currentTime = 0; // Optional: reset to beginning
+            video.pause();
+            video.currentTime = 0; // Optional: reset to beginning
         });
     }
 });
