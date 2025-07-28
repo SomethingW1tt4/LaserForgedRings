@@ -716,62 +716,67 @@ img.animated.pulse {
         max-width: 100%;
     }
 
-    /* Navbar */
-    .navbar {
-        width: 100vw;
-        margin: 0;
-        padding: 0 2rem;
-        top: 0;
-        position: fixed;
-        z-index: 1050;
-        background-color: transparent !important;
-        box-shadow: none !important;
-        transition: top 0.3s ease-in-out;
-        align-items: flex-start;
-    }
+  /* Mobile Navbar */
+.navbar {
+    width: 100vw;
+    margin: 0;
+    padding: 0 2rem;
+    top: 0;
+    position: fixed;
+    z-index: 1050;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    transition: top 0.3s ease-in-out;
+    align-items: flex-start;
+}
 
-    .navbar.hidden {
-        top: -150px;
-        transform: translateY(-100%);
-    }
+/* When hidden on scroll */
+.navbar.hidden {
+    top: -150px;
+}
 
-    .navbar-collapse {
-        background-color: rgba(0, 0, 0, 0.9);
-        text-align: right;
-    }
+/* Make collapse menu dark and right-aligned */
+.navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: right;
+}
 
-    .navbar-brand {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        padding: 0.5rem 0 !important;
-    }
+/* Brand positioning */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0.5rem 0 !important;
+}
 
-    .navbar-brand h2 {
-        font-size: 1.1rem;
-        word-break: break-word;
-        /* Force wrap on small screens */
-        max-width: 50vw;
-        line-height: 1.2;
-        margin-right: auto;
-        margin-left: 0;
-    }
+.navbar-brand h2 {
+    font-size: 1.1rem;
+    word-break: break-word;
+    max-width: 50vw;
+    line-height: 1.2;
+    margin-right: auto;
+    margin-left: 0;
+}
 
-    .navbar-nav {
-        flex-direction: column !important;
-        align-items: flex-end !important;
-        width: 100%;
-    }
+/* Nav links layout */
+.navbar-nav {
+    flex-direction: column !important;
+    align-items: flex-end !important;
+    width: 100%;
+}
 
-    .navbar-toggler {
-        margin-left: auto;
-    }
+/* Position hamburger button on the right */
+.navbar-toggler {
+    margin-left: auto;
+}
 
-    .sticky-nav {
-        top: 0 !important;
-        transform: none !important;
-    }
+/* Optional: override when scroll returns */
+.sticky-top {
+    top: 0;
+    transition: top 0.3s ease-in-out;
+}
+
 
     /* Hero Section */
     .hero-header {
