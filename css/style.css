@@ -1,61 +1,17 @@
 /********** Template CSS **********/
 
 /*** Spinner ***/
-.spinner {
+#spinner {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
     z-index: 99999;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: white;
 }
 
-.spinner.show {
-    opacity: 1;
-    visibility: visible;
+#spinner.show {
     transition: opacity 0.5s ease-out, visibility 0s linear 0s;
-}
-
-.spinner {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
-    z-index: 99999;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: white;
-}
-
-.spinner.show {
-    opacity: 1;
     visibility: visible;
-    transition: opacity 0.5s ease-out, visibility 0s linear 0s;
-}
-
-.spinner {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
-    z-index: 99999;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: white;
-}
-
-.spinner.show {
     opacity: 1;
-    visibility: visible;
-    transition: opacity 0.5s ease-out, visibility 0s linear 0s;
 }
 
 @keyframes pulse {
@@ -119,34 +75,21 @@ img.animated.pulse {
     border-radius: 50px;
 }
 
-/*** Navbar (Universal) ***/
+/*** Navbar ***/
 .sticky-top {
-    position: sticky;
-    top: 0;
-    z-index: 1050;
-    transition: top 0.3s ease-in-out;
+    transition: 0.5s;
+    outline: none;
 }
 
-.navbar {
-    transition: top 0.3s ease-in-out;
-    width: 100%;
-    margin: 0;
-    padding: 0 2rem;
-    background-color: transparent !important;
-    box-shadow: none !important;
-}
-
-.navbar.hidden {
-    top: -100px;
-}
-
-/*** Sticky Nav on Side (Desktop Only Widget) ***/
 .sticky-nav {
     position: fixed;
     right: 0;
+    /* Positions it on the right side */
     top: 50%;
     transform: translateY(-50%);
+    /* Centers it vertically */
     background: var(--bs-primary);
+    /* Sets background to primary */
     z-index: 1050;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
     padding: 10px;
@@ -157,6 +100,7 @@ img.animated.pulse {
     display: block;
     padding: 10px;
     color: var(--bs-white);
+    /* Sets text color to secondary */
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -165,7 +109,7 @@ img.animated.pulse {
     color: var(--bs-secondary);
 }
 
-/*** Navbar Links & Dropdown Icon ***/
+
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
     color: var(--bs-white);
@@ -180,6 +124,37 @@ img.animated.pulse {
     margin-left: 8px;
 }
 
+@media (max-width: 991.98px) {
+    .navbar .navbar-nav {
+        padding: 0;
+        background: var(--bs-primary);
+    }
+
+    .navbar .navbar-nav .nav-link {
+        margin-right: 0;
+        padding: 0;
+        line-height: 1.2;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        border: none;
+        margin-top: 0;
+        top: 150%;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        top: 100%;
+        visibility: visible;
+        transition: 0.5s;
+        opacity: 1;
+    }
+}
 
 /* --- Custom mobile fixes for index.html --- */
 
@@ -697,67 +672,61 @@ img.animated.pulse {
         max-width: 100%;
     }
 
-  /* Mobile Navbar */
-.navbar {
-    width: 100vw;
-    margin: 0;
-    padding: 0 2rem;
-    top: 0;
-    position: fixed;
-    z-index: 1050;
-    background-color: transparent !important;
-    box-shadow: none !important;
-    transition: top 0.3s ease-in-out;
-    align-items: flex-start;
-}
+    /* Navbar */
+    .navbar {
+        width: 100vw;
+        margin: 0;
+        padding: 0 2rem;
+        top: 0;
+        position: fixed;
+        z-index: 1050;
+        background-color: transparent !important;
+        box-shadow: none !important;
+        transition: top 0.3s ease-in-out;
+        align-items: flex-start;
+    }
 
-/* When hidden on scroll */
-.navbar.hidden {
-    top: -150px;
-}
+    .navbar.hidden {
+        top: -150px;
+    }
 
-/* Make collapse menu dark and right-aligned */
-.navbar-collapse {
-    background-color: rgba(0, 0, 0, 0.9);
-    text-align: right;
-}
+    .navbar-collapse {
+        background-color: rgba(0, 0, 0, 0.9);
+        text-align: right;
+    }
 
-/* Brand positioning */
-.navbar-brand {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 0.5rem 0 !important;
-}
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 0.5rem 0 !important;
+    }
 
-.navbar-brand h2 {
-    font-size: 1.1rem;
-    word-break: break-word;
-    max-width: 50vw;
-    line-height: 1.2;
-    margin-right: auto;
-    margin-left: 0;
-}
+    .navbar-brand h2 {
+        font-size: 1.1rem;
+        word-break: break-word;
+        /* Force wrap on small screens */
+        max-width: 50vw;
+        line-height: 1.2;
+        margin-right: auto;
+        margin-left: 0;
+    }
 
-/* Nav links layout */
-.navbar-nav {
-    flex-direction: column !important;
-    align-items: flex-end !important;
-    width: 100%;
-}
+    .navbar-nav {
+        flex-direction: column !important;
+        align-items: flex-end !important;
+        width: 100%;
+    }
 
-/* Position hamburger button on the right */
-.navbar-toggler {
-    margin-left: auto;
-}
+    .navbar-toggler {
+        margin-left: auto;
+    }
 
-/* Optional: override when scroll returns */
-.sticky-top {
-    top: 0;
-    transition: top 0.3s ease-in-out;
-}
-
+    .sticky-nav {
+        top: 0 !important;
+        transform: none !important;
+    }
 
     /* Hero Section */
     .hero-header {
@@ -960,22 +929,5 @@ h6 {
         width: 100%;
         text-align: center;
         padding: 0;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .mobile-only {
-        display: block !important;
-    }
-    .desktop-only {
-        display: none !important;
-    }
-}
-@media (min-width: 768px) {
-    .mobile-only {
-        display: none !important;
-    }
-    .desktop-only {
-        display: block !important;
     }
 }
