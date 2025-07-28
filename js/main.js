@@ -16,13 +16,29 @@
 
 
     // Sticky Navbar
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
-            $('.sticky-top').addClass('bg-primary shadow-sm').css('top', '0px');
+    let lastScrollTop = 0;
+window.addEventListener("scroll", function () {
+    const st = window.scrollY;
+    const navbar = document.querySelector(".navbar");
+
+    if (window.innerWidth <= 768) {
+        // MOBILE VERSION – Hide on scroll UP, Show on scroll DOWN
+        if (st < lastScrollTop) {
+            navbar.classList.add("hidden");
         } else {
-            $('.sticky-top').removeClass('bg-primary shadow-sm').css('top', '-150px');
+            navbar.classList.remove("hidden");
         }
-    });
+    } else {
+        // DESKTOP VERSION – Hide on scroll DOWN, Show on scroll UP
+        if (st > lastScrollTop) {
+            navbar.classList.add("hidden");
+        } else {
+            navbar.classList.remove("hidden");
+        }
+    }
+
+    lastScrollTop = Math.max(0, st);
+});
 
 
     // Back to top button
