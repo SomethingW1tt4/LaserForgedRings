@@ -1,7 +1,7 @@
 (function ($) {
     "use strict";
 
-    // Spinner
+    // Spinner (desktop)
     window.addEventListener('load', function () {
         const spinner = document.getElementById('spinner-desktop');
         if (spinner) {
@@ -9,31 +9,49 @@
         }
     });
 
-
-
-    // Initiate the wowjs
+    // WOW.js animation
     new WOW().init();
 
+    // Back to top button (jQuery)
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.back-to-top').fadeIn('slow');
+        } else {
+            $('.back-to-top').fadeOut('slow');
+        }
+    });
 
-    // Sticky Navbar
-    let lastScrollTop = 0;
+    $('.back-to-top').click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
+        return false;
+    });
+
+})(jQuery);
+
+// Sticky Navbar logic (outside the jQuery IIFE)
+let lastScrollTop = 0;
 window.addEventListener("scroll", function () {
     const st = window.scrollY;
-    const navbar = document.querySelector(".navbar");
 
     if (window.innerWidth <= 768) {
-        // MOBILE VERSION – Hide on scroll UP, Show on scroll DOWN
-        if (st < lastScrollTop) {
-            navbar.classList.add("hidden");
+        // MOBILE – Hide on scroll down
+        const mobileNavbar = document.querySelector(".mobile-only .navbar");
+        if (!mobileNavbar) return;
+
+        if (st > lastScrollTop) {
+            mobileNavbar.classList.add("hidden");
         } else {
-            navbar.classList.remove("hidden");
+            mobileNavbar.classList.remove("hidden");
         }
     } else {
-        // DESKTOP VERSION – Hide on scroll DOWN, Show on scroll UP
+        // DESKTOP – Hide on scroll down
+        const desktopNavbar = document.querySelector(".desktop-only .navbar");
+        if (!desktopNavbar) return;
+
         if (st > lastScrollTop) {
-            navbar.classList.add("hidden");
+            desktopNavbar.classList.add("hidden");
         } else {
-            navbar.classList.remove("hidden");
+            desktopNavbar.classList.remove("hidden");
         }
     }
 
