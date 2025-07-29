@@ -36,51 +36,50 @@
 </head>
 
 <body>
-    <div class="desktop-only d-none d-md-block">
-        <!-- Spinner Start -->
-        <div id="spinner"
-            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
         </div>
-        <!-- Spinner End -->
-
-        <!-- Navbar Start -->
-        <div class="container-fluid sticky-top">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-primary p-0">
-                    <a href="index.html" class="navbar-brand">
-                        <h2 class="text-white">Laser-Forged Rings</h2>
-                    </a>
-                    <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
-                        data-bs-target="#navbarCollapse">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <div class="navbar-nav ms-auto">
-                            <a href="index.html" class="nav-item nav-link">Home</a>
-                            <a href="concept.html" class="nav-item nav-link active">Concept</a>
-                            <a href="compare.html" class="nav-item nav-link">Compare</a>
-                            <a href="designs.html" class="nav-item nav-link">Designs</a>
-                            <a href="growth.html" class="nav-item nav-link">Growth</a>
-                            <div class="nav-item dropdown">
-                                <a href="about.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
-                                    onclick="location.href='about.html';">About Me</a>
-                                <div class="dropdown-menu bg-white mt-2">
-                                    <a href="bio.html" class="dropdown-item">Achievements</a>
-                                    <a href="projects.html" class="dropdown-item">Projects</a>
-                                    <a href="art.html" class="dropdown-item">Art</a>
-                                </div>
+    </div>
+    <!-- Spinner End -->
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-primary p-0">
+                <a href="index.html" class="navbar-brand">
+                    <h2 class="text-white">Laser-Forged Rings</h2>
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="concept.html" class="nav-item nav-link active">Concept</a>
+                        <a href="compare.html" class="nav-item nav-link">Compare</a>
+                        <a href="designs.html" class="nav-item nav-link">Designs</a>
+                        <a href="growth.html" class="nav-item nav-link">Growth</a>
+                        <div class="nav-item dropdown">
+                            <a href="about.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                                onclick="location.href='about.html';">About Me</a>
+                            <div class="dropdown-menu bg-white mt-2">
+                                <a href="bio.html" class="dropdown-item">Achievements</a>
+                                <a href="projects.html" class="dropdown-item">Projects</a>
+                                <a href="art.html" class="dropdown-item">Art</a>
                             </div>
-                            <a href="contact.html" class="nav-item nav-link">Contact Us</a>
                         </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact Us</a>
                     </div>
-                </nav>
-            </div>
+                </div>
+            </nav>
         </div>
-        <!-- Navbar End -->
-
+    </div>
+    <!-- Navbar End -->
+    <!--Destop Version-->
+    <div class="d-none d-md-block">
         <!-- Hero Start -->
         <div class="container-fluid bg-primary hero-header mb-5">
             <div class="container text-center">
@@ -235,7 +234,8 @@
                         style="margin-bottom: var(--bs-gutter-y);">
                         <img src="img/concept/AiCAD.png" alt="Xsection Diagram" style="width: 350px; height: auto;">
                     </div>
-                    <div class="col-lg-5 p-2 wow fadeIn text-start" data-wow-delay="0.1s" style="padding-left:5rem;">
+                    <div class="col-lg-5 p-2 wow fadeIn text-start" data-wow-delay="0.1s"
+                        style="padding-left:5rem; align-content: center;">
                         <h5>Design Enthusiasts</h5>
                         <hr class="w-25 bg-primary my-2">
                         <span>Those who appreciate high-end materials, precision engineering, and seamless
@@ -250,7 +250,8 @@
                         <img src="img/concept/fancyRing.png" alt="Statement Piece Image"
                             class="img-fluid rounded border" style="width: auto; height: 350px;">
                     </div>
-                    <div class="col-lg-5 p-4 wow fadeIn text-start text-white" data-wow-delay="0.1s">
+                    <div class="col-lg-5 p-4 wow fadeIn text-start text-white" data-wow-delay="0.1s"
+                        style="align-content: center;">
                         <h5 class="text-white">Anyone Looking for a Unique Statement Piece</h5>
                         <hr class="w-25 bg-primary my-2">
                         <span>This isn’t just a ring; it’s a demonstration of cutting-edge manufacturing, built for both
@@ -305,62 +306,10 @@
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
-
-
-
-
-
-
-
-
-
+    <!--Destop Version End-->
 
     <!-- Mobile Version -->
-    <div class="mobile-only d-block d-md-none">
-        <!-- Spinner Start -->
-        <div id="spinner"
-            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-        </div>
-        <!-- Spinner End -->
-
-        <!-- Navbar Start -->
-        <div class="container-fluid sticky-top">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-primary p-0">
-                    <a href="index.html" class="navbar-brand">
-                        <h2 class="text-white">Laser-Forged Rings</h2>
-                    </a>
-                    <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
-                        data-bs-target="#navbarCollapse">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <div class="navbar-nav ms-auto">
-                            <a href="index.html" class="nav-item nav-link">Home</a>
-                            <a href="concept.html" class="nav-item nav-link active">Concept</a>
-                            <a href="compare.html" class="nav-item nav-link">Compare</a>
-                            <a href="designs.html" class="nav-item nav-link">Designs</a>
-                            <a href="growth.html" class="nav-item nav-link">Growth</a>
-                            <div class="nav-item dropdown">
-                                <a href="about.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
-                                    onclick="location.href='about.html';">About Me</a>
-                                <div class="dropdown-menu bg-white mt-2">
-                                    <a href="bio.html" class="dropdown-item">Achievements</a>
-                                    <a href="projects.html" class="dropdown-item">Projects</a>
-                                    <a href="art.html" class="dropdown-item">Art</a>
-                                </div>
-                            </div>
-                            <a href="contact.html" class="nav-item nav-link">Contact Us</a>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
-        <!-- Navbar End -->
-
+    <div class="d-block d-md-none">
         <!-- Hero Start -->
         <div class="container-fluid bg-primary hero-header mb-5">
             <div class="container">
@@ -530,7 +479,7 @@
                     </div>
                     <div class="col-lg-6 p-4 wow fadeIn text-start text-white" data-wow-delay="0.1s">
                         <h5 class="text-white">Anyone Looking for a Unique Statement Piece</h5>
-                        
+
                     </div>
                     <div class="col-lg-6 p-4 wow fadeIn text-start text-white" data-wow-delay="0.1s">
                         <hr class="w-25 bg-primary my-2">
@@ -544,50 +493,49 @@
         <!-- Who It's For End -->
 
         <!-- Main Site Footer Start (Mobile) -->
-    <div class="container-fluid footer-mobile d-block d-md-none bg-white text-dark footer mt-5 pt-5 border-top">
-        <div class="container py-4">
-            <!-- Brand & Motto -->
-            <div class="text-center mb-4">
-                <h1 class="text-primary mb-2">JGB Designs</h1>
-                <p class="text-muted" style="max-width: 100%;">Innovating alternatives to traditional methods — from
-                    machining to meaning.</p>
-                <a href="contact.html" class="btn btn-outline-primary btn-sm">Send a Message</a>
+        <div class="container-fluid footer-mobile d-block d-md-none bg-white text-dark footer mt-5 pt-5 border-top">
+            <div class="container py-4">
+                <!-- Brand & Motto -->
+                <div class="text-center mb-4">
+                    <h1 class="text-primary mb-2">JGB Designs</h1>
+                    <p class="text-muted" style="max-width: 100%;">Innovating alternatives to traditional methods — from
+                        machining to meaning.</p>
+                    <a href="contact.html" class="btn btn-outline-primary btn-sm">Send a Message</a>
+                </div>
+                <!-- Quick Links -->
+                <div class="text-center mb-4">
+                    <h5>Explore</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-dark text-decoration-none">Home</a></li>
+                        <li><a href="concept.html" class="text-dark text-decoration-none">Concept</a></li>
+                        <li><a href="compare.html" class="text-dark text-decoration-none">Compare</a></li>
+                        <li><a href="designs.html" class="text-dark text-decoration-none">Designs</a></li>
+                        <li><a href="growth.html" class="text-dark text-decoration-none">Growth</a></li>
+                    </ul>
+                </div>
+                <!-- Legal / Info -->
+                <div class="text-center">
+                    <h5>Info</h5>
+                    <p><i class="fa fa-envelope me-2 text-primary"></i><a href="contact.html"
+                            class="text-dark text-decoration-none">Contact Me</a></p>
+                    <p class="text-muted small">Patent protected. All designs © JGB Designs.<br>Built by hand with
+                        HTML/CSS,
+                        not a site builder.</p>
+                </div>
             </div>
-            <!-- Quick Links -->
-            <div class="text-center mb-4">
-                <h5>Explore</h5>
-                <ul class="list-unstyled">
-                    <li><a href="index.html" class="text-dark text-decoration-none">Home</a></li>
-                    <li><a href="concept.html" class="text-dark text-decoration-none">Concept</a></li>
-                    <li><a href="compare.html" class="text-dark text-decoration-none">Compare</a></li>
-                    <li><a href="designs.html" class="text-dark text-decoration-none">Designs</a></li>
-                    <li><a href="growth.html" class="text-dark text-decoration-none">Growth</a></li>
-                </ul>
+
+
+            <div class="container text-center pt-3 border-top border-secondary">
+                <small class="text-muted">&copy; 2025 Laser-Forged Rings. All Rights Reserved.</small>
             </div>
-            <!-- Legal / Info -->
-            <div class="text-center">
-                <h5>Info</h5>
-                <p><i class="fa fa-envelope me-2 text-primary"></i><a href="contact.html"
-                        class="text-dark text-decoration-none">Contact Me</a></p>
-                <p class="text-muted small">Patent protected. All designs © JGB Designs.<br>Built by hand with HTML/CSS,
-                    not a site builder.</p>
-            </div>
+
+
         </div>
-
-
-        <div class="container text-center pt-3 border-top border-secondary">
-            <small class="text-muted">&copy; 2025 Laser-Forged Rings. All Rights Reserved.</small>
-        </div>
-
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
+    <!-- Mobile Version-->
 
-    <!-- Main Site Footer End (Mobile)-->
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
-    </div>
 
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
