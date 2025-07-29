@@ -902,6 +902,7 @@ img.animated.pulse {
 .footer-mobile .text-muted {
     font-size: 0.9rem;
 }
+
 /* Media query: mobile only adjustments */
 @media (max-width: 767.98px) {
     .footer-desktop {
@@ -916,5 +917,16 @@ img.animated.pulse {
         width: 100%;
         text-align: center;
         padding: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .d-md-none {
+        display: none !important;
+    }
+
+    .d-md-block {
+        display: block !important;
+
     }
 }
