@@ -292,8 +292,7 @@ img.animated.pulse {
 /*** POC Section ***/
 .poc {
     position: relative;
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 2rem;
     background: url(../img/bg.png) center center no-repeat;
     background-size: cover;
 }
