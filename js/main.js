@@ -13,7 +13,7 @@
 
 
     // Initiate the wowjs
-   // new WOW().init();
+   new WOW().init();
 
     // Lazy load videos with data-src
     $('video[data-src]').each(function () {
