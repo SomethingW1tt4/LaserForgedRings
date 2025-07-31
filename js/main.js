@@ -125,3 +125,7 @@ document.querySelectorAll('.gallery-item').forEach(item => {
     }
 });
 
+$(window).scroll(function () {
+  console.log("Scroll position:", $(this).scrollTop());
+});
+
