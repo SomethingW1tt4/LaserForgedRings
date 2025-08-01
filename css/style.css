@@ -686,10 +686,6 @@ img.animated.pulse {
         align-items: flex-start;
     }
 
-    .navbar.hidden {
-        top: 150px;
-    }
-
     .navbar-collapse {
         background-color: rgba(0, 0, 0, 0.9);
         text-align: right;
