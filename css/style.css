@@ -687,7 +687,7 @@ img.animated.pulse {
     }
 
     .navbar.hidden {
-        top: -150px;
+        top: 150px;
     }
 
     .navbar-collapse {
