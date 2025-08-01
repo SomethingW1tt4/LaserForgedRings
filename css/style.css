@@ -723,7 +723,9 @@ img.animated.pulse {
         top: 0 !important;
         transform: none !important;
     }
-
+.hide-on-scroll {
+  top: -150px !important;
+}
     /* Hero Section */
     .hero-header {
         padding: 4rem 1rem 2rem 1rem;
