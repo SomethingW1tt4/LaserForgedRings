@@ -36,13 +36,24 @@
 
     
     // Sticky Navbar
-    $(window).scroll(function () {
+ let lastScrollTop = 0;
+
+$(window).on('scroll', function () {
   if ($(window).width() <= 576) {
-    if ($(this).scrollTop() > 300) {
-      $('.navbar').removeClass('hide-on-scroll');
-    } else {
+    let currentScroll = $(this).scrollTop();
+
+    if (currentScroll > lastScrollTop) {
+      // Scrolling down
       $('.navbar').addClass('hide-on-scroll');
+    } else {
+      // Scrolling up
+      $('.navbar').removeClass('hide-on-scroll');
     }
+
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative values
+  } else {
+    // Always show navbar on desktop
+    $('.navbar').removeClass('hide-on-scroll');
   }
 });
 

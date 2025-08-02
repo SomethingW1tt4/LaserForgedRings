@@ -527,30 +527,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const navbar = document.querySelector('.navbar');
-            let lastScrollTop = 0;
-
-            window.addEventListener('scroll', function () {
-                const st = window.scrollY;
-
-                // Hide on scroll for mobile only
-                if (window.innerWidth <= 576) {
-                    if (st > lastScrollTop) {
-                        navbar.classList.add('hide-on-scroll');
-                    } else {
-                        navbar.classList.remove('hide-on-scroll');
-                    }
-                } else {
-                    navbar.classList.remove('hide-on-scroll'); // Always show on desktop
-                }
-
-                lastScrollTop = Math.max(st, 0);
-            });
-        });
-    </script>
-
+  
 </body>
 
 </html>
