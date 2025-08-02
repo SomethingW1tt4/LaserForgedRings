@@ -34,28 +34,27 @@
         observer.observe(video);
     });
 
-    
+
     // Sticky Navbar
- let lastScrollTop = 0;
+    let lastScrollTop = 0;
 
-$(window).on('scroll', function () {
-  if ($(window).width() <= 576) {
-    let currentScroll = $(this).scrollTop();
+    $(window).on('scroll', function () {
+        let currentScroll = $(this).scrollTop();
 
-    if (currentScroll > lastScrollTop) {
-      // Scrolling down
-      $('.navbar').addClass('hide-on-scroll');
-    } else {
-      // Scrolling up
-      $('.navbar').removeClass('hide-on-scroll');
-    }
+        if ($(window).width() <= 576) {
+            if (currentScroll <= 0) {
+                $('.navbar').removeClass('hide-on-scroll');
+            } else if (currentScroll > lastScrollTop) {
+                $('.navbar').addClass('hide-on-scroll');
+            } else {
+                $('.navbar').removeClass('hide-on-scroll');
+            }
+        } else {
+            $('.navbar').removeClass('hide-on-scroll'); // Always show on desktop
+        }
 
-    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative values
-  } else {
-    // Always show navbar on desktop
-    $('.navbar').removeClass('hide-on-scroll');
-  }
-});
+        lastScrollTop = currentScroll;
+    });
 
 
     // Back to top button
