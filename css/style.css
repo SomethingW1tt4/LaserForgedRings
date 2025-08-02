@@ -242,7 +242,6 @@ img.animated.pulse {
 
 /*** Animation Wrapper ***/
 .animation2-wrapper {
-    aspect-ratio: 16 / 9;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -261,7 +260,7 @@ img.animated.pulse {
 .animation2-wrapper video {
     width: 100%;
     height: auto;
-    max-width: 100%;
+    max-width: unset;
     display: block;
     margin: 0 auto;
 }
@@ -293,7 +292,8 @@ img.animated.pulse {
 /*** POC Section ***/
 .poc {
     position: relative;
-    padding-top: 2rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
     background: url(../img/bg.png) center center no-repeat;
     background-size: cover;
 }
@@ -686,6 +686,10 @@ img.animated.pulse {
         align-items: flex-start;
     }
 
+    .navbar.hidden {
+        top: -150px;
+    }
+
     .navbar-collapse {
         background-color: rgba(0, 0, 0, 0.9);
         text-align: right;
@@ -723,9 +727,7 @@ img.animated.pulse {
         top: 0 !important;
         transform: none !important;
     }
-.hide-on-scroll {
-  top: -150px !important;
-}
+
     /* Hero Section */
     .hero-header {
         padding: 4rem 1rem 2rem 1rem;
@@ -901,6 +903,18 @@ img.animated.pulse {
     font-size: 0.9rem;
 }
 
+/* Typography reset for all */
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1rem;
+}
+
 /* Media query: mobile only adjustments */
 @media (max-width: 767.98px) {
     .footer-desktop {
@@ -915,26 +929,5 @@ img.animated.pulse {
         width: 100%;
         text-align: center;
         padding: 0;
-    }
-}
-
-@media (max-width: 767.98px) {
-  .d-md-none {
-    display: block !important;
-  }
-
-  .d-md-block {
-    display: none !important;
-  }
-}
-
-@media (min-width: 768px) {
-    .d-md-none {
-        display: none !important;
-    }
-
-    .d-md-block {
-        display: block !important;
-
     }
 }
