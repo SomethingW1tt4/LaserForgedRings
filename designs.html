@@ -14,8 +14,9 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Poppins:wght@200;600;700&display=swap"
-          rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Poppins:wght@200;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <script src="https://kit.fontawesome.com/fae7e23863.js" crossorigin="anonymous"></script>
@@ -35,7 +36,7 @@
 <body>
     <!-- Spinner Start -->
     <div id="spinner"
-         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only">Loading...</span>
         </div>
@@ -49,7 +50,7 @@
                     <h2 class="text-white">Laser-Forged Rings</h2>
                 </a>
                 <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
-                        data-bs-target="#navbarCollapse">
+                    data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -60,7 +61,8 @@
                         <a href="designs.html" class="nav-item nav-link active">Designs</a>
                         <a href="growth.html" class="nav-item nav-link">Growth</a>
                         <div class="nav-item dropdown">
-                            <a href="about.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" onclick="location.href='about.html';">About Me</a>
+                            <a href="about.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                                onclick="location.href='about.html';">About Me</a>
                             <div class="dropdown-menu bg-white mt-2">
                                 <a href="bio.html" class="dropdown-item">Achievements</a>
                                 <a href="projects.html" class="dropdown-item">Projects</a>
@@ -75,180 +77,401 @@
     </div>
     <!-- Navbar End -->
 
-    <div class="container-fluid bg-primary hero-header">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="col text-center">
-                    <h2 class="text-white mb-4">Designs & Customization</h2>
+    <!--Desktop Version-->
+    <div class="d-none d-md-block">
+        <div class="container-fluid bg-primary hero-header">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col text-center">
+                        <h2 class="text-white mb-4">Designs & Customization</h2>
 
-                    <!-- Section 1: GH UI & Variation Grid -->
-                    <div class="mt-5">
-                        <h4 class="text-white">From Code to Craft – <span class="text-secondary">Parameter-Driven Designs</span></h4>
-                        <p class="text-white">
-                            These rings are generated using a custom algorithm. <br />
-                            With just a few parameters, we can generate entirely new forms — sharp, smooth, patterned, or minimalist.
-                        </p>
-
-                        <!-- GH Control UI (Manual Play with Poster) -->
-                        <div class="text-center mb-5">
-                            <video id="ghVideo" controls poster="img/designs/GHControlPoster.jpg" class="img-fluid rounded shadow-sm"
-                                   style="max-width: 900px;">
-                                <source src="img/designs/GHControlFinal.webm" type="video/webm">
-                                Your browser does not support the video tag.
-                            </video>
-
-                            <div class="mt-2 d-flex justify-content-center align-items-center gap-2">
-                                <label for="speedSelect" class="form-label mb-0 small text-white">Playback Speed:</label>
-                                <select id="speedSelect" class="form-select form-select-sm w-auto">
-                                    <option value="1" selected>1× (Normal)</option>
-                                    <option value="1.5">1.5×</option>
-                                    <option value="2">2×</option>
-                                    <option value="4">4×</option>
-
-                                </select>
-                            </div>
-
-                            <p class="text-white medium mt-2">
-                                This video is playable — click to see how parameters affect the Fortune-Teller
-                                ring design in real time.
+                        <!-- Section 1: GH UI & Variation Grid -->
+                        <div class="mt-5">
+                            <h4 class="text-white">From Code to Craft – <span class="text-secondary">Parameter-Driven
+                                    Designs</span></h4>
+                            <p class="text-white">
+                                These rings are generated using a custom algorithm. <br />
+                                With just a few parameters, we can generate entirely new forms — sharp, smooth,
+                                patterned, or minimalist.
                             </p>
-                        </div>
 
-                        <!-- Design Variations Grid -->
-                        <div class="row g-4">
-                            <!-- Bar Pattern -->
-                            <div class="col-md-6 col-lg-4">
-                                <video autoplay muted loop playsinline class="img-fluid">
-                                    <source src="img/designs/animBar.webm" type="video/webm">
+                            <!-- GH Control UI (Manual Play with Poster) -->
+                            <div class="text-center mb-5">
+                                <video id="ghVideo" controls poster="img/designs/GHControlPoster.jpg"
+                                    class="img-fluid rounded shadow-sm" style="max-width: 900px;">
+                                    <source src="img/designs/GHControlFinal.webm" type="video/webm">
+                                    Your browser does not support the video tag.
                                 </video>
-                                <p class="text-center text-white medium mt-2">Bar Pattern – Channel-cut style lines</p>
+
+                                <div class="mt-2 d-flex justify-content-center align-items-center gap-2">
+                                    <label for="speedSelect" class="form-label mb-0 small text-white">Playback
+                                        Speed:</label>
+                                    <select id="speedSelect" class="form-select form-select-sm w-auto">
+                                        <option value="1" selected>1× (Normal)</option>
+                                        <option value="1.5">1.5×</option>
+                                        <option value="2">2×</option>
+                                        <option value="4">4×</option>
+
+                                    </select>
+                                </div>
+
+                                <p class="text-white medium mt-2">
+                                    This video is playable — click to see how parameters affect the Fortune-Teller
+                                    ring design in real time.
+                                </p>
                             </div>
 
-                            <!-- Holey Ring -->
-                            <div class="col-md-6 col-lg-4">
-                                <video autoplay muted loop playsinline class="img-fluid">
-                                    <source src="img/designs/animHoley.webm" type="video/webm">
-                                </video>
-                                <p class="text-center text-white meduim mt-2">Perforated Ring – Swiss-cheese inspired geometry</p>
-                            </div>
+                            <!-- Design Variations Grid -->
+                            <div class="row g-4">
+                                <!-- Bar Pattern -->
+                                <div class="col-md-6 col-lg-4">
+                                    <video autoplay muted loop playsinline class="img-fluid">
+                                        <source src="img/designs/animBar.webm" type="video/webm">
+                                    </video>
+                                    <p class="text-center text-white medium mt-2">Bar Pattern – Channel-cut style lines
+                                    </p>
+                                </div>
 
-                            <!-- Pyramid Ring -->
-                            <div class="col-md-6 col-lg-4">
-                                <video autoplay muted loop playsinline class="img-fluid">
-                                    <source src="img/designs/animPyram.webm" type="video/webm">
-                                </video>
-                                <p class="text-center text-white medium mt-2">Pyramids – For tactile euphoria</p>
+                                <!-- Holey Ring -->
+                                <div class="col-md-6 col-lg-4">
+                                    <video autoplay muted loop playsinline class="img-fluid">
+                                        <source src="img/designs/animHoley.webm" type="video/webm">
+                                    </video>
+                                    <p class="text-center text-white meduim mt-2">Perforated Ring – Swiss-cheese
+                                        inspired geometry</p>
+                                </div>
+
+                                <!-- Pyramid Ring -->
+                                <div class="col-md-6 col-lg-4">
+                                    <video autoplay muted loop playsinline class="img-fluid">
+                                        <source src="img/designs/animPyram.webm" type="video/webm">
+                                    </video>
+                                    <p class="text-center text-white medium mt-2">Pyramids – For tactile euphoria</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Section 2: Fortune Teller Ring -->
-    <div class="container-fluid my-5">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <h4>The Customizable Polygon Ring</h4>
-                <p class="text-center">
-                    Algorithms free us from cookie-cut limitations.<br />
-                    Add customized inscriptions to each side.
-                </p>
-                <div class="text-center my-4">
-                    <video autoplay muted loop playsinline class="img-fluid rounded shadow-sm mb-5" style="max-height: 400px;
+        <!-- Section 2: Fortune Teller Ring -->
+        <div class="container-fluid my-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <h4>The Customizable Polygon Ring</h4>
+                    <p class="text-center">
+                        Algorithms free us from cookie-cut limitations.<br />
+                        Add customized inscriptions to each side.
+                    </p>
+                    <div class="text-center my-4">
+                        <video autoplay muted loop playsinline class="img-fluid rounded shadow-sm mb-5" style="max-height: 400px;
                     margin-bottom: 6rem;">
-                        <source src="img/designs/polygonChange.webm" type="video/webm">
-                    </video>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Section: Interlocking Band Types -->
-    <div class="container-fluid bg-primary hero-header mb-5" style="padding-top: 4rem;">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <h4 class="text-secondary mb-3">Interlocking Band Types – Unique Engineering</h4>
-                <p class="text-white text-center">
-                    Thanks to advanced manufacturing, our rings can be made with two distinct interlocking mechanisms:
-                    <br><br>
-                    <strong>Traditional Spinner Style:</strong> The inner band features two visible lips on the outside, holding the outer band in place—just like a classic spinner ring.
-                    <br><br>
-                    <strong>Hidden Channel Innovation:</strong> Unique to our patented process, the interlocking channel is concealed inside the ring, between the bands. This allows for a seamless exterior and a smoother, more elegant feel.
-                    <br>
-                </p>
-                <div class="row justify-content-center">
-                    <div class="col-md-6 text-center mb-4">
-                        <img src="img/designs/ringLip.png" alt="Traditional Spinner Ring with Lips" class="img-fluid rounded shadow-sm" style="max-width: 350px;">
-                        <p class="mt-2 text-white"><br>Traditional Spinner: Visible Lips</p>
-                    </div>
-                    <div class="col-md-6 text-center mb-4">
-                        <img src="img/designs/hiddenChannel.png" alt="Hidden Channel Spinner Ring" class="img-fluid rounded shadow-sm" style="max-width: 350px;">
-                        <p class="mt-2 text-white"><br>Hidden Channel: Seamless Exterior</p>
+                            <source src="img/designs/polygonChange.webm" type="video/webm">
+                        </video>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Section 3: Relief Concept & Collaborations -->
 
-    <div class="container-fluid my-5">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <h4 class="text-dark">Relief Designs & Artistic Collaboration</h4>
-                <p class="text-dark">
-                    Not all designs need to be patterned — the patented structure of these rings opens the door to more
-                    creative possibilities, like sculptural reliefs. This beach scene is just a conceptual example of
-                    what can be done.
-                </p>
-                <div class="text-center mb-3">
-                    <video autoplay muted loop playsinline class="img-fluid rounded shadow-sm" style="max-height: 400px;">
-                        <source src="img/designs/animRelief.webm" type="video/webm">
-                    </video>
+        <!-- Section: Interlocking Band Types -->
+        <div class="container-fluid bg-primary hero-header mb-5" style="padding-top: 4rem;">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <h4 class="text-secondary mb-3">Interlocking Band Types – Unique Engineering</h4>
+                    <p class="text-white text-center">
+                        Thanks to advanced manufacturing, our rings can be made with two distinct interlocking
+                        mechanisms:
+                        <br><br>
+                        <strong>Traditional Spinner Style:</strong> The inner band features two visible lips on the
+                        outside, holding the outer band in place—just like a classic spinner ring.
+                        <br><br>
+                        <strong>Hidden Channel Innovation:</strong> Unique to our patented process, the interlocking
+                        channel is concealed inside the ring, between the bands. This allows for a seamless exterior and
+                        a smoother, more elegant feel.
+                        <br>
+                    </p>
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 text-center mb-4">
+                            <img src="img/designs/ringLip.png" alt="Traditional Spinner Ring with Lips"
+                                class="img-fluid rounded shadow-sm" style="max-width: 350px;">
+                            <p class="mt-2 text-white"><br>Traditional Spinner: Visible Lips</p>
+                        </div>
+                        <div class="col-md-6 text-center mb-4">
+                            <img src="img/designs/hiddenChannel.png" alt="Hidden Channel Spinner Ring"
+                                class="img-fluid rounded shadow-sm" style="max-width: 350px;">
+                            <p class="mt-2 text-white"><br>Hidden Channel: Seamless Exterior</p>
+                        </div>
+                    </div>
                 </div>
-                <p class="text-dark">We're looking to collaborate with digital artists and sculptors to produce richly detailed ring designs — think mythic, textural, story-driven surfaces. These rings become tiny canvases of identity.</p>
+            </div>
+        </div>
+        <!-- Section 3: Relief Concept & Collaborations -->
+
+        <div class="container-fluid my-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <h4 class="text-dark">Relief Designs & Artistic Collaboration</h4>
+                    <p class="text-dark">
+                        Not all designs need to be patterned — the patented structure of these rings opens the door to
+                        more
+                        creative possibilities, like sculptural reliefs. This beach scene is just a conceptual example
+                        of
+                        what can be done.
+                    </p>
+                    <div class="text-center mb-3">
+                        <video autoplay muted loop playsinline class="img-fluid rounded shadow-sm"
+                            style="max-height: 400px;">
+                            <source src="img/designs/animRelief.webm" type="video/webm">
+                        </video>
+                    </div>
+                    <p class="text-dark">We're looking to collaborate with digital artists and sculptors to produce
+                        richly detailed ring designs — think mythic, textural, story-driven surfaces. These rings become
+                        tiny canvases of identity.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Site Footer Start -->
+        <div class="container-fluid bg-white text-dark footer mt-5 pt-5 border-top">
+            <div class="container py-5">
+                <div class="row g-4">
+                    <!-- Brand & Motto -->
+                    <div class="col-lg-4 col-md-6">
+                        <h1 class="text-primary mb-2">JGB Designs</h1>
+                        <p class="text-muted mb-3" style="max-width: 300px;">Innovating alternatives to traditional
+                            methods — from machining to meaning.</p>
+                        <a href="contact.html" class="btn btn-outline-primary btn-sm">Send a Message</a>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="mb-3">Explore</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html" class="text-dark text-decoration-none">Home</a></li>
+                            <li><a href="concept.html" class="text-dark text-decoration-none">Concept</a></li>
+                            <li><a href="compare.html" class="text-dark text-decoration-none">Compare</a></li>
+                            <li><a href="designs.html" class="text-dark text-decoration-none">Designs</a></li>
+                            <li><a href="growth.html" class="text-dark text-decoration-none">Growth</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Legal / Info -->
+                    <div class="col-lg-4 col-md-12">
+                        <h5 class="mb-3">Info</h5>
+                        <p class="mb-1"><i class="fa fa-envelope me-2 text-primary"></i><a href="contact.html"
+                                class="text-dark text-decoration-none">Contact Me</a></p>
+                        <p class="text-muted small">Patent protected. All designs © JGB Designs.<br>Built by hand with
+                            HTML/CSS, not a site builder.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container text-center pt-3 border-top border-secondary">
+                <small class="text-muted">&copy; 2025 Laser-Forged Rings. All Rights Reserved.</small>
+            </div>
+        </div>
+        <!-- Main Site Footer End -->
+    </div>
+
+
+    <!-- Mobile Version -->
+    <div class="d-block d-md-none">
+        <div class="container-fluid bg-primary hero-header">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col text-center">
+                        <h2 class="text-white mb-4">Designs & Customization</h2>
+
+                        <!-- Section 1: GH UI & Variation Grid -->
+                        <div class="mt-5">
+                            <h4 class="text-white">From Code to Craft – <span class="text-secondary">Parameter-Driven
+                                    Designs</span></h4>
+                            <p class="text-white">
+                                These rings are generated using a custom algorithm. <br />
+                                With just a few parameters, we can generate entirely new forms — sharp, smooth,
+                                patterned, or minimalist.
+                            </p>
+
+                            <!-- GH Control UI (Manual Play with Poster) -->
+                            <div class="text-center mb-5">
+                                <video id="ghVideo" controls poster="img/designs/GHControlPoster.jpg"
+                                    class="img-fluid rounded shadow-sm" style="max-width: 900px;">
+                                    <source src="img/designs/GHControlFinal.webm" type="video/webm">
+                                    Your browser does not support the video tag.
+                                </video>
+
+                                <div class="mt-2 d-flex justify-content-center align-items-center gap-2">
+                                    <label for="speedSelect" class="form-label mb-0 small text-white">Playback
+                                        Speed:</label>
+                                    <select id="speedSelect" class="form-select form-select-sm w-auto">
+                                        <option value="1" selected>1× (Normal)</option>
+                                        <option value="1.5">1.5×</option>
+                                        <option value="2">2×</option>
+                                        <option value="4">4×</option>
+
+                                    </select>
+                                </div>
+
+                                <p class="text-white medium mt-2">
+                                    This video is playable — click to see how parameters affect the Fortune-Teller
+                                    ring design in real time.
+                                </p>
+                            </div>
+
+                            <!-- Design Variations Grid -->
+                            <div class="row g-4">
+                                <!-- Bar Pattern -->
+                                <div class="col-md-6 col-lg-4">
+                                    <video autoplay muted loop playsinline class="img-fluid">
+                                        <source src="img/designs/animBar.webm" type="video/webm">
+                                    </video>
+                                    <p class="text-center text-white medium mt-2">Bar Pattern – Channel-cut style lines
+                                    </p>
+                                </div>
+
+                                <!-- Holey Ring -->
+                                <div class="col-md-6 col-lg-4">
+                                    <video autoplay muted loop playsinline class="img-fluid">
+                                        <source src="img/designs/animHoley.webm" type="video/webm">
+                                    </video>
+                                    <p class="text-center text-white meduim mt-2">Perforated Ring – Swiss-cheese
+                                        inspired geometry</p>
+                                </div>
+
+                                <!-- Pyramid Ring -->
+                                <div class="col-md-6 col-lg-4">
+                                    <video autoplay muted loop playsinline class="img-fluid">
+                                        <source src="img/designs/animPyram.webm" type="video/webm">
+                                    </video>
+                                    <p class="text-center text-white medium mt-2">Pyramids – For tactile euphoria</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2: Fortune Teller Ring -->
+        <div class="container-fluid my-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <h4>The Customizable Polygon Ring</h4>
+                    <p class="text-center">
+                        Algorithms free us from cookie-cut limitations.<br />
+                        Add customized inscriptions to each side.
+                    </p>
+                    <div class="text-center my-4">
+                        <video autoplay muted loop playsinline class="img-fluid rounded shadow-sm mb-5" style="max-height: 400px;
+                    margin-bottom: 6rem;">
+                            <source src="img/designs/polygonChange.webm" type="video/webm">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section: Interlocking Band Types -->
+        <div class="container-fluid bg-primary hero-header mb-5" style="padding-top: 4rem;">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <h4 class="text-secondary mb-3">Interlocking Band Types – Unique Engineering</h4>
+                    <p class="text-white text-center">
+                        Thanks to advanced manufacturing, our rings can be made with two distinct interlocking
+                        mechanisms:
+                        <br><br>
+                        <strong>Traditional Spinner Style:</strong> The inner band features two visible lips on the
+                        outside, holding the outer band in place—just like a classic spinner ring.
+                        <br><br>
+                        <strong>Hidden Channel Innovation:</strong> Unique to our patented process, the interlocking
+                        channel is concealed inside the ring, between the bands. This allows for a seamless exterior and
+                        a smoother, more elegant feel.
+                        <br>
+                    </p>
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 text-center mb-4">
+                            <img src="img/designs/ringLip.png" alt="Traditional Spinner Ring with Lips"
+                                class="img-fluid rounded shadow-sm" style="max-width: 350px;">
+                            <p class="mt-2 text-white"><br>Traditional Spinner: Visible Lips</p>
+                        </div>
+                        <div class="col-md-6 text-center mb-4">
+                            <img src="img/designs/hiddenChannel.png" alt="Hidden Channel Spinner Ring"
+                                class="img-fluid rounded shadow-sm" style="max-width: 350px;">
+                            <p class="mt-2 text-white"><br>Hidden Channel: Seamless Exterior</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Section 3: Relief Concept & Collaborations -->
+
+        <div class="container-fluid my-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <h4 class="text-dark">Relief Designs & Artistic Collaboration</h4>
+                    <p class="text-dark">
+                        Not all designs need to be patterned — the patented structure of these rings opens the door to
+                        more
+                        creative possibilities, like sculptural reliefs. This beach scene is just a conceptual example
+                        of
+                        what can be done.
+                    </p>
+                    <div class="text-center mb-3">
+                        <video autoplay muted loop playsinline class="img-fluid rounded shadow-sm"
+                            style="max-height: 400px;">
+                            <source src="img/designs/animRelief.webm" type="video/webm">
+                        </video>
+                    </div>
+                    <p class="text-dark">We're looking to collaborate with digital artists and sculptors to produce
+                        richly detailed ring designs — think mythic, textural, story-driven surfaces. These rings become
+                        tiny canvases of identity.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Site Footer Start -->
+        <div class="container-fluid bg-white text-dark footer mt-5 pt-5 border-top">
+            <div class="container py-5">
+                <div class="row g-4">
+                    <!-- Brand & Motto -->
+                    <div class="col-lg-4 col-md-6">
+                        <h1 class="text-primary mb-2">JGB Designs</h1>
+                        <p class="text-muted mb-3" style="max-width: 300px;">Innovating alternatives to traditional
+                            methods — from machining to meaning.</p>
+                        <a href="contact.html" class="btn btn-outline-primary btn-sm">Send a Message</a>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="mb-3">Explore</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html" class="text-dark text-decoration-none">Home</a></li>
+                            <li><a href="concept.html" class="text-dark text-decoration-none">Concept</a></li>
+                            <li><a href="compare.html" class="text-dark text-decoration-none">Compare</a></li>
+                            <li><a href="designs.html" class="text-dark text-decoration-none">Designs</a></li>
+                            <li><a href="growth.html" class="text-dark text-decoration-none">Growth</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Legal / Info -->
+                    <div class="col-lg-4 col-md-12">
+                        <h5 class="mb-3">Info</h5>
+                        <p class="mb-1"><i class="fa fa-envelope me-2 text-primary"></i><a href="contact.html"
+                                class="text-dark text-decoration-none">Contact Me</a></p>
+                        <p class="text-muted small">Patent protected. All designs © JGB Designs.<br>Built by hand with
+                            HTML/CSS, not a site builder.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container text-center pt-3 border-top border-secondary">
+                <small class="text-muted">&copy; 2025 Laser-Forged Rings. All Rights Reserved.</small>
             </div>
         </div>
     </div>
 
-    <!-- Main Site Footer Start -->
-    <div class="container-fluid bg-white text-dark footer mt-5 pt-5 border-top">
-        <div class="container py-5">
-            <div class="row g-4">
-                <!-- Brand & Motto -->
-                <div class="col-lg-4 col-md-6">
-                    <h1 class="text-primary mb-2">JGB Designs</h1>
-                    <p class="text-muted mb-3" style="max-width: 300px;">Innovating alternatives to traditional methods — from machining to meaning.</p>
-                    <a href="contact.html" class="btn btn-outline-primary btn-sm">Send a Message</a>
-                </div>
 
-                <!-- Quick Links -->
-                <div class="col-lg-4 col-md-6">
-                    <h5 class="mb-3">Explore</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html" class="text-dark text-decoration-none">Home</a></li>
-                        <li><a href="what.html" class="text-dark text-decoration-none">Concept</a></li>
-                        <li><a href="why.html" class="text-dark text-decoration-none">Compare</a></li>
-                        <li><a href="designs.html" class="text-dark text-decoration-none">Designs</a></li>
-                        <li><a href="growth.html" class="text-dark text-decoration-none">Growth</a></li>
-                    </ul>
-                </div>
-
-                <!-- Legal / Info -->
-                <div class="col-lg-4 col-md-12">
-                    <h5 class="mb-3">Info</h5>
-                    <p class="mb-1"><i class="fa fa-envelope me-2 text-primary"></i><a href="contact.html" class="text-dark text-decoration-none">Contact Me</a></p>
-                    <p class="text-muted small">Patent protected. All designs © JGB Designs.<br>Built by hand with HTML/CSS, not a site builder.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="container text-center pt-3 border-top border-secondary">
-            <small class="text-muted">&copy; 2025 Laser-Forged Rings. All Rights Reserved.</small>
-        </div>
-    </div>
-    <!-- Main Site Footer End -->
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
@@ -275,4 +498,5 @@
         });
     </script>
 </body>
+
 </html>
