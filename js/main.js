@@ -17,18 +17,34 @@
 
 
     // Sticky Navbar
-    let lastScrollTop = 0;
+    document.addEventListener("DOMContentLoaded", function () {
+        const isDesktop = window.innerWidth >= 992;
 
-    $(window).on('scroll', function () {
-        let currentScroll = $(this).scrollTop();
-
-        if (currentScroll > lastScrollTop) {
-            $('.navbar').css('top', '-150px'); // Hide
+        if (isDesktop) {
+            // Desktop scroll behavior
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 300) {
+                    $('.sticky-top').addClass('bg-primary shadow-sm').css('top', '0px');
+                } else {
+                    $('.sticky-top').removeClass('bg-primary shadow-sm').css('top', '-150px');
+                }
+            });
         } else {
-            $('.navbar').css('top', '0px'); // Show
-        }
+            // Mobile scroll behavior
+            let lastScrollTop = 0;
 
-        lastScrollTop = currentScroll;
+            $(window).on('scroll', function () {
+                let currentScroll = $(this).scrollTop();
+
+                if (currentScroll > lastScrollTop) {
+                    $('.navbar').css('top', '-150px'); // Hide
+                } else {
+                    $('.navbar').css('top', '0px'); // Show
+                }
+
+                lastScrollTop = currentScroll;
+            });
+        }
     });
 
     // Back to top button
