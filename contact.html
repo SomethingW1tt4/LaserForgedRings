@@ -36,7 +36,7 @@
 <body>
     <!-- Spinner Start -->
     <div id="spinner"
-         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only">Loading...</span>
         </div>
@@ -51,7 +51,7 @@
                     <h2 class="text-white">Laser-Forged Rings</h2>
                 </a>
                 <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
-                        data-bs-target="#navbarCollapse">
+                    data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -63,7 +63,7 @@
                         <a href="growth.html" class="nav-item nav-link">Growth</a>
                         <div class="nav-item dropdown">
                             <a href="about.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
-                               onclick="location.href='about.html';">About Me</a>
+                                onclick="location.href='about.html';">About Me</a>
                             <div class="dropdown-menu bg-white mt-2">
                                 <a href="bio.html" class="dropdown-item">Achievements</a>
                                 <a href="projects.html" class="dropdown-item">Projects</a>
@@ -78,23 +78,26 @@
     </div>
     <!-- Navbar End -->
 
-    <!-- Hero Start -->
-    <div class="container-fluid bg-primary hero-header">
-        <!-- Contact Page Content -->
-        <div class="container my-5">
-            <h2 class="text-center text-white mb-4">Send Me a Message</h2>
-            <p class="text-center text-white mb-4">Your message goes directly to me &#9830; no bots, no noise.</p>
-            <div class="d-flex justify-content-center">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdbQ5cP0N4dBe5G_Q1ANgVmjQFwD1n57V5GOEGrlBM76HXYIQ/viewform?embedded=true"
+    <!--Desktop Version-->
+    <div class="d-none d-md-block">
+        <!-- Hero Start -->
+        <div class="container-fluid bg-primary hero-header">
+            <!-- Contact Page Content -->
+            <div class="container my-5">
+                <h2 class="text-center text-white mb-4">Send Me a Message</h2>
+                <p class="text-center text-white mb-4">Your message goes directly to me &#9830; no bots, no noise.</p>
+                <div class="d-flex justify-content-center">
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSdbQ5cP0N4dBe5G_Q1ANgVmjQFwD1n57V5GOEGrlBM76HXYIQ/viewform?embedded=true"
                         width="600" height="800" frameborder="0" marginheight="0" marginwidth="0"
                         style="max-width: 700px;">
-                    Loading�
-                </iframe>
+                        Loading�
+                    </iframe>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- Footer Start (About Section) -->
+        <!-- Footer Start (About Section) -->
         <div class="container-fluid bg-dark text-light footer mt-5 pt-5">
             <div class="container py-5">
                 <div class="row g-5">
@@ -102,11 +105,6 @@
                         <h5 class="text-white mb-4">About This Site</h5>
                         <p class="text-white mb-3">This website is a digital extension of my lab notebook — documenting
                             creativity, engineering, failures, and everything in between.</p>
-                        <a href="contact.html" class="btn btn-outline-light btn-sm mt-2"
-                            style="border-color: #00ffee; color: #00ffee;">
-                            Send a Message
-                        </a>
-
                     </div>
                 </div>
             </div>
@@ -117,6 +115,52 @@
             </div>
         </div>
         <!-- Footer End -->
+    </div>
+
+
+
+
+
+    <!-- Mobile Version -->
+    <div class="d-block d-md-none">
+        <!-- Hero Start -->
+        <div class="container-fluid bg-primary hero-header">
+            <!-- Contact Page Content -->
+            <div class="container my-5">
+                <h2 class="text-center text-white mb-4">Send Me a Message</h2>
+                <p class="text-center text-white mb-4">Your message goes directly to me &#9830; no bots, no noise.</p>
+                <div class="d-flex justify-content-center">
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSdbQ5cP0N4dBe5G_Q1ANgVmjQFwD1n57V5GOEGrlBM76HXYIQ/viewform?embedded=true"
+                        width="600" height="800" frameborder="0" marginheight="0" marginwidth="0"
+                        style="max-width: 700px;">
+                        Loading�
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Start (About Section) -->
+        <div class="container-fluid bg-dark text-light footer">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-11 col-md-12">
+                        <h5 class="text-white mb-4">About This Site</h5>
+                        <p class="text-black mb-3">This website is a digital extension of my lab notebook — documenting
+                            creativity, engineering, failures, and everything in between.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container text-center border-top border-secondary pt-3">
+                <div class="copyright">
+                    © <span class="text-primary">Laser-Forged Rings</span>, All Rights Reserved.
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+    </div>
+    </div>
+
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
