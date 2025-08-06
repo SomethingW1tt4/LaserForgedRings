@@ -23,15 +23,14 @@
 </head>
 
 <body>
-    <!-- Navbar Start -->
-    <div class="container-fluid sticky-top">
+    <!-- NavAbar Start -->
+    <div class="container-fluid sticky-top bg-primary shadow-sm" style="top: 0px;">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-primary p-0">
                 <a href="index.html" class="navbar-brand">
                     <h2 class="text-white">Laser-Forged Rings</h2>
                 </a>
-                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
-                    data-bs-target="#navbarCollapse">
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -42,8 +41,7 @@
                         <a href="designs.html" class="nav-item nav-link">Designs</a>
                         <a href="growth.html" class="nav-item nav-link">Growth</a>
                         <div class="nav-item dropdown">
-                            <a href="about.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
-                                onclick="location.href='about.html';">About Me</a>
+                            <a href="about.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" onclick="location.href='about.html';">About Me</a>
                             <div class="dropdown-menu bg-white mt-2">
                                 <a href="bio.html" class="dropdown-item">Achievements</a>
                                 <a href="projects.html" class="dropdown-item">Projects</a>
@@ -71,8 +69,7 @@
 
         <!-- Profile Picture -->
         <div class="container text-center p-5">
-            <img src="img/about/profile.jpg" alt="Profile Photo" class="rounded-circle shadow"
-                style="max-width: 25%; border: 4px solid #ffffff;">
+            <img src="img/about/profile.jpg" alt="Profile Photo" class="rounded-circle shadow" style="max-width: 25%; border: 4px solid #ffffff;">
         </div>
 
         <!-- Section Tiles -->
@@ -119,10 +116,9 @@
                 <div class="row g-5">
                     <div class="col-lg-6 col-md-12 mx-auto">
                         <h5 class="text-white mb-4">About This Site</h5>
-                        <p class="text-black mb-3">This website is a digital extension of my lab notebook — documenting
+                        <p class="text-white mb-3">This website is a digital extension of my lab notebook — documenting
                             creativity, engineering, failures, and everything in between.</p>
-                        <a href="contact.html" class="btn btn-outline-light btn-sm mt-2"
-                            style="border-color: #00ffee; color: #00ffee;">
+                        <a href="contact.html" class="btn btn-outline-light btn-sm mt-2" style="border-color: #00ffee; color: #00ffee;">
                             Send a Message
                         </a>
 
@@ -143,50 +139,47 @@
     <!-- Mobile Version -->
     <div class="d-block d-md-none">
         <!-- About Me Overview -->
-        <div class="container-fluid hero-header bg-primary py-5 mb-5">
-            <div class="container text-center text-white">
-                <h1 class="display-4 text-white mb-3">About Me</h1>
+        <div class="container-fluid hero-header">
+    <div class="container">
+            <div style="padding-top: 7rem" class="text-center text-white">
+                <h1 class="display-4 text-white mb-5">About Me</h1>
                 <p class="lead">A glimpse into the projects, passions, and experiments behind the process.</p>
             </div>
-        </div>
-
-        <!-- Profile Picture -->
-        <div class="container text-center pb-5">
-            <img src="img/about/profile.jpg" alt="Profile Photo" class="rounded-circle shadow"
-                style="max-width: 400px; border: 4px solid #ffffff;">
-        </div>
-
-        <!-- Section Tiles -->
-        <div class="container my-5">
-            <div class="row g-4" style="margin-top: 0px;">
+        <!-- Profile Picture --><div class="text-center">
+            <img src="img/about/profile.jpg" alt="Profile Photo" class="rounded-circle shadow" style="max-width: 50%; border: 4px solid #ffffff;">
+        </div></div></div>
+        
+                <!-- Section Tiles -->
+        <div class="container my-2">
+            <div class="row g-4" style="margin-top: 0px; margin-left:.7rem; margin-right:.7rem">
 
                 <!-- Bio Section -->
-                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                <div class="col-lg-4 col-md-3 d-flex text-center">
                     <a href="bio.html" class="text-decoration-none text-center">
-                        <div class="overflow-hidden rounded shadow-sm" style="width: 250px">
+                        <div class="overflow-hidden rounded shadow-sm mx-auto" style="width: 85%">
                             <img src="img/about/bioThumb.png" class="img-fluid rounded" alt="Bio Thumbnail">
                         </div>
-                        <h5 class="mt-2 fw-bold text-black">Achievements</h5>
+                        <p class="mt-2 fw-bold text-dark" style="font-size:.7rem">Achievements</p>
                     </a>
                 </div>
 
                 <!-- Projects Section -->
-                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                <div class="col-lg-4 col-md-4 d-flex text-center">
                     <a href="projects.html" class="text-decoration-none text-center">
-                        <div class="overflow-hidden rounded shadow-sm" style="width: 250px">
+                        <div class="overflow-hidden rounded shadow-sm mx-auto" style="width: 85%">
                             <img src="img/about/projectsThumb.png" class="img-fluid rounded" alt="Projects Thumbnail">
                         </div>
-                        <h5 class="mt-2 fw-bold text-black">Projects</h5>
+                        <p class="mt-2 fw-bold text-dark" style="font-size:.7rem">Projects</p>
                     </a>
                 </div>
 
                 <!-- Art Section -->
-                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
-                    <a href="art.html" class="text-decoration-none text-center">
-                        <div class="overflow-hidden rounded shadow-sm" style="width: 250px">
+                <div class="col-lg-4 col-md-4 d-flex text-center">
+                    <a href="art.html" class="text-decoration-none">
+                        <div class="overflow-hidden rounded shadow-sm mx-auto" style="width: 85%">
                             <img src="img/about/artThumb.png" class="img-fluid rounded" alt="Art Thumbnail">
                         </div>
-                        <h5 class="mt-2 fw-bold text-black">Art Show</h5>
+                        <p class="mt-2 fw-bold text-dark" style="font-size:.7rem">Art Show</p>
                     </a>
                 </div>
 
@@ -195,15 +188,14 @@
 
 
         <!-- Footer Start (About Section) -->
-        <div class="container-fluid bg-dark text-light footer mt-5 pt-5">
-            <div class="container py-5">
+        <div class="container-fluid bg-dark text-light footer">
+            <div class="container">
                 <div class="row g-5">
-                    <div class="col-lg-6 col-md-12">
+                    <div class="col-lg-11 col-md-12">
                         <h5 class="text-white mb-4">About This Site</h5>
                         <p class="text-black mb-3">This website is a digital extension of my lab notebook — documenting
                             creativity, engineering, failures, and everything in between.</p>
-                        <a href="contact.html" class="btn btn-outline-light btn-sm mt-2"
-                            style="border-color: #00ffee; color: #00ffee;">
+                        <a href="contact.html" class="btn btn-outline-light btn-sm mt-2" style="border-color: #00ffee; color: #00ffee;">
                             Send a Message
                         </a>
                     </div>
@@ -211,7 +203,7 @@
             </div>
             <div class="container text-center border-top border-secondary pt-3">
                 <div class="copyright">
-                    &copy; <span class="text-primary">Laser-Forged Rings</span>, All Rights Reserved.
+                    © <span class="text-primary">Laser-Forged Rings</span>, All Rights Reserved.
                 </div>
             </div>
         </div>
@@ -221,7 +213,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top" style=""><i class="bi bi-arrow-up"></i></a>
 
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -233,6 +225,8 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+
 </body>
 
 </html>
