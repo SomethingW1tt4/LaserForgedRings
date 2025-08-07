@@ -625,23 +625,48 @@ img.animated.pulse {
     background-size: 100%, 100%;
 }
 
-.carousel-control-prev {
+@media (max-width: 576px) {
+    .carousel-control-prev {
     width: 5%;
     /* Shrink clickable area slightly */
-    left: 28%;
+    left: 10%;
 }
+}
+@media(min-width: 576px) {
+    .carousel-control-prev {
+        width: 5%;
+        /* Shrink clickable area slightly */
+        left: 28%;
+    }
+}   
 
-
-.carousel-control-next {
+@media (max-width: 576px) {
+    .carousel-control-next {
     width: 5%;
     /* Shrink clickable area slightly */
     right: 28%;
 }
+}
+}
+@media(min-width: 576px) {
+    .carousel-control-prev {
+        width: 5%;
+        /* Shrink clickable area slightly */
+        left: 10%;
+    }
+}   
+.carousel-control-next {
+    .carousel-control-next {
+    width: 5%;
+    /* Shrink clickable area slightly */
+    right:10%;
+}
+}
 
 .carousel-img-wrapper {
-    width: 350px;
+    max-width: 80vw;
     /* Control total area */
-    height: 350px;
+    max-height: 80vw;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
