@@ -636,7 +636,7 @@ img.animated.pulse {
     .carousel-control-prev {
         width: 5%;
         /* Shrink clickable area slightly */
-        left: 28%;
+        left: 25%;
     }
 }   
 
@@ -644,29 +644,22 @@ img.animated.pulse {
     .carousel-control-next {
     width: 5%;
     /* Shrink clickable area slightly */
-    right: 28%;
-}
-}
-}
-@media(min-width: 576px) {
-    .carousel-control-prev {
-        width: 5%;
-        /* Shrink clickable area slightly */
-        left: 10%;
-    }
-}   
-.carousel-control-next {
-    .carousel-control-next {
-    width: 5%;
-    /* Shrink clickable area slightly */
-    right:10%;
+    right: 10%;
 }
 }
 
+@media(min-width: 576px) {
+    .carousel-control-next {
+    width: 5%;
+    /* Shrink clickable area slightly */
+    right: 25%;
+    }
+}   
+
 .carousel-img-wrapper {
-    max-width: 80vw;
+    max-width: 60vw;
     /* Control total area */
-    max-height: 80vw;
+    max-height: 60vw;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
