@@ -677,7 +677,7 @@ img.animated.pulse {
     font-size: 1rem;
     color: rgba(0, 0, 0, 1);
     text-align: center;
-    margin-top: 0.5rem;
+    margin-top: 2rem;
 }
 
 @media (max-width: 576px) {
