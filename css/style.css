@@ -657,7 +657,7 @@ img.animated.pulse {
 }   
 
 .carousel-img-wrapper {
-    max-width: 60vw;
+    max-width: 45vw;
     /* Control total area */
     max-height: 60vw;
     margin: 0 auto;
