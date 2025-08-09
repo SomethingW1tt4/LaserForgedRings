@@ -634,9 +634,9 @@ img.animated.pulse {
 }
 @media(min-width: 576px) {
     .carousel-control-prev {
-        width: 5%;
+        width: 12%;
         /* Shrink clickable area slightly */
-        left: 25%;
+        left: -15%;
     }
 }   
 
@@ -650,9 +650,9 @@ img.animated.pulse {
 
 @media(min-width: 576px) {
     .carousel-control-next {
-    width: 5%;
+    width: 12%;
     /* Shrink clickable area slightly */
-    right: 25%;
+    right: -15%;
     }
 }   
 
