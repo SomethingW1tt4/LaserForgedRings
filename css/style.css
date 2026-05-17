@@ -597,7 +597,7 @@ img.animated.pulse {
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 10px;
+    padding: 5px;
     background: rgba(0, 0, 0, 0.75);
     color: white;
     font-size: .6rem;
@@ -606,7 +606,7 @@ img.animated.pulse {
     transition: opacity 0.3s ease;
     z-index: 11;
     pointer-events: none;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .gallery-item:hover .overlay {
